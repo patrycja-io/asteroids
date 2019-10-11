@@ -24,18 +24,53 @@ const ship = {
     //  direction of the ship conversion to radiance
     a: 90 / 180 * Math.PI 
     // rotation
-    rot: 0
+    rot:0
 }
 
 // keys set up
-document.addEventListener("keydown", keyDown);
-document.addEventListener("keyup", keyUp);
+document.addEventListener("keydown", keyDown); // pressed key
+document.addEventListener("keyup", keyUp); //released key
 
+function keyDown (/ ** @type {KeyboardEvent} */ event) {
+    switch(event.keyCode) {
 
+        //arrow left
+        case 37: 
+        ship.rot = speed / 180 * Math.PI /FPS;
+        break;
 
+        //arrow up
+        case 38:
+        break;
+
+        //arrow right
+        case 39:
+            ship.rot = - speed / 180 * Math.PI /FPS;
+        break;
+
+    }
+}
+
+function keyUp (/ ** @type {KeyboardEvent} */ event) {
+    switch(event.keyCode) {
+
+        //arrow left - stop 
+        case 37: 
+        ship.rot = 0;
+        break;
+
+        //arrow up - stop
+        case 38:
+        break;
+
+        //arrow right - stop
+        case 39:
+            ship.rot = 0;
+        break;
 
 // Game loop set up
 setInterval(update, 1000 / FPS);
+
 
 // game function to draw the ship and move 
 function update(){
