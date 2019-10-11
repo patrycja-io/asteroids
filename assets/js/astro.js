@@ -165,6 +165,14 @@ function update(){
     context.stroke();
 
 
+// drawing the enemies
+
+ context.strokeStyle = "#240090";  // color of the enemies
+ context.lineWidth = shipsize /20;
+
+
+
+
 // if loop to make ship to go back on the other side of the screen
 
  if (ship.x < 0 - ship.r) {
