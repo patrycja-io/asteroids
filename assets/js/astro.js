@@ -61,6 +61,10 @@ function update(){
    ship.y + ship.r * (Math.sin(ship.a) + Math.cos(ship.a))
      
  );
+
+ // line closing the ship
+
+ context.closePath();
  // draw the path
     context.stroke();
 }
