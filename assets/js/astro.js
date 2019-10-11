@@ -31,7 +31,21 @@ function update(){
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height)
 
- 
+ // drawing the ship 
+
+ context.strokeStyle = "white" ,
+ context.lineWidth = shipsize / 20;
+
+
+ // drawing triangle
+
+ context.beginPath();
+ context.moveTo(
+
+    //nose of the ship
+     ship.x + ship.r * Math.cos(ship.a),
+     ship.y + ship.r * Math.sin(ship.a)
+ )
 
      
 }
