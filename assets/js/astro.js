@@ -127,4 +127,28 @@ function update(){
  context.closePath();
  // draw the path
     context.stroke();
+
+
+// if loop to make ship to go back on the other side of the screen
+
+ if (ship.x < 0 - ship.r) {
+     ship.x = canvas.width + ship.r;
+} else if ( ship.x > canvas.width + ship.r){
+    ship.x = 0 - ship.r;
+}
+
+if (ship.y < 0 - ship.r) {
+    ship.y = canvas.height + ship.r;
+} else if ( ship.y > canvas.height + ship.r){
+   ship.y = 0 - ship.r;
+}
+
+
+
+
+
+
+
+
+
 }
