@@ -6,6 +6,8 @@ const canvas = document.getElementById("astroCanvas");
 
 const context = canvas.getContext("2d");
 
+
+
 // frames per seconds
 const FPS = 30; 
 
@@ -43,6 +45,9 @@ const speed = 360;
 // ship trust - pixel per seconds
 
 const ship_thrust = 5;
+
+
+
 
 
 
@@ -122,6 +127,10 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
     }
 }
+
+
+// function taking all parameters of asteroids together
+
  function newEnemy ( x, y) {
      const enemy = {
          x: x, 
@@ -137,6 +146,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
  }
 
 
+ 
 // Game loop set up
 setInterval(update, 1000 / FPS);
 
@@ -187,18 +197,16 @@ if(ship.thrusting){
  );
 
  // line closing the ship
-
  context.closePath();
- // draw the path
-    context.stroke();
+
+// draw the path
+context.stroke();
 
 // rotating the ship
-
 ship.a += ship.rot;
 
 
 // move the ship
-
 ship.x += ship.thrust.x;
 ship.y += ship.thrust.y;
 
