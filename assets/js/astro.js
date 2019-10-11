@@ -12,6 +12,9 @@ const FPS = 30;
 // ship size in pixels
 const shipsize = 30;
 
+//speed of the ship degrees per sec
+
+const speed = 360; 
 
 
 const ship = {
