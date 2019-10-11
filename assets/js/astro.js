@@ -157,22 +157,22 @@ function update(){
  context.moveTo(
 
     //nose of the ship
-     ship.x + ship.r * Math.cos(ship.a),
-     ship.y - ship.r * Math.sin(ship.a),
+     ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
+     ship.y - 4 / 3 * ship.r * Math.sin(ship.a),
  );
 
  context.lineTo(
 
      //rear left of the ship
-    ship.x - ship.r * (Math.cos(ship.a) + Math.sin(ship.a)),
-    ship.y + ship.r * (Math.sin(ship.a) - Math.cos(ship.a))
+    ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + Math.sin(ship.a)),
+    ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - Math.cos(ship.a))
      
  );
  context.lineTo(
 
     // rear right of the ship
-   ship.x - ship.r * (Math.cos(ship.a) - Math.sin(ship.a)),
-   ship.y + ship.r * (Math.sin(ship.a) + Math.cos(ship.a))
+   ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - Math.sin(ship.a)),
+   ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + Math.cos(ship.a))
      
  );
 
@@ -181,6 +181,16 @@ function update(){
  context.closePath();
  // draw the path
     context.stroke();
+
+
+// dot centerizing ship
+
+context.fillStyle ="indigo";
+context.fillRect(ship.x -1 , ship.y -1, 2, 2);
+
+
+
+
 
 
 // drawing the enemies
