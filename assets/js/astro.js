@@ -9,12 +9,23 @@ const context = canvas.getContext("2d");
 // frames per seconds
 const FPS = 30; 
 
+
+
+
+
 // numbers of enemies at the beginning
 const enemy_num = 5;
 
 // size of enemies = asteroids in pixels
 
 const enemy_size = 100;
+
+// speed of enemies = asteroids pixels per seconds
+
+const enemy_speed = 50; 
+
+
+
 
 // ship size in pixels
 const shipsize = 30;
