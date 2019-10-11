@@ -74,10 +74,6 @@ const ship = {
 
 // ASTEROIDS
 
-const enemy =[];
-createAsteroidBelt();
-
-
 function createAsteroidBelt() {
   enemy = [];
   var x, y;
@@ -85,7 +81,7 @@ function createAsteroidBelt() {
       do {
       x = Math.floor(Math.random()* canvas.width);
       y = Math.floor(Math.random()* canvas.height);
-      }while (distBetweenPoints(ship.x, ship.y, x,y) < enemy_size * 2 + ship.r)
+      } while (distBetweenPoints(ship.x, ship.y, x,y) < enemy_size * 2 + ship.r)
       enemy.push(newAsteroid(x, y));
   }
 }
@@ -242,8 +238,8 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
  context.strokeStyle = "#240090";  // color of the enemies
  context.lineWidth = shipsize /20;
- const x, y, r, a, vert;
- for  (var i =0; i < enemy.length; i++)
+ 
+ for  (var i = 0; i < enemy.length; i++)
  {
 
     //enemies properites
