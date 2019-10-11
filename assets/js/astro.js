@@ -261,6 +261,18 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
         x + r * Math.cos(a),
         y + r * Math.sin(a)
     );
+
+
+  // draw the enemies = asteroids = polygons
+
+  for ( var j= 0; j< vert; j++) {
+      context.lineTo(
+          x + r * Math.cos(a + j * Math.PI * 2 / vert),
+          y + r * Math.sin(a + j * Math.PI * 2 / vert)
+      );
+  }
+
+
   
 }
 
