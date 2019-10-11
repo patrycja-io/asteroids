@@ -22,9 +22,10 @@ const ship = {
     y: canvas.height / 2,
     r: shipsize / 2,
     //  direction of the ship conversion to radiance
-    a: 90 / 180 * Math.PI 
+    a: 90 / 180 * Math.PI,
     // rotation
-    rot:0
+    rot: 0,
+
 }
 
 // keys set up
