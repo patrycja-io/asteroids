@@ -14,3 +14,9 @@ const FPS = 30;
 setInterval(update, 1000 / FPS);
 
 // game function to draw the ship and move 
+function update(){
+
+
+    context.fillStyle = "black";
+    context.fillRect(0, 0, canvas.width, canvas.height)
+}
