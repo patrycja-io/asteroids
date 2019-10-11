@@ -123,7 +123,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
          yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
          r: enemy_size / 2,
          a: Math.random() * Math.PI * 2, // in radians
-         vert: Math.floor(Math.random() *(enemy_vert + 1) + enemy_vert / 2 );
+         vert: Math.floor(Math.random() *(enemy_vert + 1) + enemy_vert / 2 )
 
      };
      return enemy;
