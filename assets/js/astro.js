@@ -74,16 +74,13 @@ document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
 
-
-
-
-
 function keyDown (/** @type {KeyboardEvent} */ event) {
+
     switch(event.keyCode) {
 
         //arrow left
         case 37: 
-        ship.rot = speed / 180 * Math.PI /FPS;
+            ship.rot = speed / 180 * Math.PI /FPS;
         break;
 
         //arrow up
@@ -145,6 +142,9 @@ function update(){
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height)
 
+
+    
+
  // drawing the ship 
 
  context.strokeStyle = "white" ,
@@ -181,6 +181,10 @@ function update(){
  context.closePath();
  // draw the path
     context.stroke();
+
+// rotating the ship
+
+ship.a += ship.rot;
 
 
 // dot centerizing ship
