@@ -9,6 +9,9 @@ const context = canvas.getContext("2d");
 // frames per seconds
 const FPS = 30; 
 
+// numbers of enemies at the beginning
+const enemy_num = 5;
+
 // ship size in pixels
 const shipsize = 30;
 
