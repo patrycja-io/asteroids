@@ -38,6 +38,10 @@ const shipsize = 30;
 
 const speed = 360; 
 
+// ship trust - pixel per seconds
+
+const ship_trust = 5;
+
 
 
 // SHIP
@@ -142,17 +146,18 @@ function update(){
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height)
 
+// trusting the ship
+if(ship.thrusting){
 
+
+}
     
 
  // drawing the ship 
-
  context.strokeStyle = "white" ,
  context.lineWidth = shipsize / 20;
 
-
  // drawing triangle
-
  context.beginPath();
  context.moveTo(
 
