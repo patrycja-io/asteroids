@@ -17,6 +17,10 @@ const shipsize = 30;
 const speed = 360; 
 
 
+
+// SHIP
+
+
 const ship = {
     x: canvas.width / 2,
     y: canvas.height / 2,
@@ -33,6 +37,12 @@ const ship = {
     }
 
 }
+
+
+// ASTEROIDS
+
+
+
 
 // keys set up
 document.addEventListener("keydown", keyDown); // pressed key
