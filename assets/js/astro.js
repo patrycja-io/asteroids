@@ -82,8 +82,10 @@ function createAsteroidBelt() {
   enemy = [];
   var x, y;
   for(var i = o; i< enemy_num; i++) {
+      do {
       x = Math.floor(Math.random()* canvas.width);
       y = Math.floor(Math.random()* canvas.height);
+      }while (distBetweenPoints(ship.x, ship.y, x,y) < enemy_size * 2 + ship.r)
       enemy.push(newAsteroid(x, y));
   }
 }
@@ -237,9 +239,25 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
  context.strokeStyle = "#240090";  // color of the enemies
  context.lineWidth = shipsize /20;
+ const x, y, r, a, vert;
+ for  (var i =0; i < enemy.length; i++)
+ {
 
+    //enemies properites
+
+    x = enemy[i].x;
+    y = enemy[i].y;
+    r = enemy[i].r;
+    a = enemy[i].a;
+    vert = enemy[i].vert;
+    
+    // draw a path
 
 }
+
+
+
+
 
 // if loop to make ship to go back on the other side of the screen
 
