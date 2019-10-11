@@ -25,6 +25,12 @@ const ship = {
     a: 90 / 180 * Math.PI,
     // rotation
     rot: 0,
+    // thrusting of the ship parameter
+    thrusting: false,
+    thrust: {
+        x:0,
+        y:0,
+    }
 
 }
 
