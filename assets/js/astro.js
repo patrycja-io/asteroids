@@ -31,7 +31,7 @@ const ship = {
 document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
-function keyDown (/ ** @type {KeyboardEvent} */ event) {
+function keyDown (/** @type {KeyboardEvent} */ event) {
     switch(event.keyCode) {
 
         //arrow left
@@ -51,7 +51,7 @@ function keyDown (/ ** @type {KeyboardEvent} */ event) {
     }
 }
 
-function keyUp (/ ** @type {KeyboardEvent} */ event) {
+function keyUp (/** @type {KeyboardEvent} */ event) {
     switch(event.keyCode) {
 
         //arrow left - stop 
