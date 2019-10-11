@@ -12,7 +12,13 @@ const FPS = 30;
 // ship size in pixels
 const shipsize = 30;
 
-
+const ship = {
+    x: canvas.width / 2,
+    y: canvas.height / 2,
+    r: shipsize / 2,
+    // conversion to radiance
+    a: 90 / 180 * Math.PI 
+}
 
 
 // Game loop set up
