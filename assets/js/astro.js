@@ -41,12 +41,20 @@ const ship = {
 
 // ASTEROIDS
 
+const enemy =[];
+createAsteroidBelt();
+
 
 
 
 // keys set up
 document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
+
+
+
+
+
 
 function keyDown (/** @type {KeyboardEvent} */ event) {
     switch(event.keyCode) {
