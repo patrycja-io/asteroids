@@ -215,6 +215,7 @@ if(ship.thrusting){
 // draw the path
 context.stroke();
 
+
 // rotating the ship
 ship.a += ship.rot;
 
@@ -229,10 +230,16 @@ context.fillStyle ="indigo";
 context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
 
+
+
+
 // drawing the enemies
 
  context.strokeStyle = "#240090";  // color of the enemies
  context.lineWidth = shipsize /20;
+
+
+}
 
 // if loop to make ship to go back on the other side of the screen
 
