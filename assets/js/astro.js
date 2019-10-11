@@ -32,6 +32,10 @@ const enemy_speed = 50;
 
 const enemy_vert = 10;
 
+//jaggedness of asteroids (0=none 1=lots)
+
+const enemy_jag = 0.4; 
+
 
 
 
