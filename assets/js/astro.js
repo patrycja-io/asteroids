@@ -44,7 +44,15 @@ function update(){
 
     //nose of the ship
      ship.x + ship.r * Math.cos(ship.a),
-     ship.y + ship.r * Math.sin(ship.a)
+     ship.y + ship.r * Math.sin(ship.a),
+ );
+
+ context.lineTo(
+     
+     //rear of the ship
+    ship.x + ship.r * Math.cos(ship.a),
+    ship.y + ship.r * Math.sin(ship.a),
+     
  )
 
      
