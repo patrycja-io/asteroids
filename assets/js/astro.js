@@ -78,6 +78,8 @@ const ship = {
 
 // ASTEROIDS
 
+
+
 function createAsteroidBelt() {
   enemy = [];
   var x, y;
