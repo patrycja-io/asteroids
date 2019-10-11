@@ -21,7 +21,7 @@ const ship = {
     //  direction of the ship conversion to radiance
     a: 90 / 180 * Math.PI 
     // rotation
-    r: 0
+    rot: 0
 }
 
 // keys set up
