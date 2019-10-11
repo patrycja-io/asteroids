@@ -20,6 +20,12 @@ const ship = {
     a: 90 / 180 * Math.PI 
 }
 
+// keys set up
+document.addEventListener("keydown", keyDown);
+document.addEventListener("keyup", keyUp);
+
+
+
 
 // Game loop set up
 setInterval(update, 1000 / FPS);
