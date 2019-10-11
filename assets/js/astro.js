@@ -51,7 +51,7 @@ function update(){
 
      //rear left of the ship
     ship.x - ship.r * (Math.cos(ship.a) + Math.sin(ship.a)),
-    ship.y + ship.r * (Math.sin(ship.a) + Math.cos(ship.a))
+    ship.y + ship.r * (Math.sin(ship.a) - Math.cos(ship.a))
      
  );
  context.lineTo(
@@ -60,6 +60,6 @@ function update(){
    ship.x - ship.r * (Math.cos(ship.a) + Math.sin(ship.a)),
    ship.y + ship.r * (Math.sin(ship.a) - Math.cos(ship.a))
      
-
+ );
      
 }
