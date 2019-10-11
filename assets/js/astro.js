@@ -146,19 +146,22 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
  }
 
 
- 
+
 // Game loop set up
+
+
 setInterval(update, 1000 / FPS);
 
 
 // game function to draw the ship and move 
-function update(){
 
+function update(){
 
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height)
 
 // trusting the ship
+
 if(ship.thrusting){
   ship.thrust.x += ship_thrust * Math.cos(ship.a) / FPS;
   ship.thrust.y -= ship_thrust * Math.sin(ship.a) / FPS;
@@ -176,21 +179,21 @@ if(ship.thrusting){
  context.beginPath();
  context.moveTo(
 
-    //nose of the ship
+ //nose of the ship
      ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
      ship.y - 4 / 3 * ship.r * Math.sin(ship.a),
  );
 
  context.lineTo(
 
-     //rear left of the ship
+ //rear left of the ship
     ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + Math.sin(ship.a)),
     ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - Math.cos(ship.a))
      
  );
  context.lineTo(
 
-    // rear right of the ship
+ // rear right of the ship
    ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - Math.sin(ship.a)),
    ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + Math.cos(ship.a))
      
@@ -210,25 +213,16 @@ ship.a += ship.rot;
 ship.x += ship.thrust.x;
 ship.y += ship.thrust.y;
 
-
-
 // dot centerizing ship
 
 context.fillStyle ="indigo";
 context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
 
-
-
-
-
 // drawing the enemies
 
  context.strokeStyle = "#240090";  // color of the enemies
  context.lineWidth = shipsize /20;
-
-
-
 
 // if loop to make ship to go back on the other side of the screen
 
