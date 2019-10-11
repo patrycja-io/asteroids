@@ -78,6 +78,16 @@ const enemy =[];
 createAsteroidBelt();
 
 
+function createAsteroidBelt() {
+  enemy = [];
+  var x, y;
+  for(var i = o; i< enemy_num; i++) {
+      x = Math.floor(Math.random()* canvas.width);
+      y = Math.floor(Math.random()* canvas.height);
+      enemy.push(newAsteroid(x, y));
+  }
+}
+
 
 
 // keys set up
