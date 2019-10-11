@@ -148,8 +148,8 @@ function update(){
 
 // trusting the ship
 if(ship.thrusting){
-  ship.thrust.x =+ ship_thrust * Math.cos(ship.a);
-  ship.thrust.y =+ ship_thrust * Math.sin(ship.a);
+  ship.thrust.x += ship_thrust * Math.cos(ship.a) / FPS;
+  ship.thrust.y -= ship_thrust * Math.sin(ship.a) / FPS;
 }
     
 
