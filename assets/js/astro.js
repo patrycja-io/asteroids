@@ -256,6 +256,12 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
     
     // draw a path
 
+    context.beginPath();
+    context.moveTo(
+        x + r * Math.cos(a),
+        y + r * Math.sin(a)
+    );
+  
 }
 
 
