@@ -271,9 +271,10 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
           y + r * Math.sin(a + j * Math.PI * 2 / vert)
       );
   }
+ context.closePath();
+ context.stroke();
 
 
-  
 }
 
 
