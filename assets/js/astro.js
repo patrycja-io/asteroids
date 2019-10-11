@@ -16,7 +16,7 @@ const ship = {
     x: canvas.width / 2,
     y: canvas.height / 2,
     r: shipsize / 2,
-    // conversion to radiance
+    //  direction of the ship conversion to radiance
     a: 90 / 180 * Math.PI 
 }
 
