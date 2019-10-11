@@ -48,6 +48,7 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 
         //arrow up
         case 38:
+            ship.thrusting = true;
         break;
 
         //arrow right
