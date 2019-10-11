@@ -40,7 +40,7 @@ const speed = 360;
 
 // ship trust - pixel per seconds
 
-const ship_trust = 5;
+const ship_thrust = 5;
 
 
 
@@ -148,8 +148,8 @@ function update(){
 
 // trusting the ship
 if(ship.thrusting){
-
-
+  ship.thrust.x =+ ship_thrust * Math.cos(ship.a);
+  ship.thrust.y =+ ship_thrust * Math.sin(ship.a);
 }
     
 
