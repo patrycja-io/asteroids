@@ -152,6 +152,9 @@ function update(){
 if(ship.thrusting){
   ship.thrust.x += ship_thrust * Math.cos(ship.a) / FPS;
   ship.thrust.y -= ship_thrust * Math.sin(ship.a) / FPS;
+}else {
+    ship.thrust.x -= friction * ship.thrust.x / FPS;
+    ship.thrust.y -= friction * ship.thrust.y / FPS;
 }
     
 
