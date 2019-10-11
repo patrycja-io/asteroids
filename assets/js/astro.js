@@ -9,6 +9,11 @@ const context = canvas.getContext("2d");
 // frames per seconds
 const FPS = 30; 
 
+// ship size in pixels
+const shipsize = 30;
+
+
+
 
 // Game loop set up
 setInterval(update, 1000 / FPS);
@@ -19,4 +24,8 @@ function update(){
 
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height)
+
+ 
+
+     
 }
