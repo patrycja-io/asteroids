@@ -192,6 +192,13 @@ if(ship.thrusting){
 ship.a += ship.rot;
 
 
+// move the ship
+
+ship.x += ship.thrust.x;
+ship.y += ship.thrust.y;
+
+
+
 // dot centerizing ship
 
 context.fillStyle ="indigo";
