@@ -68,6 +68,9 @@ function keyUp (/ ** @type {KeyboardEvent} */ event) {
             ship.rot = 0;
         break;
 
+    }
+}
+
 // Game loop set up
 setInterval(update, 1000 / FPS);
 
