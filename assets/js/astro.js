@@ -69,6 +69,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
         //arrow up - stop
         case 38:
+        ship.thrusting = false;
         break;
 
         //arrow right - stop
