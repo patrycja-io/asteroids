@@ -9,6 +9,8 @@ const context = canvas.getContext("2d");
 // frames per seconds
 const FPS = 30; 
 
+// 0= no friction , 1= a lot of friction
+const friction = 0.7;
 
 
 
