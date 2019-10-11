@@ -29,6 +29,8 @@ const enemy_speed = 50;
 const enemy_vert = 10;
 
 
+
+
 // ship size in pixels
 const shipsize = 30;
 
