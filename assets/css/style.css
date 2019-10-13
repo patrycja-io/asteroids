@@ -1,11 +1,1 @@
-body{margin:40px;}
-
-.btn.btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    font-size: 24px;
-    line-height: 1.33;
-    border-radius: 35px;
-  }
-  
+@import "@material/fab/mdc-fab";
