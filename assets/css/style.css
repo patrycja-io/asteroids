@@ -3,6 +3,8 @@ body {
     font-size: 20px;
     color:#fff !important;
     background-color: #282828 !important;
+    background-position: center;
+    background-size: cover;
 }
 
 .navbar {
