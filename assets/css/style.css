@@ -1,7 +1,8 @@
 body {
     font-family: Roboto;
-    color:#fff;
-    background-color: #282828;
+    font-size: 20px;
+    color:#fff !important;
+    background-color: #282828 !important;
 }
 
 .navbar {
