@@ -5,8 +5,14 @@ body {
     background-color: #282828 !important;
     background-position: center;
     background-size: cover;
+    
 }
 
 .navbar {
-    background-color: #3500D3;
+    background-color: #282828;
     border-color: #190061;
+    
+nav.purple{
+    background: #0C0032;
+
+}
