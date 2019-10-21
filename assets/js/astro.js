@@ -309,4 +309,3 @@ if (ship.y < 0 - ship.r) {
 
 
 }
-$('body').scrollspy({ target: '#navbarResponsive', offset: -50})
