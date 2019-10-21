@@ -9,10 +9,18 @@ body {
 }
 
 .navbar {
-    background-color: #282828;
+    background-color: #0C0032;
     border-color: #190061;
     
-nav.purple{
-    background: #0C0032;
+.content {
+        padding: 16px;
 
-}
+
+.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+.sticky + .content {
+            padding-top: 60px;
+          }
