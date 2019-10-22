@@ -1,7 +1,4 @@
 
-
-
-
 // frames per seconds
 const FPS = 30; 
 
