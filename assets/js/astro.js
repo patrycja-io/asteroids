@@ -121,6 +121,21 @@ function destroyAsteroid(index) {
     var y = enemies[index].y;
     var r = enemies[index].r;
 
+    // split the asteroid in two if necessary
+    if (r == Math.ceil(enemy_size / 2)) { // large asteroid
+        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 4)));
+        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 4)));
+
+
+    } else if (r == Math.ceil(enemy_size / 4)) { // medium asteroid
+        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 8)));
+        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 8)));
+    }
+
+    // destroy the asteroid
+    enemies.splice(index, 1);
+}
+
 
 
 
