@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif !important; 
     font-size: 10px;
     color:#fff !important;
-    background-color:linear-gradient(#131e3a,navy,#222021) ! important!
+    background-color:#000!important;
     background-position: center;
     background-size: cover;
     
@@ -21,10 +21,34 @@ body {
 
 
 .navbar {
-    background-color: #0C0032;
+    background-color: rgb(0, 0, 2);
     border-color: #190061;
 }
     
 .content {
     padding: 30px;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #190061;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #2b2b2b;
 }
