@@ -77,13 +77,22 @@ const ship = {
     thrusting: false,
     thrust: {
         x:0,
-        y:0,
+        y:0
     }
 
 }
 
 
+
+
+
 // ASTEROIDS
+
+const enemy = [];
+createAsteroidBelt();
+
+// Game loop set up
+setInterval(update, 1000 / FPS);
 
 
 
@@ -179,10 +188,6 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
 
 
-// Game loop set up
-
-
-setInterval(update, 1000 / FPS);
 
 
 // game function to draw the ship and move 
