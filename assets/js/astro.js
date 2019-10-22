@@ -43,7 +43,7 @@ const shipsize = 30;
 
 //speed of the ship degrees per sec
 
-const speed = 360; 
+const ship_speed = 360; 
 
 // ship trust - pixel per seconds
 
@@ -99,18 +99,21 @@ setInterval(update, 1000 / FPS);
 function createAsteroidBelt() {
   enemy = [];
   var x, y;
-  for (var i = 0; i< enemy_num; i++) {
-      do {
-      x = Math.floor(Math.random()* canvas.width);
-      y = Math.floor(Math.random()* canvas.height);
+  for (var i = 0; i < enemy_num; i++) { // astreoids location
+     
+    do {
+      x = Math.floor(Math.random() * canvas.width);
+      y = Math.floor(Math.random() * canvas.height);
      
     } while (distBetweenPoints(ship.x, ship.y, x, y) < enemy_size * 2 + ship.r)
       enemy.push(newAsteroid(x, y));
   }
 }
 
+
+
 function distBetweenPoints(x1, y1, x2, y2) {
-    return Math.sqrt(Math.pow(x2 - x1, 2)+ Math.pow( y2 - y1, 2 ));
+    return Math.sqrt(Math.pow(x2 - x1, 2)+ Math.pow ( y2 - y1, 2 ));
 }
 
 
@@ -125,7 +128,7 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 
         //arrow left
         case 37: 
-            ship.rot = speed / 180 * Math.PI /FPS;
+            ship.rot = ship_speed / 180 * Math.PI /FPS;
         break;
 
         //arrow up
@@ -135,7 +138,7 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 
         //arrow right
         case 39:
-            ship.rot = - speed / 180 * Math.PI /FPS;
+            ship.rot = - ship_speed / 180 * Math.PI / FPS;
         break;
 
     }
@@ -167,21 +170,23 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
  function newEnemy ( x, y) {
      const enemy = {
+        a: Math.random() * Math.PI * 2, // in radians
+        offs: [],
+        r: enemy_size / 2,
+        vert: Math.floor(Math.random() * (enemy_vert + 1) + enemy_vert / 2 )
+
          x: x, 
          y: y,
          xv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
-         yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
-         r: enemy_size / 2,
-         a: Math.random() * Math.PI * 2, // in radians
-         vert: Math.floor(Math.random() *(enemy_vert + 1) + enemy_vert / 2 )
-         offs: []
-
+         yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1)
+        
+         
      };
 
      //vertex offset 
 
      for (var i = 0; i < enemy.vert; i++){
-         enemy.offs push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
+         enemy.offs.push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
      }
      return enemy;
  }
