@@ -37,7 +37,12 @@ const enemy_vert = 10;
 
 //jaggedness of asteroids (0=none 1=lots)
 
-const enemy_jag = 0.4; 
+const enemy_jag = 0.4;
+
+
+const show_bounding = true; // show or hide collision bounding
+
+const
 
 
 
