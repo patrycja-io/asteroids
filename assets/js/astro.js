@@ -52,11 +52,11 @@ const ship_thrust = 5;
 
 /* Conected element from html - canvas*/
 
-const canvas = document.getElementById("astroCanvas");
+let canvas = document.getElementById("astroCanvas");
 
 // Context from the canvas
 
-const context = canvas.getContext("2d");
+let context = canvas.getContext("2d");
 
 
 
@@ -64,7 +64,7 @@ const context = canvas.getContext("2d");
 // SHIP
 
 
-const ship = {
+let ship = {
     x: canvas.width / 2,
     y: canvas.height / 2,
     r: shipsize / 2,
@@ -97,8 +97,8 @@ setInterval(update, 1000 / FPS);
 
 function createAsteroidBelt() {
   enemies = [];
-  var x, y;
-  for (var i = 0; i < enemy_num; i++) { // astreoids location
+  let x, y;
+  for (let i = 0; i < enemy_num; i++) { // astreoids location
      
     do {
       x = Math.floor(Math.random() * canvas.width);
@@ -169,7 +169,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 // function - taking all parameters of asteroids together
 
  function newEnemy ( x, y) {
-     const enemy = {
+     let enemy = {
         a: Math.random() * Math.PI * 2, // in radians
         offs: [],
         r: enemy_size / 2,
@@ -185,7 +185,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
      //vertex offset 
 
-     for (var i = 0; i < enemy.vert; i++){
+     for (let i = 0; i < enemy.vert; i++){
          enemy.offs.push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
      }
      return enemy;
@@ -263,8 +263,8 @@ if (show_bounding) {
 
 context.strokeStyle = "#240090";  // color of the enemies
 context.lineWidth = shipsize / 20;
-var x, y, r, a, vert, offs;
-for  (var i = 0; i < enemies.length; i++) {
+let x, y, r, a, vert, offs;
+for  (let i = 0; i < enemies.length; i++) {
 
    //enemies properites
 
@@ -286,7 +286,7 @@ for  (var i = 0; i < enemies.length; i++) {
 
  // draw the enemies = asteroids = polygons
 
- for ( var j = 1; j < vert; j++) {
+ for ( let j = 1; j < vert; j++) {
      context.lineTo(
          x + r * offs [j] * Math.cos(a + j * Math.PI * 2 / vert),
          y + r * offs [j] * Math.sin(a + j * Math.PI * 2 / vert)
