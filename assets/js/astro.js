@@ -87,7 +87,7 @@ const ship = {
 
 // ASTEROIDS
 
-const enemies = [];
+let enemies = [];
 createAsteroidBelt();
 
 // Game loop set up
