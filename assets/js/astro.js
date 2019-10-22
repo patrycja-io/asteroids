@@ -73,6 +73,8 @@ let context = canvas.getContext("2d");
 
 // SHIP
 
+  // set up the spaceship object
+  let ship = newShip();
 
 let ship = {
     x: canvas.width / 2,
