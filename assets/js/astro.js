@@ -330,7 +330,29 @@ for  (let i = 0; i < enemies.length; i++) {
 context.closePath();
 context.stroke();
 
-
+// draw the lasers
+for (var i = 0; i < ship.lasers.length; i++) {
+    if (ship.lasers[i].explodeTime == 0) {
+        ctx.fillStyle = "salmon";
+        ctx.beginPath();
+        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, shipsize / 15, 0, Math.PI * 2, false);
+        ctx.fill();
+    } else {
+        // draw the eplosion
+        ctx.fillStyle = "orangered";
+        ctx.beginPath();
+        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.75, 0, Math.PI * 2, false);
+        ctx.fill();
+        ctx.fillStyle = "salmon";
+        ctx.beginPath();
+        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.5, 0, Math.PI * 2, false);
+        ctx.fill();
+        ctx.fillStyle = "pink";
+        ctx.beginPath();
+        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.25, 0, Math.PI * 2, false);
+        ctx.fill();
+    }
+}
 
 
 
