@@ -1,6 +1,4 @@
 body {
-    
-    font-family: 'Roboto', sans-serif !important; 
     font-size: 10px;
     color:#fff !important;
     background-color:#000!important;
@@ -10,13 +8,14 @@ body {
     
 }
 
-.h1{
-    font-family: 'Playfair Display', serif;
+h1{
+    font-family:'Playfair Display', serif;
+    font-size: 15px;
 
 };
 
-.display { 
-    font-family: 'Playfair Display', serif;
+p { 
+    font-family: 'Roboto', sans-serif;
 }
 
 
