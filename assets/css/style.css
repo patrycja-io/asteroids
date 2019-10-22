@@ -29,6 +29,10 @@ body {
     padding: 30px;
 }
 
+.fa-plus-circle {
+    color:#190061;
+}
+
 .social-links {
     padding-bottom: 15px;
 }
