@@ -173,7 +173,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
         a: Math.random() * Math.PI * 2, // in radians
         offs: [],
         r: enemy_size / 2,
-        vert: Math.floor(Math.random() * (enemy_vert + 1) + enemy_vert / 2 )
+        vert: Math.floor(Math.random() * (enemy_vert + 1) + enemy_vert / 2 ),
 
          x: x, 
          y: y,
