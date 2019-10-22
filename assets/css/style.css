@@ -15,7 +15,7 @@ body {
 
 };
 
-.p { 
+.display { 
     font-family: 'Playfair Display', serif;
 }
 
@@ -33,28 +33,30 @@ body {
     color:#3500d3;
 }
 
-.fa-plus-circle {
-	shadow: 0 0 0 4px rgba(255,255,255,1);
-	transition: background 0.2s, color 0.2s;	
+#fa-circle{
+    padding-bottom: 15px;
+
+}
+#fa-circle li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #3500d3;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
-.no-touch .fa-plus-circle :hover {
-	background: rgba(255,255,255,1);
-	color: #64bb5d;
+#fa-circle li a i:hover {
+    background: #2b2b2b;
 }
 
-.no-touch .fa-plus-circle:hover:before {
-	animation: spinAround 2s linear infinite;
-}
-
-@keyframes spinAround {
-	from {
-		transform: rotate(0deg)
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
 
 .social-links {
     padding-bottom: 15px;
