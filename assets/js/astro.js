@@ -297,6 +297,21 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 enemy[i].x += enemy[i].xv;
 enemy[i].y += enemy[i].yv;
 
+//backstop on the borders
+
+if (enemy[i].x < 0 - enemy [i].r){
+    enemy[i].x = canvas.width = enemy[i].r;
+} else if (roids[i].x > canvas.width + roids[i].r) {
+    enemy[i].x = 0 - roids[i].r
+}
+
+if (enemy[i].y < 0 - enemy [i].r){
+    enemy[i].y = canvas.height = enemy[i].r;
+} else if (roids[i].y > canvas.height + roids[i].r) {
+    enemy[i].y = 0 - roids[i].r
+}
+
+
 
 
 }
