@@ -6,6 +6,15 @@ const FPS = 30;
 // 0= no friction , 1= a lot of friction
 const friction = 0.7;
 
+//LASER
+
+const l_distance = 0.6; // max distance laser can travel as fraction of screen width
+
+const l_duration = 0.1; // duration of the lasers' explosion in seconds
+
+const laser_max = 10; // maximum number of lasers on screen at once
+
+const laser_speed= 500; // speed of lasers in pixels per second
 
 
 
