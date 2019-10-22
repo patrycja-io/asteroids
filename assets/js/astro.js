@@ -55,6 +55,9 @@ const ship_speed = 360;
 
 const ship_thrust = 5;
 
+// explosion in seconds 
+const ship_explode = 0.3;
+
 
 
 /* Conected element from html - canvas*/
@@ -136,7 +139,9 @@ function destroyAsteroid(index) {
     enemies.splice(index, 1);
 }
 
-
+function explodeShip() {
+    ship.explodeTime = Math.ceil(ship_explode * FPS);
+}
 
 
 function distBetweenPoints(x1, y1, x2, y2) {
