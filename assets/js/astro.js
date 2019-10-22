@@ -86,7 +86,7 @@ const ship = {
 function createAsteroidBelt() {
   enemy = [];
   var x, y;
-  for(var i = o; i< enemy_num; i++) {
+  for (var i = 0; i< enemy_num; i++) {
       do {
       x = Math.floor(Math.random()* canvas.width);
       y = Math.floor(Math.random()* canvas.height);
@@ -191,7 +191,11 @@ if(ship.thrusting){
 }
     
 
- // drawing the ship 
+
+
+
+
+ // Drawing the ship 
  context.strokeStyle = "white" ,
  context.lineWidth = shipsize / 20;
 
@@ -247,7 +251,7 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
  context.strokeStyle = "#240090";  // color of the enemies
  context.lineWidth = shipsize /20;
- 
+ var x, y, r, a, vert;
  for  (var i = 0; i < enemy.length; i++)
  {
 
@@ -309,3 +313,4 @@ if (ship.y < 0 - ship.r) {
 
 
 }
+  
