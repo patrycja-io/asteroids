@@ -150,7 +150,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 }
 
 
-// function taking all parameters of asteroids together
+// function - taking all parameters of asteroids together
 
  function newEnemy ( x, y) {
      const enemy = {
@@ -291,6 +291,12 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
   }
  context.closePath();
  context.stroke();
+
+// move the asteroids
+
+enemy[i].x += enemy[i].xv;
+enemy[i].y += enemy[i].yv;
+
 
 
 }
