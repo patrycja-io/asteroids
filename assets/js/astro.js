@@ -195,16 +195,16 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
 
 
-// game function to draw the ship and move 
+// game function to draw the space, the ship and move 
 
-function update(){
+function update() {
 
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height)
 
 // trusting the ship
 
-if(ship.thrusting){
+if (ship.thrusting) {
   ship.thrust.x += ship_thrust * Math.cos(ship.a) / FPS;
   ship.thrust.y -= ship_thrust * Math.sin(ship.a) / FPS;
 }else {
@@ -218,7 +218,7 @@ if(ship.thrusting){
 
 
  // Drawing the ship 
- context.strokeStyle = "white" ,
+ context.strokeStyle = "white" ;
  context.lineWidth = shipsize / 20;
 
  // drawing triangle
@@ -227,7 +227,7 @@ if(ship.thrusting){
 
  //nose of the ship
      ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
-     ship.y - 4 / 3 * ship.r * Math.sin(ship.a),
+     ship.y - 4 / 3 * ship.r * Math.sin(ship.a)
  );
 
  context.lineTo(
@@ -259,61 +259,41 @@ if (show_bounding) {
 }
 
 
-
-
-// rotating the ship
-ship.a += ship.rot;
-
-
-// move the ship
-ship.x += ship.thrust.x;
-ship.y += ship.thrust.y;
-
-// dot centerizing ship
-
-context.fillStyle ="indigo";
-context.fillRect(ship.x -1 , ship.y -1, 2, 2);
-
-
-
-
-
 // drawing the enemies
 
- context.strokeStyle = "#240090";  // color of the enemies
- context.lineWidth = shipsize /20;
- var x, y, r, a, vert, offs;
- for  (var i = 0; i < enemy.length; i++)
- {
+context.strokeStyle = "#240090";  // color of the enemies
+context.lineWidth = shipsize / 20;
+var x, y, r, a, vert, offs;
+for  (var i = 0; i < enemy.length; i++) {
 
-    //enemies properites
+   //enemies properites
 
-    x = enemy[i].x;
-    y = enemy[i].y;
-    r = enemy[i].r;
-    a = enemy[i].a;
-    vert = enemy[i].vert;
-    offs = enemy[i].offs;
+   x = enemy[i].x;
+   y = enemy[i].y;
+   r = enemy[i].r;
+   a = enemy[i].a;
+   vert = enemy[i].vert;
+   offs = enemy[i].offs;
 
-    // draw a path
+   // draw a path
 
-    context.beginPath();
-    context.moveTo(
-        x + r * offs [0] * Math.cos(a),
-        y + r * offs [0] * Math.sin(a)
-    );
+   context.beginPath();
+   context.moveTo (
+       x + r * offs [0] * Math.cos(a),
+       y + r * offs [0] * Math.sin(a)
+   );
 
 
-  // draw the enemies = asteroids = polygons
+ // draw the enemies = asteroids = polygons
 
-  for ( var j= 1; j< vert; j++) {
-      context.lineTo(
-          x + r * offs [j] * Math.cos(a + j * Math.PI * 2 / vert),
-          y + r * offs [j] * Math.sin(a + j * Math.PI * 2 / vert)
-      );
-  }
- context.closePath();
- context.stroke();
+ for ( var j = 1; j < vert; j++) {
+     context.lineTo(
+         x + r * offs [j] * Math.cos(a + j * Math.PI * 2 / vert),
+         y + r * offs [j] * Math.sin(a + j * Math.PI * 2 / vert)
+     );
+ }
+context.closePath();
+context.stroke();
 
 // move the asteroids
 
@@ -337,13 +317,36 @@ if (enemy[i].y < 0 - enemy [i].r){
 
 
 
+// rotating the ship
+ship.a += ship.rot;
+
+
+// move the ship
+ship.x += ship.thrust.x;
+ship.y += ship.thrust.y;
+
+// dot centerizing ship
+
+context.fillStyle ="indigo";
+context.fillRect(ship.x -1 , ship.y -1, 2, 2);
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 
 
 
-// if loop to make ship to go back on the other side of the screen
+// "if loop to move ship back on the other side of the screen
 
  if (ship.x < 0 - ship.r) {
      ship.x = canvas.width + ship.r;
