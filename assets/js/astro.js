@@ -87,7 +87,7 @@ const ship = {
 
 // ASTEROIDS
 
-const enemy = [];
+const enemies = [];
 createAsteroidBelt();
 
 // Game loop set up
@@ -96,7 +96,7 @@ setInterval(update, 1000 / FPS);
 
 
 function createAsteroidBelt() {
-  enemy = [];
+  enemies = [];
   var x, y;
   for (var i = 0; i < enemy_num; i++) { // astreoids location
      
@@ -105,7 +105,7 @@ function createAsteroidBelt() {
       y = Math.floor(Math.random() * canvas.height);
      
     } while (distBetweenPoints(ship.x, ship.y, x, y) < enemy_size * 2 + ship.r)
-      enemy.push(newAsteroid(x, y));
+      enemies.push(newAsteroid(x, y));
   }
 }
 
@@ -264,16 +264,16 @@ if (show_bounding) {
 context.strokeStyle = "#240090";  // color of the enemies
 context.lineWidth = shipsize / 20;
 var x, y, r, a, vert, offs;
-for  (var i = 0; i < enemy.length; i++) {
+for  (var i = 0; i < enemies.length; i++) {
 
    //enemies properites
 
-   x = enemy[i].x;
-   y = enemy[i].y;
-   r = enemy[i].r;
-   a = enemy[i].a;
-   vert = enemy[i].vert;
-   offs = enemy[i].offs;
+   x = enemies[i].x;
+   y = enemies[i].y;
+   r = enemies[i].r;
+   a = enemies[i].a;
+   vert = enemies[i].vert;
+   offs = enemies[i].offs;
 
    // draw a path
 
@@ -295,23 +295,27 @@ for  (var i = 0; i < enemy.length; i++) {
 context.closePath();
 context.stroke();
 
+
+
+
+
 // move the asteroids
 
-enemy[i].x += enemy[i].xv;
-enemy[i].y += enemy[i].yv;
+enemies[i].x += enemies[i].xv;
+enemies[i].y += enemies[i].yv;
 
 //backstop on the borders
 
-if (enemy[i].x < 0 - enemy [i].r){
-    enemy[i].x = canvas.width = enemy[i].r;
-} else if (roids[i].x > canvas.width + roids[i].r) {
-    enemy[i].x = 0 - roids[i].r
+if (enemies[i].x < 0 - enemies[i].r){
+    enemies[i].x = canvas.width = enemies[i].r;
+} else if (enemies[i].x > canvas.width + enemies[i].r) {
+    enemies[i].x = 0 - enemies[i].r
 }
 
-if (enemy[i].y < 0 - enemy [i].r){
-    enemy[i].y = canvas.height = enemy[i].r;
-} else if (roids[i].y > canvas.height + roids[i].r) {
-    enemy[i].y = 0 - roids[i].r
+if (enemies[i].y < 0 - enemies [i].r){
+    enemies[i].y = canvas.height = enemies[i].r;
+} else if (enemies[i].y > canvas.height + enemies[i].r) {
+    enemies[i].y = 0 - roids[i].r
 }
 
 
