@@ -254,7 +254,7 @@ context.stroke();
 if (show_bounding) {
     context.strokeStyle = "lime";
     context.beginPath();
-    context.arc(ship.x, ship.y, ship.r, 0, math.Pi * 2, false);
+    context.arc(ship.x, ship.y, ship.r, 0, Math.Pi * 2, false);
     context.stroke();
 }
 
@@ -315,7 +315,7 @@ if (enemies[i].x < 0 - enemies[i].r){
 if (enemies[i].y < 0 - enemies [i].r){
     enemies[i].y = canvas.height = enemies[i].r;
 } else if (enemies[i].y > canvas.height + enemies[i].r) {
-    enemies[i].y = 0 - roids[i].r
+    enemies[i].y = 0 - enemies[i].r
 }
 
 
@@ -336,13 +336,13 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
 // handle edge of screen
 if (ship.x < 0 - ship.r) {
-    ship.x = canv.width + ship.r;
-} else if (ship.x > canv.width + ship.r) {
+    ship.x = canvas.width + ship.r;
+} else if (ship.x > canvas.width + ship.r) {
     ship.x = 0 - ship.r;
 }
 if (ship.y < 0 - ship.r) {
-    ship.y = canv.height + ship.r;
-} else if (ship.y > canv.height + ship.r) {
+    ship.y = canvas.height + ship.r;
+} else if (ship.y > canvas.height + ship.r) {
     ship.y = 0 - ship.r;
 }
 
