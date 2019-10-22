@@ -271,7 +271,7 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
     a = enemy[i].a;
     vert = enemy[i].vert;
     offs = enemy[i].offs;
-    
+
     // draw a path
 
     context.beginPath();
@@ -285,8 +285,8 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
   for ( var j= 1; j< vert; j++) {
       context.lineTo(
-          x + r * Math.cos(a + j * Math.PI * 2 / vert),
-          y + r * Math.sin(a + j * Math.PI * 2 / vert)
+          x + r * offs [j] * Math.cos(a + j * Math.PI * 2 / vert),
+          y + r * offs [j] * Math.sin(a + j * Math.PI * 2 / vert)
       );
   }
  context.closePath();
