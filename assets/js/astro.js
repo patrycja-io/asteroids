@@ -76,7 +76,8 @@ let context = canvas.getContext("2d");
   // set up the spaceship object
   let ship = newShip();
 
-function newShip = {
+function newShip () {
+    return{
     x: canvas.width / 2,
     y: canvas.height / 2,
     r: shipsize / 2,
@@ -221,7 +222,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
      for (let i = 0; i < enemy.vert; i++){
          enemy.offs.push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
      }
-     
+
      return enemy;
  }
 
