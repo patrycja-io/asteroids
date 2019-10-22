@@ -90,7 +90,8 @@ function createAsteroidBelt() {
       do {
       x = Math.floor(Math.random()* canvas.width);
       y = Math.floor(Math.random()* canvas.height);
-      } while (distBetweenPoints(ship.x, ship.y, x,y) < enemy_size * 2 + ship.r)
+     
+    } while (distBetweenPoints(ship.x, ship.y, x, y) < enemy_size * 2 + ship.r)
       enemy.push(newAsteroid(x, y));
   }
 }
@@ -160,8 +161,15 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
          r: enemy_size / 2,
          a: Math.random() * Math.PI * 2, // in radians
          vert: Math.floor(Math.random() *(enemy_vert + 1) + enemy_vert / 2 )
+         offs: []
 
      };
+
+     //vertex offset 
+
+     for (var i = 0; i < enemy.vert; i++){
+         enemy.offs push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
+     }
      return enemy;
  }
 
