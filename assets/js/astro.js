@@ -1,15 +1,6 @@
 
 
 
-/* Conected element from html - canvas*/
-
-const canvas = document.getElementById("astroCanvas");
-
-// Context from the canvas
-
-const context = canvas.getContext("2d");
-
-
 
 // frames per seconds
 const FPS = 30; 
@@ -59,6 +50,14 @@ const speed = 360;
 const ship_thrust = 5;
 
 
+
+/* Conected element from html - canvas*/
+
+const canvas = document.getElementById("astroCanvas");
+
+// Context from the canvas
+
+const context = canvas.getContext("2d");
 
 
 
@@ -241,6 +240,15 @@ if(ship.thrusting){
 
 // draw the path
 context.stroke();
+
+if (show_bounding) {
+    context.strokeStyle = "lime";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r, 0, math.Pi * 2, false);
+    context.stroke();
+}
+
+
 
 
 // rotating the ship
