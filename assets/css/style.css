@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif !important; 
     font-size: 10px;
     color:#fff !important;
-    background-color: #000000 !important;
+    background-color:linear-gradient(#131e3a,navy,#222021) ! important!
     background-position: center;
     background-size: cover;
     

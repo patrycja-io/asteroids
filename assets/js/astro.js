@@ -33,7 +33,6 @@ const enemy_jag = 0.4;
 
 const show_bounding = true; // show or hide collision bounding
 
-const
 
 
 
@@ -118,6 +117,7 @@ function distBetweenPoints(x1, y1, x2, y2) {
 
 
 // keys set up
+
 document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
