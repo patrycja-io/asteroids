@@ -330,7 +330,17 @@ ship.y += ship.thrust.y;
 context.fillStyle ="indigo";
 context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
-
+// handle edge of screen
+if (ship.x < 0 - ship.r) {
+    ship.x = canv.width + ship.r;
+} else if (ship.x > canv.width + ship.r) {
+    ship.x = 0 - ship.r;
+}
+if (ship.y < 0 - ship.r) {
+    ship.y = canv.height + ship.r;
+} else if (ship.y > canv.height + ship.r) {
+    ship.y = 0 - ship.r;
+}
 
 
 
