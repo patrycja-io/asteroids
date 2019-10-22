@@ -259,7 +259,7 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
 
  context.strokeStyle = "#240090";  // color of the enemies
  context.lineWidth = shipsize /20;
- var x, y, r, a, vert;
+ var x, y, r, a, vert, offs;
  for  (var i = 0; i < enemy.length; i++)
  {
 
@@ -270,19 +270,20 @@ context.fillRect(ship.x -1 , ship.y -1, 2, 2);
     r = enemy[i].r;
     a = enemy[i].a;
     vert = enemy[i].vert;
+    offs = enemy[i].offs;
     
     // draw a path
 
     context.beginPath();
     context.moveTo(
-        x + r * Math.cos(a),
-        y + r * Math.sin(a)
+        x + r * offs [0] * Math.cos(a),
+        y + r * offs [0] * Math.sin(a)
     );
 
 
   // draw the enemies = asteroids = polygons
 
-  for ( var j= 0; j< vert; j++) {
+  for ( var j= 1; j< vert; j++) {
       context.lineTo(
           x + r * Math.cos(a + j * Math.PI * 2 / vert),
           y + r * Math.sin(a + j * Math.PI * 2 / vert)
