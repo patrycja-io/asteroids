@@ -1,13 +1,24 @@
 body {
     
-    font-family: Roboto;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif !important; 
+    font-size: 10px;
     color:#fff !important;
     background-color: #000000 !important;
     background-position: center;
     background-size: cover;
     
+    
 }
+
+.h1{
+    font-family: 'Playfair Display', serif;
+
+};
+
+.p { 
+    font-family: 'Playfair Display', serif;
+}
+
 
 .navbar {
     background-color: #0C0032;
