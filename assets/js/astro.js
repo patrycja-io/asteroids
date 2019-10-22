@@ -76,7 +76,7 @@ let context = canvas.getContext("2d");
   // set up the spaceship object
   let ship = newShip();
 
-let ship = {
+function newShip = {
     x: canvas.width / 2,
     y: canvas.height / 2,
     r: shipsize / 2,
@@ -203,19 +203,17 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
 
 // function - taking all parameters of asteroids together
 
- function newEnemy ( x, y) {
+ function newEnemy ( x, y, r) {
      let enemy = {
+        x: x, 
+        y: y,
+        xv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
+        yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1)
+       
         a: Math.random() * Math.PI * 2, // in radians
         offs: [],
-        r: enemy_size / 2,
-        vert: Math.floor(Math.random() * (enemy_vert + 1) + enemy_vert / 2 ),
-
-         x: x, 
-         y: y,
-         xv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
-         yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1)
-        
-         
+        r: r,
+        vert: Math.floor(Math.random() * (enemy_vert + 1) + enemy_vert / 2 ),    
      };
 
      //vertex offset 
@@ -223,6 +221,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
      for (let i = 0; i < enemy.vert; i++){
          enemy.offs.push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
      }
+     
      return enemy;
  }
 
