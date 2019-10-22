@@ -116,6 +116,12 @@ function createAsteroidBelt() {
   }
 }
 
+function destroyAsteroid(index) {
+    var x = enemies[index].x;
+    var y = enemies[index].y;
+    var r = enemies[index].r;
+
+
 
 
 function distBetweenPoints(x1, y1, x2, y2) {
