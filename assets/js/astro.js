@@ -105,7 +105,7 @@ function createAsteroidBelt() {
       y = Math.floor(Math.random() * canvas.height);
      
     } while (distBetweenPoints(ship.x, ship.y, x, y) < enemy_size * 2 + ship.r)
-      enemies.push(newAsteroid(x, y));
+      enemies.push(newEnemy(x, y));
   }
 }
 
