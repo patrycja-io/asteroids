@@ -26,8 +26,9 @@ p {
     border-color: #190061;
 }
     
-.content {
+.game {
     padding: 30px;
+    background-image: url(assets/purple.jpg);
 }
 
 .fa-plus-circle {
