@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display%7CRoboto&display=swap');
 
 body {
     font-size: 10px;
@@ -30,6 +30,7 @@ p {
     padding: 30px;
     background-image: url("assets/purple.jpg");
 }
+
 
 
 @-webkit-keyframes fa-plus-circle {
