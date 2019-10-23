@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display%7CRoboto&display=swap');
 
 body {
+    background-image: url("10.jpg");
     font-size: 10px;
     color:#fff !important;
     background-color:#000!important;
@@ -9,6 +10,8 @@ body {
     position: relative;
     
 }
+    
+
 
 h1{
     font-family:'Playfair Display', serif;
@@ -28,7 +31,6 @@ p {
     
 .game {
     padding: 30px;
-    background-image: url("assets/purple.jpg");
 }
 
 
