@@ -31,14 +31,6 @@ p {
     background-image: url("assets/purple.jpg");
 }
 
-.fa-plus-circle {
-    color:#3500d3;
-        -webkit-animation-name: bounce;
-        animation-name: bounce;
-        -webkit-transform-origin: center bottom;
-        transform-origin: center bottom;
-      }
-
 
 @-webkit-keyframes fa-plus-circle {
         from,
@@ -105,6 +97,14 @@ p {
           transform: translate3d(0, -4px, 0);
         }
       }
+
+      .fa-plus-circle {
+        color:#3500d3;
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+          }
       
       
 

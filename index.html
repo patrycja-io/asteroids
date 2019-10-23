@@ -30,13 +30,13 @@
 
 
 
-<body data-spy ="scroll" data-target="#asteroids" data-offset="50">
+<body>data-spy ="scroll" data-target="#game" data-offset="50">
 
 
     <!-- Navbar - Image  -->
 
 
-    <nav class="navbar text-center navbar-stick-top" id="navabar" >
+    <nav id="navbar" class="navbar text-center navbar-stick-top">
         <div class="navbar-collapse">
             <a class="navbar-brand"  href="#game">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Asteroids_arcade_logo.png" width="300"
@@ -45,11 +45,13 @@
             </a>
         </div>
     </nav>
-    
+
+  <div data-spy="scroll" data-target="#navbar" data-offset="0"></div>
+
 
     <!-- main content of the web -->
 <div class="container game">
-
+ 
     <div class="container">
         <div class="row">
             <div class="col-md-4 px-2">
