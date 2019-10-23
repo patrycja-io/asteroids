@@ -28,7 +28,7 @@ p {
     
 .game {
     padding: 30px;
-    background-image: url(assets/purple.jpg);
+    background-image: url("assets/purple.jpg");
 }
 
 .fa-plus-circle {

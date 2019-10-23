@@ -209,7 +209,7 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
         x: x, 
         y: y,
         xv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
-        yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1)
+        yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
        
         a: Math.random() * Math.PI * 2, // in radians
         offs: [],
