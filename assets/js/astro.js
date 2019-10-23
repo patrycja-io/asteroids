@@ -93,7 +93,7 @@ function newShip () {
     }
 
 }
-
+}
 
 
 
@@ -467,4 +467,4 @@ if (ship.y < 0 - ship.r) {
 
 
 }
-  
+}
