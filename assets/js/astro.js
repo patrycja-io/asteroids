@@ -1,10 +1,11 @@
 //game settings
+
 const FPS = 30; // frames per seconds
 const friction = 0.7; // 0= no friction , 1= a lot of friction
 const laserDistance = 0.6; // max distance laser can travel as fraction of screen width
 const laserDuration = 0.1; // duration of the lasers' explosion in seconds
 const laserMax = 10; // maximum number of lasers on screen at once
-const laserSeed= 500; // speed of lasers in pixels per second
+const laserSpeed= 500; // speed of lasers in pixels per second
 const enemyNum = 5;// numbers of enemies at the beginning
 const enemySize = 100;// size of enemies = asteroids in pixels
 const enemySpeed = 50; // speed of enemies = asteroids pixels per seconds
@@ -15,6 +16,9 @@ const shipSize = 30;// ship size in pixels
 const shipSpeed = 360; //speed of the ship degrees per sec
 const shipThrust = 5; // ship trust - pixel per seconds
 const shipExplode = 0.3; // explosion in seconds 
+const shipBlinkDuration = 0.1; //duration in seconds of one blink
+const explodeDuration = 0.3; // duration of the ship explosion
+const shipInvisible = 3; //ship invisibility in sec
 
 /* html- canvas*/
 let canvas = document.getElementById("astroCanvas");
