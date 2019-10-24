@@ -6,8 +6,9 @@ body {
     color:#fff !important;
     background-color:#000!important;
     background-position: center;
-    background-size: cover;
+    background-size: 120%;
     position: relative;
+    background-repeat: no-repeat;
     
 }
     
@@ -26,7 +27,8 @@ p {
 
 .navbar {
     background-color: rgb(0, 0, 2);
-    border-color: #190061;
+   
+    opacity:0.9;
 }
     
 .game {
