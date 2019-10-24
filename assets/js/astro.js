@@ -38,7 +38,7 @@ function newShip () {
     return{
     x: canvas.width / 2,
     y: canvas.height / 2,
-    r: shipsize / 2,
+    r: shipSize / 2,
     //  direction of the ship conversion to radiance
     a: 90 / 180 * Math.PI,
     // rotation
@@ -162,14 +162,14 @@ function keyUp ( event) {
         xv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
         yv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
         a: Math.random() * Math.PI * 2, // in radians
-        offs: [],
         r: r,
+        offs: [],
         vert: Math.floor(Math.random() * (enemyVert + 1) + enemyVert / 2 ),    
      };
 
      //vertex offset 
 
-     for (let i = 0; i < enemy.vert; i++){
+     for (let i = 0; i < enemy.vert; i++) {
          enemy.offs.push(Math.random() * enemyJag * 2 + 1 - enemyJag)
      }
 
@@ -177,9 +177,21 @@ function keyUp ( event) {
  }
 
 
+ // shooting function
+ function shootLaser(){
+     if(ship.canShoot && ship.lasers.length <laserMax){
+         ship.laser.push({ // from the nose of the ship
+            x: ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
+            y: ship.y - 4 / 3 * ship.r * Math.sin(ship.a),
+            xv: laserSpeed * Math.cos(ship.a) / FPS,
+            yv: -laserSpeed * Math.sin(ship.a) / FPS,
+            dist: 0,
+            explodeTime:0
 
+        });
+     }
 
-
+ }
 // game function to draw the space, the ship and move 
 
 function update() {
