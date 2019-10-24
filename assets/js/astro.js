@@ -431,17 +431,7 @@ if (ship.y < 0 - ship.r) {
 }
 
 
-
-
-
-
-
-
-
 }
-
-
-
 
 
 // "if loop to move ship back on the other side of the screen
@@ -457,14 +447,6 @@ if (ship.y < 0 - ship.r) {
 } else if ( ship.y > canvas.height + ship.r){
    ship.y = 0 - ship.r;
 }
-
-
-
-
-
-
-
-
 
 }
 }
