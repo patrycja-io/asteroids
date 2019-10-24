@@ -14,7 +14,7 @@ const showBunding = true; // show or hide collision bounding
 const shipSize = 30;// ship size in pixels
 const shipSpeed = 360; //speed of the ship degrees per sec
 const shipThrust = 5; // ship trust - pixel per seconds
-const ship_explode = 0.3; // explosion in seconds 
+const shipExplode = 0.3; // explosion in seconds 
 
 /* html- canvas*/
 let canvas = document.getElementById("astroCanvas");
@@ -60,13 +60,13 @@ setInterval(update, 1000 / FPS);
 function createAsteroidBelt() {
   enemies = [];
   let x, y;
-  for (let i = 0; i < enemy_num; i++) { // astreoids location
+  for (let i = 0; i < enemyNum; i++) { // asteroids location
      
     do {
       x = Math.floor(Math.random() * canvas.width);
       y = Math.floor(Math.random() * canvas.height);
      
-    } while (distBetweenPoints(ship.x, ship.y, x, y) < enemy_size * 2 + ship.r)
+    } while (distBetweenPoints(ship.x, ship.y, x, y) < enemySize * 2 + ship.r)
       enemies.push(newEnemy(x, y));
   }
 }
@@ -77,14 +77,14 @@ function destroyAsteroid(index) {
     var r = enemies[index].r;
 
     // split the asteroid in two if necessary
-    if (r == Math.ceil(enemy_size / 2)) { // large asteroid
-        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 4)));
-        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 4)));
+    if (r == Math.ceil(enemySize / 2)) { // large asteroid
+        enemies.push(newEnemy(x, y, Math.ceil(enemySize / 4)));
+        enemies.push(newEnemy(x, y, Math.ceil(enemySize / 4)));
 
 
-    } else if (r == Math.ceil(enemy_size / 4)) { // medium asteroid
-        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 8)));
-        enemies.push(newEnemy(x, y, Math.ceil(enemy_size / 8)));
+    } else if (r == Math.ceil(enemySize / 4)) { // medium asteroid
+        enemies.push(newEnemy(x, y, Math.ceil(enemySize / 8)));
+        enemies.push(newEnemy(x, y, Math.ceil(enemySize / 8)));
     }
 
     // destroy the asteroid
@@ -92,7 +92,7 @@ function destroyAsteroid(index) {
 }
 
 function explodeShip() {
-    ship.explodeTime = Math.ceil(ship_explode * FPS);
+    ship.explodeTime = Math.ceil(shipExplode * FPS);
 }
 
 
@@ -113,7 +113,7 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 
         //arrow left
         case 37: 
-            ship.rot = ship_speed / 180 * Math.PI /FPS;
+            ship.rot = shipSpeed / 180 * Math.PI /FPS;
         break;
 
         //arrow up
@@ -123,13 +123,13 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 
         //arrow right
         case 39:
-            ship.rot = - ship_speed / 180 * Math.PI / FPS;
+            ship.rot = - shipSpeed / 180 * Math.PI / FPS;
         break;
 
     }
 }
 
-function keyUp (/** @type {KeyboardEvent} */ event) {
+function keyUp ( event) {
     switch(event.keyCode) {
 
         //arrow left - stop 
@@ -157,19 +157,19 @@ function keyUp (/** @type {KeyboardEvent} */ event) {
      let enemy = {
         x: x, 
         y: y,
-        xv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
-        yv: Math.random() * enemy_speed / FPS * (Math.random() <0.5 ? 1: -1),
+        xv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
+        yv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
        
         a: Math.random() * Math.PI * 2, // in radians
         offs: [],
         r: r,
-        vert: Math.floor(Math.random() * (enemy_vert + 1) + enemy_vert / 2 ),    
+        vert: Math.floor(Math.random() * (enemyVert + 1) + enemyVert / 2 ),    
      };
 
      //vertex offset 
 
      for (let i = 0; i < enemy.vert; i++){
-         enemy.offs.push(Math.random() * enemy_jag * 2 + 1 - enemy_jag)
+         enemy.offs.push(Math.random() * enemyJag * 2 + 1 - enemyJag)
      }
 
      return enemy;
@@ -189,8 +189,8 @@ function update() {
 // trusting the ship
 
 if (ship.thrusting) {
-  ship.thrust.x += ship_thrust * Math.cos(ship.a) / FPS;
-  ship.thrust.y -= ship_thrust * Math.sin(ship.a) / FPS;
+  ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
+  ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
 }else {
     ship.thrust.x -= friction * ship.thrust.x / FPS;
     ship.thrust.y -= friction * ship.thrust.y / FPS;
@@ -246,7 +246,7 @@ if (show_bounding) {
 // drawing the enemies
 
 context.strokeStyle = "#240090";  // color of the enemies
-context.lineWidth = shipsize / 20;
+context.lineWidth = shipSize / 20;
 let x, y, r, a, vert, offs;
 for  (let i = 0; i < enemies.length; i++) {
 
@@ -284,7 +284,7 @@ for (let i = 0; i < ship.lasers.length; i++) {
     if (ship.lasers[i].explodeTime == 0) {
         ctx.fillStyle = "salmon";
         ctx.beginPath();
-        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, shipsize / 15, 0, Math.PI * 2, false);
+        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, shipSize / 15, 0, Math.PI * 2, false);
         ctx.fill();
     } else {
         // draw the eplosion
@@ -307,7 +307,7 @@ for (let i = 0; i < ship.lasers.length; i++) {
 for (let i = ship.lasers.length - 1; i >= 0; i--) {
                 
     // check distance travelled
-    if (ship.lasers[i].dist > l_distance* canvas.width) {
+    if (ship.lasers[i].dist > laserDistance* canvas.width) {
         ship.lasers.splice(i, 1);
         continue;
     }
