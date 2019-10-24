@@ -49,7 +49,6 @@ function newShip () {
         x:0,
         y:0
     }
-
 }
 }
 
@@ -68,8 +67,8 @@ function createAsteroidBelt() {
       y = Math.floor(Math.random() * canvas.height);
      
     } while (distBetweenPoints(ship.x, ship.y, x, y) < enemySize * 2 + ship.r)
-      enemies.push(newEnemy(x, y));
-  }
+      enemies.push(newEnemy(x, y, Math.ceil(enemySize / 2)));
+}
 }
 
 function destroyAsteroid(index) {
