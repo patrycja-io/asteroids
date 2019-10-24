@@ -49,10 +49,7 @@ function newShip () {
 }
 }
 
-
-
-
-// ASTEROIDS
+// ASTEROIDS set up
 
 let enemies = [];
 createAsteroidBelt();
