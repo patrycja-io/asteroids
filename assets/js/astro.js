@@ -1,75 +1,24 @@
+//game settings
+const FPS = 30; // frames per seconds
+const friction = 0.7; // 0= no friction , 1= a lot of friction
+const laserDistance = 0.6; // max distance laser can travel as fraction of screen width
+const laserDuration = 0.1; // duration of the lasers' explosion in seconds
+const laserMax = 10; // maximum number of lasers on screen at once
+const laserSeed= 500; // speed of lasers in pixels per second
+const enemyNum = 5;// numbers of enemies at the beginning
+const enemySize = 100;// size of enemies = asteroids in pixels
+const enemySpeed = 50; // speed of enemies = asteroids pixels per seconds
+const enemyVert = 10; // vertices on each enemy
+const enemyJag = 0.4;//jaggedness of asteroids (0=none 1=lots)
+const showBunding = true; // show or hide collision bounding
+const shipSize = 30;// ship size in pixels
+const shipSpeed = 360; //speed of the ship degrees per sec
+const shipThrust = 5; // ship trust - pixel per seconds
+const ship_explode = 0.3; // explosion in seconds 
 
-
-// frames per seconds
-const FPS = 30; 
-
-// 0= no friction , 1= a lot of friction
-const friction = 0.7;
-
-//LASER
-
-const l_distance = 0.6; // max distance laser can travel as fraction of screen width
-
-const l_duration = 0.1; // duration of the lasers' explosion in seconds
-
-const laser_max = 10; // maximum number of lasers on screen at once
-
-const laser_speed= 500; // speed of lasers in pixels per second
-
-
-
-// numbers of enemies at the beginning
-const enemy_num = 5;
-
-// size of enemies = asteroids in pixels
-
-const enemy_size = 100;
-
-// speed of enemies = asteroids pixels per seconds
-
-const enemy_speed = 50; 
-
-// vertices on each enemy
-
-const enemy_vert = 10;
-
-//jaggedness of asteroids (0=none 1=lots)
-
-const enemy_jag = 0.4;
-
-
-const show_bounding = true; // show or hide collision bounding
-
-
-
-
-
-// ship size in pixels
-const shipsize = 30;
-
-//speed of the ship degrees per sec
-
-const ship_speed = 360; 
-
-// ship trust - pixel per seconds
-
-const ship_thrust = 5;
-
-// explosion in seconds 
-const ship_explode = 0.3;
-
-
-
-/* Conected element from html - canvas*/
-
+/* html- canvas*/
 let canvas = document.getElementById("astroCanvas");
-
-// Context from the canvas
-
 let context = canvas.getContext("2d");
-
-
-
 
 // SHIP
 
