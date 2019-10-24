@@ -91,13 +91,12 @@ function destroyAsteroid(index) {
     enemies.splice(index, 1);
 }
 
-function explodeShip() {
-    ship.explodeTime = Math.ceil(shipExplode * FPS);
+function distBetweenPoints(x1, y1, x2, y2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow ( y2 - y1, 2 ));
 }
 
-
-function distBetweenPoints(x1, y1, x2, y2) {
-    return Math.sqrt(Math.pow(x2 - x1, 2)+ Math.pow ( y2 - y1, 2 ));
+function explodeShip() {
+    ship.explodeTime = Math.ceil(shipExplode * FPS);
 }
 
 
@@ -111,18 +110,19 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 
     switch(event.keyCode) {
 
-        //arrow left
-        case 37: 
+        case 32: // space bar key (shoot laser)
+        shootLaser();
+        break;
+        
+        case 37: //arrow left
             ship.rot = shipSpeed / 180 * Math.PI /FPS;
         break;
 
-        //arrow up
-        case 38:
+        case 38:  //arrow up
             ship.thrusting = true;
         break;
 
-        //arrow right
-        case 39:
+        case 39:  //arrow right
             ship.rot = - shipSpeed / 180 * Math.PI / FPS;
         break;
 
