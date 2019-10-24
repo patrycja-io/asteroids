@@ -24,6 +24,10 @@ const shipInvisible = 3; //ship invisibility in sec
 let canvas = document.getElementById("astroCanvas");
 let context = canvas.getContext("2d");
 
+
+// Game loop set up
+setInterval(update, 1000 / FPS);
+
 // SHIP
 
   // Spaceship object- set up
@@ -53,11 +57,6 @@ function newShip () {
 
 let enemies = [];
 createAsteroidBelt();
-
-// Game loop set up
-setInterval(update, 1000 / FPS);
-
-
 
 function createAsteroidBelt() {
   enemies = [];
