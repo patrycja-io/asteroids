@@ -26,8 +26,9 @@ let context = canvas.getContext("2d");
 
 // SHIP
 
-  // set up the spaceship object
-  let ship = newShip();
+  // Spaceship object- set up
+
+let ship = newShip();
 
 function newShip () {
     return{
