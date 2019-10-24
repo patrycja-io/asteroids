@@ -130,20 +130,22 @@ function keyDown (/** @type {KeyboardEvent} */ event) {
 }
 
 function keyUp ( event) {
+
     switch(event.keyCode) {
 
-        //arrow left - stop 
-        case 37: 
+         case 32: //space bar 
+         ship.canShoot = true;
+         break;
+        
+        case 37: //arrow left - stop 
         ship.rot = 0;
         break;
 
-        //arrow up - stop
-        case 38:
+        case 38: //arrow up - stop
         ship.thrusting = false;
         break;
 
-        //arrow right - stop
-        case 39:
+        case 39:  //arrow right - stop
             ship.rot = 0;
         break;
 
@@ -159,7 +161,6 @@ function keyUp ( event) {
         y: y,
         xv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
         yv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
-       
         a: Math.random() * Math.PI * 2, // in radians
         offs: [],
         r: r,
