@@ -190,8 +190,10 @@ function keyUp ( event) {
 
         });
      }
-
+     ship.canShoot = false; //prevent further shooting
  }
+
+ 
 // game function to draw the space, the ship and move 
 
 function update() {
