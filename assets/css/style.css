@@ -6,9 +6,10 @@ body {
     color:#fff !important;
     background-color:#000!important;
     background-position: center;
-    background-size: 120%;
+    background-size: 70%;
     position: relative;
     background-repeat: no-repeat;
+    opacity:0,5;
     
 }
     
