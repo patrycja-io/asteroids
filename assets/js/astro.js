@@ -380,6 +380,24 @@ if (!exploding) {
         }
     }
 
+// rotate the ship
+ship.a += ship.rot;
+
+// move the ship
+ship.x += ship.thrust.x;
+ship.y += ship.thrust.y;
+} else {
+// reduce the explode time
+ship.explodeTime--;
+
+// reset the ship after the explosion has finished
+if (ship.explodeTime == 0) {
+    ship = newShip();
+}
+}
+
+
+
 // move the lasers
 for (let i = ship.lasers.length - 1; i >= 0; i--) {
                 
@@ -420,17 +438,6 @@ if (enemies[i].y < 0 - enemies [i].r){
 } else if (enemies[i].y > canvas.height + enemies[i].r) {
     enemies[i].y = 0 - enemies[i].r
 }
-
-
-
-
-// rotating the ship
-ship.a += ship.rot;
-
-
-// move the ship
-ship.x += ship.thrust.x;
-ship.y += ship.thrust.y;
 
 // dot centerizing ship
 
