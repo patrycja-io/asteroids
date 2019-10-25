@@ -435,19 +435,6 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
         ship.lasers[i].dist += Math.sqrt(Math.pow(ship.lasers[i].xv, 2) + Math.pow(ship.lasers[i].yv, 2));
     }
 
-//backstop on the borders
-
-if (enemies[i].x < 0 - enemies[i].r){
-    enemies[i].x = canvas.width = enemies[i].r;
-} else if (enemies[i].x > canvas.width + enemies[i].r) {
-    enemies[i].x = 0 - enemies[i].r
-}
-
-if (enemies[i].y < 0 - enemies [i].r){
-    enemies[i].y = canvas.height = enemies[i].r;
-} else if (enemies[i].y > canvas.height + enemies[i].r) {
-    enemies[i].y = 0 - enemies[i].r
-}
 
 // dot centerizing ship
 
@@ -470,12 +457,29 @@ if (ship.y < 0 - ship.r) {
 }
 
 
+    // move the asteroids
+    for (var i = 0; i < roids.length; i++) {
+        roids[i].x += roids[i].xv;
+        roids[i].y += roids[i].yv;
 
+        // handle asteroid edge of screen
+        if (roids[i].x < 0 - roids[i].r) {
+            roids[i].x = canv.width + roids[i].r;
+        } else if (roids[i].x > canv.width + roids[i].r) {
+            roids[i].x = 0 - roids[i].r
+        }
+        if (roids[i].y < 0 - roids[i].r) {
+            roids[i].y = canv.height + roids[i].r;
+        } else if (roids[i].y > canv.height + roids[i].r) {
+            roids[i].y = 0 - roids[i].r
+ 
+ 
+        }
+ 
+    }
 
-// move the asteroids
-
-enemies[i].x += enemies[i].xv;
-enemies[i].y += enemies[i].yv;
-
+    
 }
-}
+
+
+ }
