@@ -339,6 +339,47 @@ for (let i = 0; i < ship.lasers.length; i++) {
     }
 }
 
+// detect laser hits on asteroids
+let ax, ay, ar, lx, ly;
+for (let i = enemies.length - 1; i >= 0; i--) {
+
+    // grab the asteroid properties
+    ax = enemies[i].x;
+    ay = enemies[i].y;
+    ar = enemies[i].r;
+
+    // loop over the lasers
+    for (let j = ship.lasers.length - 1; j >= 0; j--) {
+
+        // grab the laser properties
+        lx = ship.lasers[j].x;
+        ly = ship.lasers[j].y;
+
+        // detect hits
+        if (ship.lasers[j].explodeTime == 0 && distBetweenPoints(ax, ay, lx, ly) < ar) {
+
+            // destroy the asteroid and activate the laser explosion
+            destroyAsteroid(i);
+            ship.lasers[j].explodeTime = Math.ceil(laserExplodeDuration * FPS);
+            break;
+        }
+    }
+}
+
+// check for asteroid collisions (when not exploding)
+if (!exploding) {
+
+    // only check when not blinking
+    if (ship.blinkNum == 0) {
+        for (var i = 0; i < enemies.length; i++) {
+            if (distBetweenPoints(ship.x, ship.y, enemies[i].x, enemies[i].y) < ship.r + roids[i].r) {
+                explodeShip();
+                destroyAsteroid(i);
+                break;
+            }
+        }
+    }
+
 // move the lasers
 for (let i = ship.lasers.length - 1; i >= 0; i--) {
                 
