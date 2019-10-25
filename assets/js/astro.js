@@ -20,6 +20,8 @@ const shipExplode = 0.3; // explosion in seconds
 const shipBlinkDuration = 0.1; //duration in seconds of one blink
 const explodeDuration = 0.3; // duration of the ship explosion
 const shipInvisible = 3; //ship invisibility in sec
+const timeText = 2.5 ;// fading time in seconds
+const textSize = 40; //text font height in pixels
 
 /* html- canvas*/
 let canvas = document.getElementById("astroCanvas");
