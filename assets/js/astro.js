@@ -193,80 +193,22 @@ function keyUp ( event) {
      ship.canShoot = false; //prevent further shooting
  }
 
- 
+function update() {
+    var blinkOn = ship.blinkNum % 2 == 0;
+    var exploding = ship.explodeTime > 0;
+
 // game function to draw the space, the ship and move 
 
-function update() {
-
     context.fillStyle = "black";
-    context.fillRect(0, 0, canvas.width, canvas.height)
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
-// trusting the ship
-
-if (ship.thrusting) {
-  ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
-  ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
-}else {
-    ship.thrust.x -= friction * ship.thrust.x / FPS;
-    ship.thrust.y -= friction * ship.thrust.y / FPS;
-}
-    
-
-
-
-
-
- // Drawing the ship 
- context.strokeStyle = "white" ;
- context.lineWidth = shipsize / 20;
-
- // drawing triangle
- context.beginPath();
- context.moveTo(
-
- //nose of the ship
-     ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
-     ship.y - 4 / 3 * ship.r * Math.sin(ship.a)
- );
-
- context.lineTo(
-
- //rear left of the ship
-    ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + Math.sin(ship.a)),
-    ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - Math.cos(ship.a))
-     
- );
- context.lineTo(
-
- // rear right of the ship
-   ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - Math.sin(ship.a)),
-   ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + Math.cos(ship.a))
-     
- );
-
- // line closing the ship
- context.closePath();
-
-// draw the path
-context.stroke();
-
-if (show_bounding) {
-    context.strokeStyle = "lime";
-    context.beginPath();
-    context.arc(ship.x, ship.y, ship.r, 0, Math.Pi * 2, false);
-    context.stroke();
-}
-
-
-// drawing the enemies
-
-context.strokeStyle = "#240090";  // color of the enemies
-context.lineWidth = shipSize / 20;
 let x, y, r, a, vert, offs;
 for  (let i = 0; i < enemies.length; i++) {
-
+  
+ context.strokeStyle = "white" ;   // Drawing the ship 
+ context.lineWidth = shipsize / 20;
+    
    //enemies properites
-
    x = enemies[i].x;
    y = enemies[i].y;
    r = enemies[i].r;
@@ -282,7 +224,6 @@ for  (let i = 0; i < enemies.length; i++) {
        y + r * offs [0] * Math.sin(a)
    );
 
-
  // draw the enemies = asteroids = polygons
 
  for ( let j = 1; j < vert; j++) {
@@ -291,6 +232,86 @@ for  (let i = 0; i < enemies.length; i++) {
          y + r * offs [j] * Math.sin(a + j * Math.PI * 2 / vert)
      );
  }
+ 
+ context.closePath(); //line closing the ship
+ context.stroke(); // draw the path
+
+}
+}
+
+
+// trusting the ship
+
+if (ship.thrusting) {
+  ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
+  ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
+
+  if (!exploding && blinkOn) { // drawing thruster
+    ctx.fillStyle = "red";
+    ctx.strokeStyle = "yellow";
+    ctx.lineWidth = shipSize / 10;
+
+    ctx.beginPath();
+    ctx.moveTo( // rear left
+        ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + 0.5 * Math.sin(ship.a)),
+        ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - 0.5 * Math.cos(ship.a))
+    );
+    ctx.lineTo( // rear centre (behind the ship)
+        ship.x - ship.r * 5 / 3 * Math.cos(ship.a),
+        ship.y + ship.r * 5 / 3 * Math.sin(ship.a)
+    );
+    ctx.lineTo( // rear right
+        ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - 0.5 * Math.sin(ship.a)),
+        ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + 0.5 * Math.cos(ship.a))
+    );
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+}
+  
+}
+else {
+    ship.thrust.x -= friction * ship.thrust.x / FPS;
+    ship.thrust.y -= friction * ship.thrust.y / FPS;
+}
+
+ // drawing triangle ship
+ if (!exploding) {
+    if (blinkOn) {
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = shipSize/ 20;
+
+ context.beginPath();
+ context.moveTo(  //nose of the ship
+     ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
+     ship.y - 4 / 3 * ship.r * Math.sin(ship.a)
+ );
+
+ context.lineTo(//rear left of the ship
+    ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + Math.sin(ship.a)),
+    ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - Math.cos(ship.a))
+     
+ );
+ context.lineTo( // rear right of the ship
+   ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - Math.sin(ship.a)),
+   ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + Math.cos(ship.a))
+     
+ );
+
+if (show_bounding) {
+    context.strokeStyle = "lime";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r, 0, Math.Pi * 2, false);
+    context.stroke();
+}
+
+
+// drawing the enemies
+
+context.strokeStyle = "#240090";  // color of the enemies
+context.lineWidth = shipSize / 20;
+
+
 context.closePath();
 context.stroke();
 
@@ -344,13 +365,6 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
         // calculate the distance travelled
         ship.lasers[i].dist += Math.sqrt(Math.pow(ship.lasers[i].xv, 2) + Math.pow(ship.lasers[i].yv, 2));
     }
-
-
-
-// move the asteroids
-
-enemies[i].x += enemies[i].xv;
-enemies[i].y += enemies[i].yv;
 
 //backstop on the borders
 
@@ -411,6 +425,11 @@ if (ship.y < 0 - ship.r) {
 } else if ( ship.y > canvas.height + ship.r){
    ship.y = 0 - ship.r;
 }
+
+// move the asteroids
+
+enemies[i].x += enemies[i].xv;
+enemies[i].y += enemies[i].yv;
 
 }
 }
