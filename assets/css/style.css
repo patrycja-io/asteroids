@@ -112,13 +112,9 @@ body {
     }
   }
   
-
-
-
-
-
 .jumbotron.game{
 background-image: linear-gradient(to bottom right,  #311B92, #872A56);
+background-size: cover; 
     
 
 }
@@ -218,7 +214,7 @@ p {
         }
       }
 
-      .fa-plus-circle {
+.fa-plus-circle {
         color:#3500d3;
             -webkit-animation-name: bounce;
             animation-name: bounce;
