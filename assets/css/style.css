@@ -7,26 +7,30 @@ html {
 body {
     color:#fff!important;
     position: relative;
-    background-color:#3500d3;
 }
+
+.navbar {
+    background-color: #0c0032;
+    opacity:0.9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0;
+}
+
 
 
 .jumbotron.history{
     background-image: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); 
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 100%;
     background-attachment: fixed;
     opacity:0.9;
+    margin-bottom:0;
 }
 
 #atari {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgba(233, 230, 230, 0.424);
-    
+    background-color: rgba(233, 230, 230, 0.424); 
 }
-    
-
 
 .shake-bl {
 	-webkit-animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -135,18 +139,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-
-.navbar {
-    background-color: #0c0032;
-    opacity:0.9;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
     
 .game {
     padding: 30px;
 }
-
-
 
 @-webkit-keyframes fa-plus-circle {
         from,
