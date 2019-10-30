@@ -16,14 +16,11 @@ body {
     margin-bottom: 0;
 }
 
-
-
 .jumbotron.history{
     background-image: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); 
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    opacity:0.9;
     margin-bottom:0;
 }
 
@@ -120,7 +117,6 @@ body {
 background-image: linear-gradient(to bottom right,  #311B92, #872A56);
 background-size: cover; 
     
-
 }
 
 img {
