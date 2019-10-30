@@ -375,7 +375,7 @@ if (!exploding) {
     // only check when not blinking
     if (ship.blinkNum == 0) {
         for (var i = 0; i < enemies.length; i++) {
-            if (distBetweenPoints(ship.x, ship.y, enemies[i].x, enemies[i].y) < ship.r + roids[i].r) {
+            if (distBetweenPoints(ship.x, ship.y, enemies[i].x, enemies[i].y) < ship.r + enemies[i].r) {
                 explodeShip();
                 destroyAsteroid(i);
                 break;
@@ -458,12 +458,10 @@ if (ship.y < 0 - ship.r) {
 
 
 }
-
-
     // move the asteroids
-    for (var i = 0; i < roids.length; i++) {
-        roids[i].x += roids[i].xv;
-        roids[i].y += roids[i].yv;
+    for (var i = 0; i < enemies.length; i++) {
+        enemies[i].x += enemies[i].xv;
+        enemies[i].y += roids[i].yv;
 
         // handle asteroid edge of screen
         if (roids[i].x < 0 - roids[i].r) {
