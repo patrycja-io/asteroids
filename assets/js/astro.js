@@ -162,26 +162,24 @@ document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
 
-function keyDown (/** @type {KeyboardEvent} */ event) {
-
+function keyDown (event) {
+   
+    if (ship.dead) {
+        return;
+    }
     switch(event.keyCode) {
-
-        case 32: // space bar key (shoot laser)
+      case 32: // space bar key (shoot laser)
         shootLaser();
         break;
-        
-        case 37: //arrow left
-            ship.rot = shipSpeed / 180 * Math.PI /FPS;
+      case 37: //arrow left
+        ship.rot = shipSpeed / 180 * Math.PI /FPS;
         break;
-
-        case 38:  //arrow up
-            ship.thrusting = true;
+      case 38:  //arrow up
+        ship.thrusting = true;
         break;
-
-        case 39:  //arrow right
-            ship.rot = - shipSpeed / 180 * Math.PI / FPS;
+      case 39:  //arrow right
+        ship.rot = - shipSpeed / 180 * Math.PI / FPS;
         break;
-
     }
 }
 
