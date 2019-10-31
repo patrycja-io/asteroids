@@ -200,8 +200,8 @@ function keyUp (event) {
      let enemy = {
         x: x, 
         y: y,
-        xv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
-        yv: Math.random() * enemySpeed / FPS * (Math.random() <0.5 ? 1: -1),
+        xv: Math.random() * enemySpeed * lvlMult / FPS * (Math.random() <0.5 ? 1: -1),
+        yv: Math.random() * enemySpeed * lvlMult / FPS * (Math.random() <0.5 ? 1: -1),
         a: Math.random() * Math.PI * 2, // in radians
         r: r,
         offs: [],
