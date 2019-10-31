@@ -126,6 +126,26 @@ function explodeShip() {
     ship.explodeTime = Math.ceil(shipExplode * FPS);
 }
 
+function drawShip(x, y, a, colour = "magenta") {
+    context.strokeStyle = colour;
+    context.lineWidth = shipSize / 20;
+    context.beginPath();
+    context.moveTo( // nose of the ship
+        x + 4 / 3 * ship.r * Math.cos(a),
+        y - 4 / 3 * ship.r * Math.sin(a)
+    );
+    context.lineTo( // rear left
+        x - ship.r * (2 / 3 * Math.cos(a) + Math.sin(a)),
+        y + ship.r * (2 / 3 * Math.sin(a) - Math.cos(a))
+    );
+    context.lineTo( // rear right
+        x - ship.r * (2 / 3 * Math.cos(a) - Math.sin(a)),
+        y + ship.r * (2 / 3 * Math.sin(a) + Math.cos(a))
+    );
+    context.closePath();
+    context.stroke();
+}
+
 
 // keys set up
 
