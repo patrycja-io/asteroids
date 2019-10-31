@@ -2,7 +2,7 @@
 
 const FPS = 30; // frames per seconds
 const friction = 0.7; // 0= no friction , 1= a lot of friction
-const Lives = 3;// number of given lives
+const gameLives = 3;// number of given lives
 const laserDistance = 0.6; // max distance laser can travel as fraction of screen width
 const laserDuration = 0.1; // duration of the lasers' explosion in seconds
 const laserMax = 10; // maximum number of lasers on screen at once
