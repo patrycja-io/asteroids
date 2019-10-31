@@ -30,19 +30,15 @@ const textSize = 40; //text font height in pixels
 /* html- canvas*/
 let canvas = document.getElementById("astroCanvas");
 let context = canvas.getContext("2d");
-
-
-let level, lives, roids, score, scoreHigh, ship, text, textAlpha; // set up the game parameters
+let level, lives, enemies, score, scoreHigh, ship, text, textAlpha; // set up the game parameters
 newGame();
-
 
 // Game loop set up
 setInterval(update, 1000 / FPS);
 
 // SHIP
 
-  // Spaceship object- set up
-
+// Spaceship object- set up
 let ship = newShip();
 
 function newShip () {
@@ -68,24 +64,20 @@ function newShip () {
     }
 }
 }
-
 // ASTEROIDS set up
-
 let enemies = [];
 createAsteroidBelt();
 
 function createAsteroidBelt() {
   enemies = [];
   let x, y;
-  for (let i = 0; i < enemyNum; i++) { // asteroids location
-     
+  for (let i = 0; i < enemyNum; i++) { // asteroids location 
     do {
       x = Math.floor(Math.random() * canvas.width);
-      y = Math.floor(Math.random() * canvas.height);
-     
+      y = Math.floor(Math.random() * canvas.height);   
     } while (distBetweenPoints(ship.x, ship.y, x, y) < enemySize * 2 + ship.r)
       enemies.push(newEnemy(x, y, Math.ceil(enemySize / 2)));
-}
+  }
 }
 
 function destroyAsteroid(index) {
@@ -155,7 +147,6 @@ function gameOver() {
     text = "Game Over";
     textAlpha = 1.0;
 }
-
 
 // keys set up
 document.addEventListener("keydown", keyDown); // pressed key
