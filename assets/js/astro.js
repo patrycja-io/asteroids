@@ -333,24 +333,24 @@ context.stroke();
 // draw the lasers
 for (let i = 0; i < ship.lasers.length; i++) {
     if (ship.lasers[i].explodeTime == 0) {
-        ctx.fillStyle = "salmon";
-        ctx.beginPath();
-        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, shipSize / 15, 0, Math.PI * 2, false);
-        ctx.fill();
+        context.fillStyle = "salmon";
+        context.beginPath();
+        context.arc(ship.lasers[i].x, ship.lasers[i].y, shipSize / 15, 0, Math.PI * 2, false);
+        context.fill();
     } else {
         // draw the eplosion
-        ctx.fillStyle = "orangered";
-        ctx.beginPath();
-        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.75, 0, Math.PI * 2, false);
-        ctx.fill();
-        ctx.fillStyle = "salmon";
-        ctx.beginPath();
-        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.5, 0, Math.PI * 2, false);
-        ctx.fill();
-        ctx.fillStyle = "pink";
-        ctx.beginPath();
-        ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.25, 0, Math.PI * 2, false);
-        ctx.fill();
+        context.fillStyle = "orangered";
+        context.beginPath();
+        context.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.75, 0, Math.PI * 2, false);
+        context.fill();
+        context.fillStyle = "salmon";
+        context.beginPath();
+        context.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.5, 0, Math.PI * 2, false);
+        context.fill();
+        context.fillStyle = "pink";
+        context.beginPath();
+        context.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.25, 0, Math.PI * 2, false);
+        context.fill();
     }
 }
 
