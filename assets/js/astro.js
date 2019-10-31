@@ -293,8 +293,8 @@ else {
  // drawing triangle ship
  if (!exploding) {
     if (blinkOn) {
-        ctx.strokeStyle = "white";
-        ctx.lineWidth = shipSize/ 20;
+        context.strokeStyle = "white";
+        context.lineWidth = shipSize/ 20;
 
  context.beginPath();
  context.moveTo(  //nose of the ship
