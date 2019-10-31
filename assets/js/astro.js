@@ -468,31 +468,10 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
         ship.y = 0 - ship.r;
   }
 }
-
-// dot centerizing ship
-
-context.fillStyle ="indigo";
-context.fillRect(ship.x -1 , ship.y -1, 2, 2);
-
-// handle edge of screen
-if (ship.x < 0 - ship.r) {
-    ship.x = canvas.width + ship.r;
-} else if (ship.x > canvas.width + ship.r) {
-    ship.x = 0 - ship.r;
-}
-if (ship.y < 0 - ship.r) {
-    ship.y = canvas.height + ship.r;
-} else if (ship.y > canvas.height + ship.r) {
-    ship.y = 0 - ship.r;
-}
-
-
-}
-    // move the asteroids
+   // move the asteroids
     for (var i = 0; i < enemies.length; i++) {
         enemies[i].x += enemies[i].xv;
         enemies[i].y += enemies[i].yv;
-
         // handle asteroid edge of screen
         if (enemies[i].x < 0 - enemies[i].r) {
             enemies[i].x = canv.width + enemies[i].r;
@@ -503,15 +482,9 @@ if (ship.y < 0 - ship.r) {
             enemies[i].y = canv.height + enemies[i].r;
         } else if (enemies[i].y > canv.height + enemies[i].r) {
             enemies[i].y = 0 - enemies[i].r
- 
- 
         }
- 
-    }
-
-    
+    }   
 }
-
-
  }
 }
+
