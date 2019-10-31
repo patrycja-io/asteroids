@@ -104,8 +104,11 @@ function destroyAsteroid(index) {
         score += pointsForMediumAsteroids;
     } else {
         score += pointForSmallAsteroids;
+    } if (score > scoreHigh) { // check high score
+       scoreHigh = score;
+       localStorage.setItem(saveScore, scoreHigh);
     }
-
+    
     // destroy the asteroid
     enemies.splice(index, 1);
 }
