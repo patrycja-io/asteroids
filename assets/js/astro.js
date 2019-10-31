@@ -285,9 +285,9 @@ function update() {
 
 // trusting the ship
 
-if (ship.thrusting) {
-  ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
-  ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
+if (ship.thrusting && !ship.dead) {
+       ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
+       ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
 
   if (!exploding && blinkOn) { // drawing thruster
     context.fillStyle = "red";
