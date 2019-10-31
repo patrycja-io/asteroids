@@ -27,6 +27,7 @@ body {
 #atari {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(233, 230, 230, 0.123);
+    text-align: center;
 }
 
 .shake-bl {
@@ -126,13 +127,14 @@ img {
 
 h1{
     font-family:'Playfair Display', serif;
-    font-size: 36px;
-   /* background-image: url("https://ak8.picdn.net/shutterstock/videos/1015902028/thumb/10.jpg");*/
+    text-align:center;
+
     font-size: 20px;
 };
 
 p { 
     font-family: 'Roboto', sans-serif;
+    
 }
 
     
