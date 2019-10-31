@@ -146,6 +146,9 @@ function drawShip(x, y, a, colour = "magenta") {
     context.stroke();
 }
 
+function explodeShip() {
+    ship.explodeTime = Math.ceil(shipExplode * FPS);
+}
 
 // keys set up
 
