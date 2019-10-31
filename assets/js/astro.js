@@ -32,6 +32,10 @@ let canvas = document.getElementById("astroCanvas");
 let context = canvas.getContext("2d");
 
 
+let level, lives, roids, score, scoreHigh, ship, text, textAlpha; // set up the game parameters
+newGame();
+
+
 // Game loop set up
 setInterval(update, 1000 / FPS);
 
