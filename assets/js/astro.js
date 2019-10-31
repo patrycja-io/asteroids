@@ -9,6 +9,7 @@ const laserMax = 10; // maximum number of lasers on screen at once
 const laserSpeed= 500; // speed of lasers in pixels per second
 const pointsForLargeAsteroids = 20; // points scored for a large asteroid
 const pointsForMediumAsteroids = 50; // points scored for a medium asteroid
+const pointForSmallAsteroids = 100; // points scored for a medium asteroid
 const enemyNum = 5;// numbers of enemies at the beginning
 const enemySize = 100;// size of enemies = asteroids in pixels
 const enemySpeed = 50; // speed of enemies = asteroids pixels per seconds
