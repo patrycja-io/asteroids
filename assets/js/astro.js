@@ -422,7 +422,7 @@ if (ship.explodeTime == 0) {// reset the ship after the explosion has finished
         gameOver();
     } else {
     ship = newShip();
-   }
+    }
   }
 }
 
@@ -440,30 +440,21 @@ if (ship.y < 0 - ship.r) {
 
 
 // move the lasers
-for (let i = ship.lasers.length - 1; i >= 0; i--) {
-                
-    // check distance travelled
-    if (ship.lasers[i].dist > laserDistance* canvas.width) {
-        ship.lasers.splice(i, 1);
-        continue;
-    }
-
-    // handle the explosion
-    if (ship.lasers[i].explodeTime > 0) {
-        ship.lasers[i].explodeTime--;
-
-        // destroy the laser after the duration is up
-        if (ship.lasers[i].explodeTime == 0) {
-            ship.lasers.splice(i, 1);
-            continue;
-        }
+for (let i = ship.lasers.length - 1; i >= 0; i--) {             
+     if (ship.lasers[i].dist > laserDistance * canvas.width) {  // check distance travelled
+         ship.lasers.splice(i, 1);
+         continue;
+         }
+     if (ship.lasers[i].explodeTime > 0) {// handle the explosion
+         ship.lasers[i].explodeTime--;
+     if (ship.lasers[i].explodeTime == 0) { // destroy the laser after the duration is up
+         ship.lasers.splice(i, 1);
+         continue;
+         }
     } else {
-        // move the laser
-        ship.lasers[i].x += ship.lasers[i].xv;
-        ship.lasers[i].y += ship.lasers[i].yv;
-
-        // calculate the distance travelled
-        ship.lasers[i].dist += Math.sqrt(Math.pow(ship.lasers[i].xv, 2) + Math.pow(ship.lasers[i].yv, 2));
+         ship.lasers[i].x += ship.lasers[i].xv; // move the laser
+         ship.lasers[i].y += ship.lasers[i].yv;
+         ship.lasers[i].dist += Math.sqrt(Math.pow(ship.lasers[i].xv, 2) + Math.pow(ship.lasers[i].yv, 2));// calculate the distance travelled
     }
 
 
