@@ -380,27 +380,18 @@ for (let i = 0; i < ship.lasers.length; i++) {
 
 // detect laser hits on asteroids
 let ax, ay, ar, lx, ly;
-for (let i = enemies.length - 1; i >= 0; i--) {
-
-    // grab the asteroid properties
+for (let i = enemies.length - 1; i >= 0; i--) {  // grab the asteroid properties
     ax = enemies[i].x;
     ay = enemies[i].y;
-    ar = enemies[i].r;
-
-    // loop over the lasers
-    for (let j = ship.lasers.length - 1; j >= 0; j--) {
-
+    ar = enemies[i].r;  
+for (let j = ship.lasers.length - 1; j >= 0; j--) {// loop over the lasers
         // grab the laser properties
         lx = ship.lasers[j].x;
         ly = ship.lasers[j].y;
-
-        // detect hits
-        if (ship.lasers[j].explodeTime == 0 && distBetweenPoints(ax, ay, lx, ly) < ar) {
-
-            // destroy the asteroid and activate the laser explosion
-            destroyAsteroid(i);
-            ship.lasers[j].explodeTime = Math.ceil(laserExplodeDuration * FPS);
-            break;
+if (ship.lasers[j].explodeTime == 0 && distBetweenPoints(ax, ay, lx, ly) < ar) {// detect hits       
+    destroyAsteroid(i);// destroy the asteroid and activate the laser explosion
+    ship.lasers[j].explodeTime = Math.ceil(laserExplodeDuration * FPS);
+    break;
         }
     }
 }
