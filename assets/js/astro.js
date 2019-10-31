@@ -161,7 +161,6 @@ function gameOver() {
 document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
-
 function keyDown (event) {
    
     if (ship.dead) {
@@ -204,10 +203,9 @@ function keyUp (event) {
     }
 }
 
-
 // function - taking all parameters of asteroids together
-
  function newEnemy ( x, y, r) {
+    var lvlMult = 1 + 0.1 * level;
      let enemy = {
         x: x, 
         y: y,
