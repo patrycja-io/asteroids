@@ -282,18 +282,15 @@ function update() {
    }
 }
 
-
 // trusting the ship
-
 if (ship.thrusting && !ship.dead) {
        ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
        ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
-
-  if (!exploding && blinkOn) { // drawing thruster
+    
+    if (!exploding && blinkOn) { // drawing thruster
     context.fillStyle = "red";
     context.strokeStyle = "yellow";
     context.lineWidth = shipSize / 10;
-
     context.beginPath();
     context.moveTo( // rear left
         ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + 0.5 * Math.sin(ship.a)),
@@ -310,10 +307,9 @@ if (ship.thrusting && !ship.dead) {
     context.closePath();
     context.fill();
     context.stroke();
-}
-  
-}
-else {
+  } 
+  } else {
+      //slow the ship down when not thrusting
     ship.thrust.x -= friction * ship.thrust.x / FPS;
     ship.thrust.y -= friction * ship.thrust.y / FPS;
 }
