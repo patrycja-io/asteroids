@@ -398,9 +398,8 @@ if (ship.lasers[j].explodeTime == 0 && distBetweenPoints(ax, ay, lx, ly) < ar) {
 
 // check for asteroid collisions (when not exploding)
 if (!exploding) {
-
     // only check when not blinking
-    if (ship.blinkNum == 0) {
+    if (ship.blinkNum == 0 && !ship.dead) {
         for (var i = 0; i < enemies.length; i++) {
             if (distBetweenPoints(ship.x, ship.y, enemies[i].x, enemies[i].y) < ship.r + enemies[i].r) {
                 explodeShip();
