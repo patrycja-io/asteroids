@@ -65,9 +65,6 @@ function newShip () {
 }
 }
 // ASTEROIDS set up
-let enemies = [];
-createAsteroidBelt();
-
 function createAsteroidBelt() {
   enemies = [];
   let x, y;
@@ -193,7 +190,6 @@ function keyUp (event) {
           break;
     }
 }
-
 // function - taking all parameters of asteroids together
  function newEnemy ( x, y, r) {
     var lvlMult = 1 + 0.1 * level;
@@ -215,6 +211,9 @@ function keyUp (event) {
      return enemy;
  }
 
+
+ 
+
  // shooting function
  function shootLaser(){
      if(ship.canShoot && ship.lasers.length <laserMax){
@@ -225,7 +224,6 @@ function keyUp (event) {
             yv: -laserSpeed * Math.sin(ship.a) / FPS,
             dist: 0,
             explodeTime:0
-
         });
      }
      ship.canShoot = false; //prevent further shooting
