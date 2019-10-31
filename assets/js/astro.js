@@ -456,7 +456,18 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
          ship.lasers[i].y += ship.lasers[i].yv;
          ship.lasers[i].dist += Math.sqrt(Math.pow(ship.lasers[i].xv, 2) + Math.pow(ship.lasers[i].yv, 2));// calculate the distance travelled
     }
-
+    // handle edge of screen
+    if (ship.x < 0 - ship.r) {
+        ship.x = canvas.width + ship.r;
+    } else if (ship.x > canvas.width + ship.r) {
+        ship.x = 0 - ship.r;
+    }
+    if (ship.y < 0 - ship.r) {
+        ship.y = canvas.height + ship.r;
+    } else if (ship.y > canvas.height + ship.r) {
+        ship.y = 0 - ship.r;
+  }
+}
 
 // dot centerizing ship
 
