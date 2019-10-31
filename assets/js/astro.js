@@ -218,14 +218,11 @@ function keyUp (event) {
      };
 
      //vertex offset 
-
      for (let i = 0; i < enemy.vert; i++) {
-         enemy.offs.push(Math.random() * enemyJag * 2 + 1 - enemyJag)
+         enemy.offs.push(Math.random() * enemyJag * 2 + 1 - enemyJag);
      }
-
      return enemy;
  }
-
 
  // shooting function
  function shootLaser(){
@@ -246,53 +243,43 @@ function keyUp (event) {
 function update() {
     let blinkOn = ship.blinkNum % 2 == 0;
     let exploding = ship.explodeTime > 0;
-
-// game function to draw the space, the ship and move 
-
-    context.fillStyle = "black";
-    context.fillRect(0, 0, canvas.width, canvas.height);
-
-let x, y, r, a, vert, offs;
-for  (let i = 0; i < enemies.length; i++) {
- context.strokeStyle = "purple" ;   // Drawing the ship 
- context.lineWidth = shipSize / 20;
-    
-   //enemies properites
+ // game function to draw the space, the ship and move    
+        context.fillStyle = "black";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+// draw the asteroids 
+    let x, y, r, a, vert, offs;
+    for  (let i = 0; i < enemies.length; i++) {
+        context.strokeStyle = "purple" ;   // Drawing the ship 
+        context.lineWidth = shipSize / 20; 
+//enemies properites
    x = enemies[i].x;
    y = enemies[i].y;
    r = enemies[i].r;
    a = enemies[i].a;
    vert = enemies[i].vert;
    offs = enemies[i].offs;
-
-   // draw a path
-
-   context.beginPath();
-   context.moveTo (
-       x + r * offs [0] * Math.cos(a),
-       y + r * offs [0] * Math.sin(a)
-   );
-
- // draw the enemies = asteroids = polygons
-
- for ( let j = 1; j < vert; j++) {
-     context.lineTo(
+// draw a path
+        context.beginPath();
+        context.moveTo (
+        x + r * offs [0] * Math.cos(a),
+        y + r * offs [0] * Math.sin(a)
+    );
+// draw the enemies = asteroids = polygons
+   for ( let j = 1; j < vert; j++) {
+        context.lineTo(
          x + r * offs [j] * Math.cos(a + j * Math.PI * 2 / vert),
          y + r * offs [j] * Math.sin(a + j * Math.PI * 2 / vert)
      );
  }
- 
- context.closePath(); //line closing the ship
- context.stroke(); // draw the path
-
- // show asteroid's collision circle
- if (showBunding) {
-    context.strokeStyle = "lime";
-    context.beginPath();
-    context.arc(x, y, r, 0, Math.PI * 2, false);
-    context.stroke();
-
-}
+        context.closePath(); //line closing the ship
+        context.stroke(); // draw the path
+// show asteroid's collision circle
+   if (showBunding) {
+        context.strokeStyle = "lime";
+        context.beginPath();
+        context.arc(x, y, r, 0, Math.PI * 2, false);
+        context.stroke();
+   }
 }
 
 
