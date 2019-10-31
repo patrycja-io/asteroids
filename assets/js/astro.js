@@ -45,6 +45,12 @@ function newShip () {
     //  direction of the ship conversion to radiance
     a: 90 / 180 * Math.PI,
     // rotation
+    blinkNum: Math.ceil(shipInvisible / shipBlinkDuration),
+    blinkTime: Math.ceil(shipBlinkDuration * FPS),
+    canShoot: true,
+    dead: false,
+    explodeTime: 0,
+    lasers: [],
     rot: 0,
     // thrusting of the ship parameter
     thrusting: false,
@@ -209,7 +215,7 @@ let x, y, r, a, vert, offs;
 for  (let i = 0; i < enemies.length; i++) {
   
  context.strokeStyle = "white" ;   // Drawing the ship 
- context.lineWidth = shipsize / 20;
+ context.lineWidth = shipSize / 20;
     
    //enemies properites
    x = enemies[i].x;
