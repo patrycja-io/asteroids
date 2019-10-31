@@ -410,20 +410,22 @@ if (!exploding) {
     }
 
 // rotate the ship
-ship.a += ship.rot;
-
+    ship.a += ship.rot;
 // move the ship
-ship.x += ship.thrust.x;
-ship.y += ship.thrust.y;
-} else {
-// reduce the explode time
-ship.explodeTime--;
-
-// reset the ship after the explosion has finished
-if (ship.explodeTime == 0) {
+    ship.x += ship.thrust.x;
+    ship.y += ship.thrust.y;
+ } else {
+    ship.explodeTime--;// reduce the explode time
+if (ship.explodeTime == 0) {// reset the ship after the explosion has finished
+    lives--;
+    if (lives == 0) {
+        gameOver();
+    } else {
     ship = newShip();
+   }
+  }
 }
-}
+
 // handle edge of screen
 if (ship.x < 0 - ship.r) {
     ship.x = canvas.width + ship.r;
