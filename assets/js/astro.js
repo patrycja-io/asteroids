@@ -150,8 +150,14 @@ function explodeShip() {
     ship.explodeTime = Math.ceil(shipExplode * FPS);
 }
 
-// keys set up
+function gameOver() {
+    ship.dead = true;
+    text = "Game Over";
+    textAlpha = 1.0;
+}
 
+
+// keys set up
 document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
