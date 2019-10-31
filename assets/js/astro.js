@@ -59,6 +59,7 @@ function newShip () {
     }
   }
 }
+
 // ASTEROIDS set up
 function createAsteroidBelt() {
   enemies = [];
@@ -141,12 +142,10 @@ function gameOver() {
 document.addEventListener("keydown", keyDown); // pressed key
 document.addEventListener("keyup", keyUp); //released key
 
-function keyDown (event) {
-   
+function keyDown (event) {  
     if (ship.dead) {
         return;
-    }
-    switch(event.keyCode) {
+    }switch(event.keyCode) {
       case 32: // space bar key (shoot laser)
         shootLaser();
         break;
@@ -161,13 +160,10 @@ function keyDown (event) {
         break;
     }
 }
-
 function keyUp (event) {
-
     if (ship.dead) {
         return;
-    }
-    switch(event.keyCode) {
+    }switch(event.keyCode) {
        case 32: //space bar 
           ship.canShoot = true;
           break;
@@ -313,6 +309,13 @@ if (textAlpha >= 0) {
 } else if (ship.dead) {
     // after "game over" fades, start a new game
     newGame();
+}
+
+// draw the lives
+let lifeColour;
+for (let i = 0; i < lives; i++) {
+    lifeColour = exploding && i == lives - 1 ? "red" : "white";
+    drawShip(shipSize + i * shipSize * 1.2, shipSize, 0.5 * Math.PI, lifeColour);
 }
 
 // draw the lasers
