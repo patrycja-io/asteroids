@@ -183,26 +183,24 @@ function keyDown (event) {
     }
 }
 
-function keyUp ( event) {
+function keyUp (event) {
 
+    if (ship.dead) {
+        return;
+    }
     switch(event.keyCode) {
-
-         case 32: //space bar 
-         ship.canShoot = true;
-         break;
-        
-        case 37: //arrow left - stop 
-        ship.rot = 0;
-        break;
-
-        case 38: //arrow up - stop
-        ship.thrusting = false;
-        break;
-
-        case 39:  //arrow right - stop
-            ship.rot = 0;
-        break;
-
+       case 32: //space bar 
+          ship.canShoot = true;
+          break;
+       case 37: //arrow left - stop 
+          ship.rot = 0;
+          break;
+       case 38: //arrow up - stop
+          ship.thrusting = false;
+          break;
+       case 39:  //arrow right - stop
+          ship.rot = 0;
+          break;
     }
 }
 
