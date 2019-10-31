@@ -203,8 +203,8 @@ function keyUp ( event) {
  }
 
 function update() {
-    var blinkOn = ship.blinkNum % 2 == 0;
-    var exploding = ship.explodeTime > 0;
+    let blinkOn = ship.blinkNum % 2 == 0;
+    let exploding = ship.explodeTime > 0;
 
 // game function to draw the space, the ship and move 
 
@@ -213,8 +213,7 @@ function update() {
 
 let x, y, r, a, vert, offs;
 for  (let i = 0; i < enemies.length; i++) {
-  
- context.strokeStyle = "white" ;   // Drawing the ship 
+ context.strokeStyle = "purple" ;   // Drawing the ship 
  context.lineWidth = shipSize / 20;
     
    //enemies properites
@@ -245,6 +244,13 @@ for  (let i = 0; i < enemies.length; i++) {
  context.closePath(); //line closing the ship
  context.stroke(); // draw the path
 
+ // show asteroid's collision circle
+ if (showBunding) {
+    context.strokeStyle = "lime";
+    context.beginPath();
+    context.arc(x, y, r, 0, Math.PI * 2, false);
+    context.stroke();
+
 }
 }
 
@@ -256,26 +262,26 @@ if (ship.thrusting) {
   ship.thrust.y -= shipThrust * Math.sin(ship.a) / FPS;
 
   if (!exploding && blinkOn) { // drawing thruster
-    ctx.fillStyle = "red";
-    ctx.strokeStyle = "yellow";
-    ctx.lineWidth = shipSize / 10;
+    context.fillStyle = "red";
+    context.strokeStyle = "yellow";
+    context.lineWidth = shipSize / 10;
 
-    ctx.beginPath();
-    ctx.moveTo( // rear left
+    context.beginPath();
+    context.moveTo( // rear left
         ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + 0.5 * Math.sin(ship.a)),
         ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - 0.5 * Math.cos(ship.a))
     );
-    ctx.lineTo( // rear centre (behind the ship)
+    context.lineTo( // rear centre (behind the ship)
         ship.x - ship.r * 5 / 3 * Math.cos(ship.a),
         ship.y + ship.r * 5 / 3 * Math.sin(ship.a)
     );
-    ctx.lineTo( // rear right
+    context.lineTo( // rear right
         ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - 0.5 * Math.sin(ship.a)),
         ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + 0.5 * Math.cos(ship.a))
     );
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke();
+    context.closePath();
+    context.fill();
+    context.stroke();
 }
   
 }
@@ -307,7 +313,7 @@ else {
      
  );
 
-if (show_bounding) {
+if (showBounding) {
     context.strokeStyle = "lime";
     context.beginPath();
     context.arc(ship.x, ship.y, ship.r, 0, Math.Pi * 2, false);
@@ -490,3 +496,4 @@ if (ship.y < 0 - ship.r) {
 
 
  }
+}
