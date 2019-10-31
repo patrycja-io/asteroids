@@ -97,11 +97,13 @@ function destroyAsteroid(index) {
     if (r == Math.ceil(enemySize / 2)) { // large asteroid
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 4)));
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 4)));
-
-
+        score += pointsForLargeAsteroids;
     } else if (r == Math.ceil(enemySize / 4)) { // medium asteroid
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 8)));
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 8)));
+        score += pointsForMediumAsteroids;
+    } else {
+        score += pointForSmallAsteroids;
     }
 
     // destroy the asteroid
