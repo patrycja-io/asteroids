@@ -445,6 +445,5 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
       } 
 
     }
-  }
-}
+
 
