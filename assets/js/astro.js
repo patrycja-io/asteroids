@@ -38,7 +38,6 @@ setInterval(update, 1000 / FPS);
 
 // SHIP
 // Spaceship object- set up
-let ship = newShip();
 
 function newShip () {
     return{
