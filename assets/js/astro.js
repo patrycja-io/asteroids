@@ -37,7 +37,6 @@ newGame();
 setInterval(update, 1000 / FPS);
 
 // SHIP
-
 // Spaceship object- set up
 let ship = newShip();
 
@@ -104,7 +103,6 @@ function destroyAsteroid(index) {
                 level++;
                 newLevel();
       }
-    
 }
 
 function distBetweenPoints(x1, y1, x2, y2) {
@@ -134,11 +132,9 @@ function drawShip(x, y, a, colour = "magenta") {
     context.closePath();
     context.stroke();
 }
-
 function explodeShip() {
     ship.explodeTime = Math.ceil(shipExplode * FPS);
 }
-
 function gameOver() {
     ship.dead = true;
     text = "Game Over";
@@ -211,6 +207,12 @@ function keyUp (event) {
      return enemy;
  }
 
+ function newGame() {
+    level = 0;
+    lives = gameLives;
+    ship = newShip();
+    newLevel();
+}
 
  
 
