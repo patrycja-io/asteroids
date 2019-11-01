@@ -45,9 +45,7 @@ function newShip () {
     x: canvas.width / 2,
     y: canvas.height / 2,
     r: shipSize / 2,
-    //  direction of the ship conversion to radiance
-    a: 90 / 180 * Math.PI,
-    // rotation
+    a: 90 / 180 * Math.PI, //  direction of the ship conversion to radiance
     blinkNum: Math.ceil(shipInvisible / shipBlinkDuration),
     blinkTime: Math.ceil(shipBlinkDuration * FPS),
     canShoot: true,
@@ -55,13 +53,12 @@ function newShip () {
     explodeTime: 0,
     lasers: [],
     rot: 0,
-    // thrusting of the ship parameter
-    thrusting: false,
+    thrusting: false, // thrusting of the ship parameter
     thrust: {
         x:0,
         y:0
     }
-}
+  }
 }
 // ASTEROIDS set up
 function createAsteroidBelt() {
