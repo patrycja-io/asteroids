@@ -137,6 +137,10 @@ p {
     
 }
 
+#astrocanvas{
+    width: 900;
+    height: 700;
+}
     
 .game {
     padding: 30px;
