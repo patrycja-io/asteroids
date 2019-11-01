@@ -303,6 +303,19 @@ if (ship.thrusting && !ship.dead) {
     ship.thrust.y -= friction * ship.thrust.y / FPS;
 }
 
+// draw the game text
+if (textAlpha >= 0) {
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillStyle = "rgba(255, 255, 255, " + textAlpha + ")";
+    context.font = "small-caps " + textSize + "bangers open sans";
+    context.fillText(text, canvas.width / 2, canvas.height * 0.75);
+    textAlpha -= (1.0 / timeText / FPS);
+} else if (ship.dead) {
+    // after "game over" fades, start a new game
+    newGame();
+}
+
 // draw the lasers
 for (let i = 0; i < ship.lasers.length; i++) {
     if (ship.lasers[i].explodeTime == 0) {
