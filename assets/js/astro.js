@@ -431,18 +431,16 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
         enemies[i].x += enemies[i].xv;
         enemies[i].y += enemies[i].yv;
         // handle asteroid edge of screen
-        if (enemies[i].x < 0 - enemies[i].r) {
-            enemies[i].x = canv.width + enemies[i].r;
-        } else if (enemies[i].x > canv.width + enemies[i].r) {
+          if (enemies[i].x < 0 - enemies[i].r) {
+            enemies[i].x = canvas.width + enemies[i].r;
+        } else if (enemies[i].x > canvas.width + enemies[i].r) {
             enemies[i].x = 0 - enemies[i].r
-        }
-        if (enemies[i].y < 0 - enemies[i].r) {
-            enemies[i].y = canv.height + enemies[i].r;
-        } else if (enemies[i].y > canv.height + enemies[i].r) {
+        } if (enemies[i].y < 0 - enemies[i].r) {
+            enemies[i].y = canvas.height + enemies[i].r;
+        } else if (enemies[i].y > canvas.height + enemies[i].r) {
             enemies[i].y = 0 - enemies[i].r
         }
-      } 
-
-    }
+     } 
+ }
 
 
