@@ -121,6 +121,11 @@ background-size: cover;
     
 }
 
+#astrocanvas {
+    width: 700;
+    height: 500;
+}
+
 img {
     max-width: 70%;
     height: auto;
@@ -137,10 +142,7 @@ p {
     
 }
 
-#astrocanvas{
-    width: 900;
-    height: 700;
-}
+
     
 .game {
     padding: 30px;
