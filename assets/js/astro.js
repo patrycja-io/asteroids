@@ -99,7 +99,7 @@ function destroyAsteroid(index) {
       if (enemies.length == 0) { // new level when no more asteroids
                 level++;
                 newLevel();
-      }
+    }
 }
 
 function distBetweenPoints(x1, y1, x2, y2) {
@@ -272,7 +272,6 @@ function update() {
         context.stroke();
    }
 }
-
 // trusting the ship
 if (ship.thrusting && !ship.dead) {
        ship.thrust.x += shipThrust * Math.cos(ship.a) / FPS;
@@ -298,16 +297,15 @@ if (ship.thrusting && !ship.dead) {
     context.closePath();
     context.fill();
     context.stroke();
-  } 
+    } 
   } else {
-      //slow the ship down when not thrusting
-    ship.thrust.x -= friction * ship.thrust.x / FPS;
+    ship.thrust.x -= friction * ship.thrust.x / FPS; //slow the ship down when not thrusting
     ship.thrust.y -= friction * ship.thrust.y / FPS;
 }
 
  // drawing triangle ship
  if (!exploding) {
-    if (blinkOn) {
+    if (blinkOn && !ship.dead) {
         context.strokeStyle = "white";
         context.lineWidth = shipSize/ 20;
 
@@ -337,11 +335,8 @@ if (showBounding) {
 
 
 // drawing the enemies
-
 context.strokeStyle = "#240090";  // color of the enemies
 context.lineWidth = shipSize / 20;
-
-
 context.closePath();
 context.stroke();
 
@@ -474,8 +469,9 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
         } else if (enemies[i].y > canv.height + enemies[i].r) {
             enemies[i].y = 0 - enemies[i].r
         }
-    }   
-}
- }
+      } 
+        
+    }
+  }
 }
 
