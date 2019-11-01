@@ -39,7 +39,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 * _ANIMISTA_
 
-* _JAVASCRIPT_
+* _VANILLA JAVASCRIPT_
 
 
 ## Testing
