@@ -64,7 +64,9 @@ Please make sure to update tests as appropriate.
 
 **Media**
 * [Background photo used from Unsplash.com](https://bit.ly/34i6Iaa)
+![Image](https://bit.ly/2pogWqS)
 * [Original Asteroids logo copied from - click link](https://upload.wikimedia.org/wikipedia/commons/3/36/Asteroids_arcade_logo.png)
+
 
 **Acknowledgements**
 
