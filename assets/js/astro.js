@@ -298,6 +298,40 @@ if (ship.thrusting && !ship.dead) {
     ship.thrust.y -= friction * ship.thrust.y / FPS;
 }
 
+// draw the triangle ship
+if (!exploding) {
+    if (blinkOn && !ship.dead) {
+        drawShip(ship.x, ship.y, ship.a);
+   }if (ship.blinkNum > 0) {// handle blinking
+       ship.blinkTime--;// reduce the blink time
+    if (ship.blinkTime == 0) {// reduce the blink num
+            ship.blinkTime = Math.ceil(shipBlinkDuration * FPS);
+            ship.blinkNum--;
+        }
+    }
+} else {// draw the explosion (concentric circles of different colours)
+    context.fillStyle = "darkred";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r * 1.7, 0, Math.PI * 2, false);
+    context.fill();
+    context.fillStyle = "red";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r * 1.4, 0, Math.PI * 2, false);
+    context.fill();
+    context.fillStyle = "orange";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r * 1.1, 0, Math.PI * 2, false);
+    context.fill();
+    context.fillStyle = "yellow";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r * 0.8, 0, Math.PI * 2, false);
+    context.fill();
+    context.fillStyle = "white";
+    context.beginPath();
+    context.arc(ship.x, ship.y, ship.r * 0.5, 0, Math.PI * 2, false);
+    context.fill();
+}
+
 // draw the game text
 if (textAlpha >= 0) {
     context.textAlign = "center";
