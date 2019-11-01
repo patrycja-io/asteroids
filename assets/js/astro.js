@@ -303,43 +303,6 @@ if (ship.thrusting && !ship.dead) {
     ship.thrust.y -= friction * ship.thrust.y / FPS;
 }
 
- // drawing triangle ship
- if (!exploding) {
-    if (blinkOn && !ship.dead) {
-        context.strokeStyle = "white";
-        context.lineWidth = shipSize/ 20;
-
- context.beginPath();
- context.moveTo(  //nose of the ship
-     ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
-     ship.y - 4 / 3 * ship.r * Math.sin(ship.a)
- );
-
- context.lineTo(//rear left of the ship
-    ship.x - ship.r * (2 / 3 * Math.cos(ship.a) + Math.sin(ship.a)),
-    ship.y + ship.r * (2 / 3 * Math.sin(ship.a) - Math.cos(ship.a))
-     
- );
- context.lineTo( // rear right of the ship
-   ship.x - ship.r * (2 / 3 * Math.cos(ship.a) - Math.sin(ship.a)),
-   ship.y + ship.r * (2 / 3 * Math.sin(ship.a) + Math.cos(ship.a))
-     
- );
-
-if (showBounding) {
-    context.strokeStyle = "lime";
-    context.beginPath();
-    context.arc(ship.x, ship.y, ship.r, 0, Math.Pi * 2, false);
-    context.stroke();
-}
-
-
-// drawing the enemies
-context.strokeStyle = "#240090";  // color of the enemies
-context.lineWidth = shipSize / 20;
-context.closePath();
-context.stroke();
-
 // draw the lasers
 for (let i = 0; i < ship.lasers.length; i++) {
     if (ship.lasers[i].explodeTime == 0) {
@@ -381,7 +344,6 @@ if (ship.lasers[j].explodeTime == 0 && distBetweenPoints(ax, ay, lx, ly) < ar) {
         }
     }
 }
-
 // check for asteroid collisions (when not exploding)
 if (!exploding) {
     // only check when not blinking
@@ -394,7 +356,6 @@ if (!exploding) {
             }
         }
     }
-
 // rotate the ship
     ship.a += ship.rot;
 // move the ship
@@ -424,7 +385,6 @@ if (ship.y < 0 - ship.r) {
     ship.y = 0 - ship.r;
 }
 
-
 // move the lasers
 for (let i = ship.lasers.length - 1; i >= 0; i--) {             
      if (ship.lasers[i].dist > laserDistance * canvas.width) {  // check distance travelled
@@ -442,18 +402,18 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
          ship.lasers[i].y += ship.lasers[i].yv;
          ship.lasers[i].dist += Math.sqrt(Math.pow(ship.lasers[i].xv, 2) + Math.pow(ship.lasers[i].yv, 2));// calculate the distance travelled
     }
-    // handle edge of screen
-    if (ship.x < 0 - ship.r) {
-        ship.x = canvas.width + ship.r;
-    } else if (ship.x > canvas.width + ship.r) {
-        ship.x = 0 - ship.r;
-    }
-    if (ship.y < 0 - ship.r) {
-        ship.y = canvas.height + ship.r;
-    } else if (ship.y > canvas.height + ship.r) {
-        ship.y = 0 - ship.r;
-  }
-}
+// edges of the screen with lasers function
+      if (ship.lasers[i].x < 0) {
+    ship.lasers[i].x = canvas.width;
+    } else if (ship.lasers[i].x > canvas.width) {
+    ship.lasers[i].x = 0;
+    } if (ship.lasers[i].y < 0) {
+    ship.lasers[i].y = canvas.height;
+    } else if (ship.lasers[i].y > canvas.height) {
+    ship.lasers[i].y = 0;
+   }
+} 
+
    // move the asteroids
     for (var i = 0; i < enemies.length; i++) {
         enemies[i].x += enemies[i].xv;
@@ -470,7 +430,7 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
             enemies[i].y = 0 - enemies[i].r
         }
       } 
-        
+
     }
   }
 }
