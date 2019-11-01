@@ -213,9 +213,6 @@ function keyUp (event) {
     ship = newShip();
     newLevel();
 }
-
- 
-
  // shooting function
  function shootLaser(){
      if(ship.canShoot && ship.lasers.length <laserMax){
@@ -230,6 +227,12 @@ function keyUp (event) {
      }
      ship.canShoot = false; //prevent further shooting
  }
+
+ function newLevel() {
+    text = "Level " + (level + 1);
+    textAlpha = 1.0;
+    createAsteroidBelt();
+}
 
 function update() {
     let blinkOn = ship.blinkNum % 2 == 0;
