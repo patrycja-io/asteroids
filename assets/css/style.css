@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display%7CRoboto&display=swap');
 
+
 html {
     scroll-behavior: smooth; 
   }
@@ -142,9 +143,7 @@ p {
     font-family: 'Roboto', sans-serif;
     
 }
-
-
-    
+ 
 .game {
     padding: 30px;
 }

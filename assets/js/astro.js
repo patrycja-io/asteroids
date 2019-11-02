@@ -73,9 +73,9 @@ function createAsteroidBelt() {
 }
 
 function destroyAsteroid(index) {
-    var x = enemies[index].x;
-    var y = enemies[index].y;
-    var r = enemies[index].r;
+    let x = enemies[index].x;
+    let y = enemies[index].y;
+    let r = enemies[index].r;
 
     // split the asteroid in two if necessary
     if (r == Math.ceil(enemySize / 2)) { // large asteroid
@@ -179,7 +179,7 @@ function keyUp (event) {
 }
 // function - taking all parameters of asteroids together
  function newEnemy ( x, y, r) {
-    var lvlMult = 1 + 0.1 * level;
+    let lvlMult = 1 + 0.1 * level;
      let enemy = {
         x: x, 
         y: y,
@@ -397,7 +397,7 @@ if (ship.lasers[j].explodeTime == 0 && distBetweenPoints(ax, ay, lx, ly) < ar) {
 if (!exploding) {
     // only check when not blinking
     if (ship.blinkNum == 0 && !ship.dead) {
-        for (var i = 0; i < enemies.length; i++) {
+        for (let i = 0; i < enemies.length; i++) {
             if (distBetweenPoints(ship.x, ship.y, enemies[i].x, enemies[i].y) < ship.r + enemies[i].r) {
                 explodeShip();
                 destroyAsteroid(i);
@@ -464,7 +464,7 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
 } 
 
    // move the asteroids
-    for (var i = 0; i < enemies.length; i++) {
+    for (let i = 0; i < enemies.length; i++) {
         enemies[i].x += enemies[i].xv;
         enemies[i].y += enemies[i].yv;
         // handle asteroid edge of screen
