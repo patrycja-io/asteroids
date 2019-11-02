@@ -1,19 +1,28 @@
 # Asteroids - Game from 1979
 
-Foobar is a Python library for dealing with word pluralization.
+Asteroids website is like a back to the past when the Internet was just a newborn and IT just had a first boom! After Atari and Commodore world became different forever! 
+
+<p><img alt="Image" title="icon" src="assets/Icon-pictures.png" /></p>
+
 
 ## UX
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+### 80`s video games?
+My website is prepared to acknowledge ypung generation about video games from era without www.
+Most of them never heard of any devices with game taht you could connect to tv or mini computer that could give you hours spending relaxing and having fun compeeting with friens.
+This website is made as well as a nostalgic journey for those who had a chance to play with Atari games when the were kids.
 
-```bash
-pip install foobar
-```
+### Let`s go back!
 
+On my website user can find out a little bit about Atari. there is a text section explaining subject with plus button attached linked to Youtube channel where subject is explained wider.
+The same with Asteroids game. On my websiet you can find a short hint but hsitory of a game but attached link to wkipedia saying more about this matter.
 
+### Why Asteroids?
 
-```python
-import foobar
+### User stories
+
+### Wireframes
+
 
 foobar.pluralize('word') # returns 'words'
 foobar.pluralize('goose') # returns 'geese'
