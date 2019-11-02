@@ -97,6 +97,9 @@ and so on
 
 * [Original game footage - recorded](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
 * [Scheme Color - Daphne from Scooby Doo](https://bit.ly/36k9PQF)
-* [Stranger Things - Netflix series stylized on 80`s](https://www.youtube.com/watch?v=YEG3bmU_WaI)
+
+Finally my project got colors inspired by my favourite tv show 
+
+* [Stranger Things - Netflix series stylized on '80s](https://www.youtube.com/watch?v=YEG3bmU_WaI)
 
 ![Image](https://i.ytimg.com/vi/YEG3bmU_WaI/maxresdefault.jpg)
