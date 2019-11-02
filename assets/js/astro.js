@@ -207,7 +207,7 @@ function keyUp (event) {
  // shooting function
  function shootLaser(){
      if(ship.canShoot && ship.lasers.length <laserMax){
-         ship.laser.push({ // from the nose of the ship
+         ship.lasers.push({ // from the nose of the ship
             x: ship.x + 4 / 3 * ship.r * Math.cos(ship.a),
             y: ship.y - 4 / 3 * ship.r * Math.sin(ship.a),
             xv: laserSpeed * Math.cos(ship.a) / FPS,
@@ -453,13 +453,13 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
     }
 // edges of the screen with lasers function
       if (ship.lasers[i].x < 0) {
-    ship.lasers[i].x = canvas.width;
+          ship.lasers[i].x = canvas.width;
     } else if (ship.lasers[i].x > canvas.width) {
-    ship.lasers[i].x = 0;
+          ship.lasers[i].x = 0;
     } if (ship.lasers[i].y < 0) {
-    ship.lasers[i].y = canvas.height;
+          ship.lasers[i].y = canvas.height;
     } else if (ship.lasers[i].y > canvas.height) {
-    ship.lasers[i].y = 0;
+          ship.lasers[i].y = 0;
    }
 } 
 
