@@ -8,7 +8,7 @@ html {
 body {
     background-color: #0c0032;
     color:#fff!important;
-    position: relative;
+    position: fixed;
 }
 
 .navbar {
@@ -35,6 +35,7 @@ body {
 .shake-bl {
 	-webkit-animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
             animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+         position: relative;;
          
            
 }
