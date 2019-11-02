@@ -1,3 +1,4 @@
-$(document).ready(function(){
- $("#game").hide();
+$(function() {
+
+ $('#game').hide();
   });
