@@ -2,7 +2,7 @@
 
 Asteroids website is like a back to the past when the Internet was just a newborn and IT just had a first boom! After Atari and Commodore world became different forever! 
 
-<p><img alt="Image" title="icon" src="assets/mockup.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/mockup.png" /></p>
 
 
 ## UX
@@ -23,7 +23,9 @@ The same with Asteroids game. On my websiet you can find a short hint but hsitor
 
 ### Wireframes
 
+
 <p><img alt="Image" title="icon" src="wireframes/PAGE 1.png" /></p>
+
 <p><img alt="Image" title="icon" src="wireframes/PAGE 2.png" /></p>
 
 ## Features
