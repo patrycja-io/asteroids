@@ -85,18 +85,16 @@ http://www.liketotally80s.com/2006/11/80s-atari/
 
 **Acknowledgements**
 
-freecodecamp
-csstricks
-stackoverflow
+freecodecamp freecodecamp.org/learn
+csstricks https://css-tricks.com/
+stackoverflow https://stackoverflow.com/
 https://www.w3schools.com/  
 https://getbootstrap.com/   
 https://www.youtube.com/watch?v=vEROU2XtPR8
 https://www.youtube.com/watch?v=vDJpGenyHaA
-and so on 
-
 
 * [Original game footage - recorded](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
-* [Scheme Color - Daphne from Scooby Doo](https://bit.ly/36k9PQF)
+* [Scheme Color - Daphne from Scooby Doo](https://bit.ly/36k9PQF) - past era
 
 Finally my project got colors inspired by my favourite tv show 
 
