@@ -22,18 +22,19 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     margin-bottom:0;
-    color: #f1e314;
+    color: #fcf8f8;
     }
 
 #atari {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgba(233, 230, 230, 0.123);
+    background-color: rgba(70, 54, 107, 0.616);
     text-align: center;
 }
 
 .shake-bl {
 	-webkit-animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
             animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+         
            
 }
 /* ----------------------------------------------
