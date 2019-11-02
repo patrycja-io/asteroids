@@ -16,7 +16,7 @@ const enemySize = 100;// size of enemies = asteroids in pixels
 const enemySpeed = 50; // speed of enemies = asteroids pixels per seconds
 const enemyVert = 10; // vertices on each enemy
 const enemyJag = 0.4;//jaggedness of asteroids (0=none 1=lots)
-const showBunding = true; // show or hide collision bounding
+const showBunding = false; // show or hide collision bounding
 const shipSize = 30;// ship size in pixels
 const shipSpeed = 360; //speed of the ship degrees per sec
 const shipThrust = 5; // ship trust - pixel per seconds
@@ -38,7 +38,6 @@ setInterval(update, 1000 / FPS);
 
 // SHIP
 // Spaceship object- set up
-
 function newShip () {
     return{
     x: canvas.width / 2,
@@ -259,6 +258,7 @@ function update() {
  }
         context.closePath(); //line closing the ship
         context.stroke(); // draw the path
+
 // show asteroid's collision circle
    if (showBunding) {
         context.strokeStyle = "lime";
