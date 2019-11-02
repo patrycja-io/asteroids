@@ -23,8 +23,8 @@ The same with Asteroids game. On my websiet you can find a short hint but hsitor
 
 ### Wireframes
 
-<p><img alt="Image" title="icon" src="/wireframes/PAGE1.png" /></p>
-<p><img alt="Image" title="icon" src="/wireframes/PAGE2.png" /></p>
+<p><img alt="Image" title="icon" src="PAGE 1.png" /></p>
+<p><img alt="Image" title="icon" src="PAGE 2.png" /></p>
 
 ## Features
 
