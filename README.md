@@ -88,7 +88,8 @@ http://www.liketotally80s.com/2006/11/80s-atari/
 freecodecamp freecodecamp.org/learn
 csstricks https://css-tricks.com/
 stackoverflow https://stackoverflow.com/
-https://www.w3schools.com/  
+https://www.w3schools.com/ 
+https://www.w3schools.com/tags/ref_canvas.asp
 https://getbootstrap.com/   
 https://www.youtube.com/watch?v=vEROU2XtPR8
 https://www.youtube.com/watch?v=vDJpGenyHaA
