@@ -1,6 +1,6 @@
 # Asteroids - Game from 1979
 
-Asteroids website is like a back to the past when the Internet was just a newborn and IT just had a first boom! After Atari and Commodore world became different forever! 
+Asteroids website is like a back to the past when the Internet was just a newborn and IT just had the first boom! After Atari and Commodore world became different forever! 
 
 <p><img alt="Image" title="icon" src="wireframes/mockup.png" /></p>
 
@@ -8,9 +8,9 @@ Asteroids website is like a back to the past when the Internet was just a newbor
 ## UX
 
 ### 80`s video games?
-My website is prepared to acknowledge ypung generation about video games from era without www.
-Most of them never heard of any devices with game taht you could connect to tv or mini computer that could give you hours spending relaxing and having fun compeeting with friens.
-This website is made as well as a nostalgic journey for those who had a chance to play with Atari games when the were kids.
+My website is prepared to acknowledge the young generation about video games from an era without www.
+Most of them never heard of any gaming devices before XBOX and Playstation. '80s are trendy now, so I thought that I could help the new generation to understand how it was.
+This website is made as well as a nostalgic journey for those who had a chance to play with Atari games when they were kids.
 
 ### Let`s go back!
 
