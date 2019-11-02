@@ -23,11 +23,8 @@ The same with Asteroids game. On my websiet you can find a short hint but hsitor
 
 ### Wireframes
 
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+<p><img alt="Image" title="icon" src="wireframes/PAGE1.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/PAGE2.png" /></p>
 
 ## Features
 
