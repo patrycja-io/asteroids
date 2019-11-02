@@ -1,5 +1,14 @@
-//game settings
+$(document).ready(function(){
+    $("#jumbotron").click(function(){
+      $("#game").hide();
+    });
+    $("#show").click(function(){
+      $("#game").show();
+    });
+  });
 
+
+//game settings
 const FPS = 30; // frames per seconds
 const friction = 0.7; // 0= no friction , 1= a lot of friction
 const gameLives = 3;// number of given lives
