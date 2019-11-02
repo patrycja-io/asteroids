@@ -25,7 +25,7 @@ const shipBlinkDuration = 0.1; //duration in seconds of one blink
 const explodeDuration = 0.3; // duration of the ship explosion
 const shipInvisible = 3; //ship invisibility in sec
 const timeText = 2.5 ;// fading time in seconds
-const textSize = 80; //text font height in pixels
+const textSize = 100; //text font height in pixels
 
 /* html- canvas*/
 let canvas = document.getElementById("astroCanvas");
@@ -337,7 +337,7 @@ if (textAlpha >= 0) {
     context.textAlign = "center";
     context.textBaseline = "middle";
     context.fillStyle = "rgba(255, 255, 255, " + textAlpha + ")";
-    context.font = "small-caps " + textSize + "bangers open sans";
+    context.font = "large-caps " + textSize + "px Playfair Display";
     context.fillText(text, canvas.width / 2, canvas.height * 0.75);
     textAlpha -= (1.0 / timeText / FPS);
 } else if (ship.dead) {
