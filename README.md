@@ -2,7 +2,7 @@
 
 Asteroids website is like a back to the past when the Internet was just a newborn and IT just had a first boom! After Atari and Commodore world became different forever! 
 
-<p><img alt="Image" title="icon" src="assets/Icon-pictures.png" /></p>
+<p><img alt="Image" title="icon" src="assets/mockup.png" /></p>
 
 
 ## UX
