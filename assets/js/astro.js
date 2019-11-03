@@ -213,8 +213,6 @@ function newGame() {
 newLevel();
 }
 
-    newLevel();
-}
  // shooting function
  function shootLaser(){
      if(ship.canShoot && ship.lasers.length <laserMax){
@@ -362,6 +360,8 @@ for (let i = 0; i < lives; i++) {
     lifeColour = exploding && i == lives - 1 ? "red" : "white";
     drawShip(shipSize + i * shipSize * 1.2, shipSize, 0.5 * Math.PI, lifeColour);
 }
+
+
 
 // draw the lasers
 for (let i = 0; i < ship.lasers.length; i++) {
