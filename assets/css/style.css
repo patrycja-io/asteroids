@@ -35,6 +35,9 @@ body {
 #modalIcon{
   text-align: center;
 }
+.modal-content{
+  color:#2b2b2b;
+}
 
 .shake-bl {
 	-webkit-animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
