@@ -198,10 +198,21 @@ function keyUp (event) {
      return enemy;
  }
 
- function newGame() {
+function newGame() {
     level = 0;
     lives = gameLives;
     ship = newShip();
+
+    let scoreStr = localStorage.getItem(saveScore);// get the high score from local storage
+    if (scoreStr == null) {
+        scoreHigh = 0;
+    } else {
+        scoreHigh = parseInt(scoreStr);
+    }
+
+newLevel();
+}
+
     newLevel();
 }
  // shooting function
