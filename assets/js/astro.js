@@ -361,6 +361,20 @@ for (let i = 0; i < lives; i++) {
     drawShip(shipSize + i * shipSize * 1.2, shipSize, 0.5 * Math.PI, lifeColour);
 }
 
+// draw the score
+context.textAlign = "right";
+context.textBaseline = "middle";
+context.fillStyle = "white";
+context.font = textSize + "px dejavu sans mono";
+context.fillText(score, canvas.width - shipSize / 2, shipSize);
+
+// draw the high score
+context.textAlign = "center";
+context.textBaseline = "middle";
+context.fillStyle = "white";
+context.font = (textSize * 0.75) + "px dejavu sans mono";
+context.fillText("BEST " + scoreHigh, canvas.width / 2, shipSize);
+
 
 
 // draw the lasers
