@@ -11,7 +11,7 @@ const pointsForLargeAsteroids = 20; // points scored for a large asteroid
 const pointsForMediumAsteroids = 50; // points scored for a medium asteroid
 const pointForSmallAsteroids = 100; // points scored for a medium asteroid
 const saveScore = "highscore"; // save key for local storage of high score
-const enemyNum = 5;// numbers of enemies at the beginning
+const enemyNum = 3;// numbers of enemies at the beginning
 const enemySize = 100;// size of enemies = asteroids in pixels
 const enemySpeed = 50; // speed of enemies = asteroids pixels per seconds
 const enemyVert = 10; // vertices on each enemy
@@ -27,7 +27,7 @@ const shipInvisible = 3; //ship invisibility in sec
 const timeText = 2.5 ;// fading time in seconds
 const textSize = 100; //text font height in pixels
 
-/* html- canvas*/
+// html- canvas
 let canvas = document.getElementById("astroCanvas");
 let context = canvas.getContext("2d");
 let level, lives, enemies, score, scoreHigh, ship, text, textAlpha; // set up the game parameters
