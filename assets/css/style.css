@@ -150,11 +150,6 @@ h1{
     margin-bottom:20px;
 };
 
-p { 
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-    
-}
  
 .game {
     padding: 30px;
@@ -162,12 +157,8 @@ p {
 
 
 .fa-plus-circle {
-        color:#faf9fc;
-            -webkit-animation-name: bounce;
-            animation-name: bounce;
-            -webkit-transform-origin: center bottom;
-            transform-origin: center bottom;
-          }
+        color:#faf9fc;}
+            
 
 .fa-play-circle {
   color:#faf9fc;
