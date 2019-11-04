@@ -507,5 +507,15 @@ for (let i = ship.lasers.length - 1; i >= 0; i--) {
         }
      } 
  }
+ let play = document.getElementById("play");
 
+ function hideScreen(){
 
+ 
+ $("#play").click(function(){
+    $("game").show();
+    $("#navbar").hide();
+    $(".history").hide();
+    $(".footer").hide();
+
+  });
