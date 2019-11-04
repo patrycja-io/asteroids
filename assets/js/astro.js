@@ -135,6 +135,7 @@ function gameOver() {
     ship.dead = true;
     text = "Game Over";
     textAlpha = 2.0;
+    location.reload;
 }
 
 // keys set up
