@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-bottom:0;
-    color: #fcf8f8;
+
     }
 
 #atari {
@@ -165,7 +165,6 @@ h1{
   
 }   
       
-
 .social-links {
     padding-bottom: 15px;
 }
@@ -190,7 +189,9 @@ h1{
     background: #2b2b2b;
 }
 
+
 .hr{
     color: #2b2b2b;
 }
-.footer { justify-items: end;}
+.footer {
+  scroll-margin: 10[x];;}
