@@ -135,9 +135,6 @@ function gameOver() {
     ship.dead = true;
     text = "Game Over";
     textAlpha = 2.0;
-    $(".footer").show();
-        $(".history").show();
-        $("#navbar").show(); 
 }
 
 // keys set up
