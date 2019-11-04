@@ -17,6 +17,7 @@ body {
     margin-bottom: 0;
 }
 
+
 .jumbotron.history{
     background-image: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); 
     background-repeat: no-repeat;
@@ -28,7 +29,7 @@ body {
 #atari {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(70, 54, 107, 0.616);
-    text-align: center;
+   
 }
 
 #modalIcon{
@@ -138,7 +139,7 @@ background-size: cover;
 }
 
 img {
-    max-width: 70%;
+    max-width: 60%;
     height: auto;
   }
 
