@@ -346,12 +346,12 @@ if (textAlpha >= 0) {
     context.textAlign = "center";
     context.textBaseline = "middle";
     context.fillStyle = "rgba(255, 255, 255, " + textAlpha + ")";
-    context.font = "large-caps " + textSize + "px Playfair Display";
+    context.font = "large-caps " + textSize + "px Lato";
     context.fillText(text, canvas.width / 2, canvas.height * 0.75);
     textAlpha -= (1.0 / timeText / FPS);
 } else if (ship.dead) {
     // after "game over" fades, start a new game
-    reload.location();
+    
 }
 
 // draw the lives
@@ -365,14 +365,14 @@ for (let i = 0; i < lives; i++) {
 context.textAlign = "right";
 context.textBaseline = "middle";
 context.fillStyle = "white";
-context.font = textSize + "px dejavu sans mono";
+context.font = textSize + "px Lato";
 context.fillText(score, canvas.width - shipSize / 2, shipSize);
 
 // draw the high score
 context.textAlign = "center";
 context.textBaseline = "middle";
 context.fillStyle = "white";
-context.font = (textSize * 0.75) + "px dejavu sans mono";
+context.font = (textSize * 0.75) + "px Lato";
 context.fillText("BEST " + scoreHigh, canvas.width / 2, shipSize);
 
 
