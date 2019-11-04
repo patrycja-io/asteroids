@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:900i&display=swap');
 
 
 html {
@@ -144,7 +144,7 @@ img {
   }
 
 h1{
-    font-family:'Lato',sans-serif;
+  font-family: 'Exo 2', sans-serif;
     text-align:center;
     font-size: 25px;
     margin-bottom:20px;
