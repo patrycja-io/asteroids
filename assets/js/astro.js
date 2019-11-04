@@ -135,7 +135,9 @@ function gameOver() {
     ship.dead = true;
     text = "Game Over";
     textAlpha = 2.0;
-    location.reload;
+    $(".footer").show();
+        $(".history").show();
+        $("#navbar").show(); 
 }
 
 // keys set up
@@ -352,7 +354,7 @@ if (textAlpha >= 0) {
     textAlpha -= (1.0 / timeText / FPS);
 } else if (ship.dead) {
     // after "game over" fades, start a new game
-    newGame();
+    reload.location();
 }
 
 // draw the lives
