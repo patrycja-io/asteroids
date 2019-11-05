@@ -126,7 +126,6 @@ canvas{
   }
   
 .jumbotron.game{
-
 background-image: linear-gradient(to bottom right,  #311B92, #872A56);
 background-size: cover; 
 display: none;  
@@ -149,7 +148,6 @@ h1{
     margin-bottom:20px;
 };
 
- 
 .game {
     padding: 30px;
 }
@@ -165,7 +163,7 @@ h1{
 }   
       
 .social-links {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .social-links li a i {
