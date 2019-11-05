@@ -22,7 +22,6 @@ body {
     background-image: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     margin:0;
     background-position: center;
     }
@@ -131,7 +130,8 @@ canvas{
 .jumbotron.game{
 background-image: linear-gradient(to bottom right,  #311B92, #872A56);
 background-size: cover; 
-display: none;  
+display: none;
+ 
 }
 
 #astroCanvas {
@@ -184,5 +184,5 @@ h1{
 }
 
 .footer{
-  padding: 50px;
+  padding: 30px;
 }
