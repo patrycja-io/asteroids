@@ -72,7 +72,6 @@ http://www.liketotally80s.com/2006/11/80s-atari/
 * [Main color scheme taken from - click link ](https://www.awwwards.com/sites/arkade-london-audio-reactive-art)
   `And ` [and found on Visme.com - NO. 9](https://visme.co/blog/website-color-schemes/)
 
-![Image](https://bit.ly/2WCU8j9)
 
 **Media**
 * [Background photo used from Unsplash.com](https://bit.ly/34i6Iaa)
@@ -92,7 +91,7 @@ https://getbootstrap.com/
 https://www.youtube.com/watch?v=vEROU2XtPR8
 https://www.youtube.com/watch?v=vDJpGenyHaA
 
-* [Original game footage - recorded](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
+* [Original game on Youtube](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
 * [Scheme Color - Daphne from Scooby Doo](https://bit.ly/36k9PQF) - past era
 
 Finally my project got colors inspired by my favourite tv show 
