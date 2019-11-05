@@ -30,9 +30,10 @@ body {
 
 #modalIcon{
   text-align: center;
+  color: #FEF001;
 }
 .modal-content{
-  color:#fdfcfc;
+  color:#fafaf8;
   background-color: #1d1c1cf5;
   font-family: Lato, sans-serif;
 }
@@ -151,12 +152,11 @@ h1{
 };
 
 .fa-plus-circle {
-    color:#FEF001;}
+    color:rgb(235, 224, 17);
+  }
             
-
 .fa-play-circle {
   color:#FEF001;
-
 }   
       
 .social-links {
