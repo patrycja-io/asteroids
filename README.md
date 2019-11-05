@@ -73,7 +73,7 @@ Finally my project got colors inspired by my favourite tv show
 
 * [MOCKUP](http://ami.responsivedesign.is/#) - mockup for my readme
 
-* [GIT] (https://git-scm.com/)-version control for my project
+* [GIT] (https://git-scm.com/) -version control for my project
 
 
 ## Testing
@@ -88,7 +88,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-1.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.png" /></p>
 
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-2.png" /></p>
 
