@@ -73,7 +73,7 @@ Finally my project got colors inspired by my favourite tv show
 
 * [MOCKUP](http://ami.responsivedesign.is/#) - mockup for my readme
 
-* [GIT] (https://git-scm.com/) -version control for my project
+* [GIT](https://git-scm.com/) -version control for my project
 
 
 ## Testing
