@@ -159,20 +159,24 @@ function keyDown (event) {
         break;
     }
 }
+
+ /** function saying what will happened if key will be realeased
+*/
+
 function keyUp (event) {
     if (ship.dead) {
         return;
     }switch(event.keyCode) {
-       case 32: //space bar 
+       case 32: 
           ship.canShoot = true;
           break;
-       case 37: //arrow left - stop 
+       case 37: 
           ship.rot = 0;
           break;
-       case 38: //arrow up - stop
+       case 38: 
           ship.thrusting = false;
           break;
-       case 39:  //arrow right - stop
+       case 39:  
           ship.rot = 0;
           break;
     }
