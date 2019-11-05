@@ -34,6 +34,10 @@ body {
   background-color: #0c0032;
 }
 
+canvas{
+  width: 100%;
+}
+
 .shake-bl {
 	-webkit-animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
    animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
