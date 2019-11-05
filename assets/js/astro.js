@@ -109,6 +109,9 @@ function explodeShip() {
     ship.explodeTime = Math.ceil(shipExplode * FPS);
 }
 
+ /** 
+ * function drawing the ship
+*/
 function drawShip(x, y, a, colour = "magenta") {
     context.strokeStyle = colour;
     context.lineWidth = shipSize / 20;
