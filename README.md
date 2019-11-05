@@ -75,8 +75,6 @@ http://www.liketotally80s.com/2006/11/80s-atari/
 
 **Media**
 * [Background photo used from Unsplash.com](https://bit.ly/34i6Iaa)
-
-![Image](https://bit.ly/2pogWqS)
 * [Original Asteroids logo](https://upload.wikimedia.org/wikipedia/commons/3/36/Asteroids_arcade_logo.png)
 
 
