@@ -136,25 +136,29 @@ function gameOver() {
     text = "Game Over";
     textAlpha = 2.0;
 }
+ /** added event listener to keydown and keyup
+ * 
+*/
+document.addEventListener("keydown", keyDown);
+document.addEventListener("keyup", keyUp); 
 
-// keys set up
-document.addEventListener("keydown", keyDown); // pressed key
-document.addEventListener("keyup", keyUp); //released key
+ /** function saying what will happen when you will press assigned key keyboards
+*/
 
 function keyDown (event) {  
     if (ship.dead) {
         return;
     }switch(event.keyCode) {
-      case 32: // space bar key (shoot laser)
+      case 32:
         shootLaser();
         break;
-      case 37: //arrow left
+      case 37: 
         ship.rot = shipSpeed / 180 * Math.PI /FPS;
         break;
-      case 38:  //arrow up
+      case 38:  
         ship.thrusting = true;
         break;
-      case 39:  //arrow right
+      case 39: 
         ship.rot = - shipSpeed / 180 * Math.PI / FPS;
         break;
     }
