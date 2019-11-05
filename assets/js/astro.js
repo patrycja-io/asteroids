@@ -198,6 +198,9 @@ function keyUp (event) {
      return enemy;
  }
 
+  /** function  starting new game
+ * 
+*/
 function newGame() {
     level = 0;
     lives = gameLives;
@@ -213,7 +216,9 @@ function newGame() {
 newLevel();
 }
 
- // shooting function
+ /** function making lasers for shooting in asteroids
+ * 
+*/
  function shootLaser(){
      if(ship.canShoot && ship.lasers.length <laserMax){
          ship.lasers.push({ // from the nose of the ship
@@ -268,7 +273,10 @@ function update() {
         context.closePath(); //line closing the ship
         context.stroke(); // draw the path
 
-// show asteroid's collision circle
+/** functions showing what happens when asteroids=enemy will hit the ship and vice versa
+ * showing collision circle
+*/
+
    if (showBunding) {
         context.strokeStyle = "lime";
         context.beginPath();
