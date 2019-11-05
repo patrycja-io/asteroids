@@ -88,13 +88,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-<p><img alt="Image" title="icon" src="wireframes/how to deply-1.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-1.png" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/how to deply-2.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-2.png" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/how to deply-3.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-3.png" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/how to deply-4.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-4.png" /></p>
 
 
 
