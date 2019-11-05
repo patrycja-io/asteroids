@@ -22,6 +22,13 @@ Asteroids is one of my favourite game on Atari, after Tetris and Space Invaders.
 Making Asteroids was a big challenge for me but at the same time pleasure to get it done.
 Currently im fascinated about '80s era. Music, Film, culture and art. Thats kind of an era that I was bord and wplyw prominiwal na moje dziecinstwo. At the begining I wanted to make my website very dark. But things were
 
+Finally my project got colors inspired by my favourite tv show 
+
+* [Stranger Things - Netflix series stylized on '80s](https://www.youtube.com/watch?v=YEG3bmU_WaI)
+
+
+
+
 ### User stories
 
 ### Wireframes
@@ -95,20 +102,9 @@ http://www.liketotally80s.com/2006/11/80s-atari/
 
 **Acknowledgements**
 
-freecodecamp freecodecamp.org/learn
-csstricks https://css-tricks.com/
-stackoverflow https://stackoverflow.com/
-https://www.w3schools.com/ 
-https://www.w3schools.com/tags/ref_canvas.asp
-https://getbootstrap.com/   
-https://www.youtube.com/watch?v=vEROU2XtPR8
-https://www.youtube.com/watch?v=vDJpGenyHaA
-
+* [Traversy_Media] https://www.youtube.com/watch?v=vEROU2XtPR8
+* [w3schools]https://www.w3schools.com/tags/ref_canvas.asp
+* [csstricks] https://css-tricks.com/
+* [stackoverflow] https://stackoverflow.com/
+* [bootstrap_documentation] https://getbootstrap.com/   
 * [Original game on Youtube](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
-* [Scheme Color - Daphne from Scooby Doo](https://bit.ly/36k9PQF) - past era
-
-Finally my project got colors inspired by my favourite tv show 
-
-* [Stranger Things - Netflix series stylized on '80s](https://www.youtube.com/watch?v=YEG3bmU_WaI)
-
-![Image](https://i.ytimg.com/vi/YEG3bmU_WaI/maxresdefault.jpg)
