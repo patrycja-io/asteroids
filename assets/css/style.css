@@ -127,11 +127,26 @@ canvas{
     }
   }
   
-.jumbotron.game{
+/*.jumbotron.game{
 background-image: linear-gradient(to bottom right,  #311B92, #872A56);
 background-size: cover; 
 display: none;
- 
+}
+*/
+
+#bottomContainer {
+	display: none;
+}
+.parent {
+	display: flex;
+	justify-content: center;
+	margin-top: 10vh;
+}
+.clickButtons {
+	background: hotpink;
+	color: #fff;
+	padding: 10px 16px;
+	border-radius: 5px;
 }
 
 #astroCanvas {
