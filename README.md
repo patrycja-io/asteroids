@@ -52,6 +52,7 @@ Finally my project got colors inspired by my favourite tv show
 
 6. user friendly
 
+
 ## Technologies used
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Core of the website
@@ -66,14 +67,14 @@ Finally my project got colors inspired by my favourite tv show
 
 * [FONTAWESOME](https://fontawesome.com/) - Icons to make my website looking proffesional
 
-* [GOOGLEFONTS]( )
+* [GOOGLEFONTS]( https://fonts.google.com/) - nice choice of fonts
 
 * [ANIMISTA](http://animista.net/)  - to animate my icons
 
-http://ami.responsivedesign.is/#
+* [MOCKUP](http://ami.responsivedesign.is/#) - mockup for my readme
 
+* [GIT] (https://git-scm.com/)-version control for my project
 
-- version control for my project
 
 ## Testing
 
