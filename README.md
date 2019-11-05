@@ -88,13 +88,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-<p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.PNG" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-2.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-2.PNG" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-3.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-3.PNG" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-4.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/how to deploy-4.PNG" /></p>
 
 
 
