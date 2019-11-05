@@ -32,27 +32,26 @@ The same with Asteroids game. On my websiet you can find a short hint but hsitor
 
 ## Technologies used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Core of the website
 
-* _HTML5_ [link](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Core of the website
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - To make my website stylish
 
-* _BOOTSTRAP 4_ [link](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Framework to make layout and content looking better
+* [JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - to make my game with
 
-* _JQUERY_ [link](https://jquery.com/) - to simplyfy DOM manipulation
+* [JQUERY](https://jquery.com/) - to simplyfy DOM manipulation
 
-* _CSS3_ [link](https://developer.mozilla.org/en-US/docs/Web/CSS) - To make my website stylish 
+* [BOOTSTRAP 4](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Framework to make layout and content looking better
 
-* _FONTAWESOME_  [link](https://fontawesome.com/) - Icons to make my website looking proffesional
+* [FONTAWESOME](https://fontawesome.com/) - Icons to make my website looking proffesional
 
-* _ANIMISTA_ - to animate my icons
+* [GOOGLEFONTS]( )
 
-* _JAVASCRIPT_ [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - to make my game with 
+* [ANIMISTA](http://animista.net/)  - to animate my icons
 
-* _GIT_  [link](http://animista.net/) - version control for my project
-
-* _GitHUB_ [link](https://github.com/) - remote version control to have a backup of my work and to deploy my website with 
+http://ami.responsivedesign.is/#
 
 
+- version control for my project
 
 ## Testing
 
