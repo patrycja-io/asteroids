@@ -177,7 +177,9 @@ function keyUp (event) {
           break;
     }
 }
-// function - taking all parameters of asteroids together
+ /** function building asteroids
+ * 
+*/
  function newEnemy ( x, y, r) {
     let lvlMult = 1 + 0.1 * level;
      let enemy = {
@@ -190,17 +192,16 @@ function keyUp (event) {
         offs: [],
         vert: Math.floor(Math.random() * (enemyVert + 1) + enemyVert / 2 ),    
      };
-
-     //vertex offset 
      for (let i = 0; i < enemy.vert; i++) {
          enemy.offs.push(Math.random() * enemyJag * 2 + 1 - enemyJag);
      }
      return enemy;
  }
 
-  /** function  starting new game
- * 
+  /** 
+* function  starting new game
 */
+
 function newGame() {
     level = 0;
     lives = gameLives;
