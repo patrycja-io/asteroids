@@ -81,9 +81,20 @@ Finally my project got colors inspired by my favourite tv show
 
 
 ## Deployment
+To Deploy my website I had to logo on browser to my personal gitub side and click on my repository with Milstone 2 project in tghat case that was patrycja-io/asteroids.
+Once I cliced on my repo
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+<p><img alt="Image" title="icon" src="wireframes/howtodeply-1.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeply-2.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeply-3.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeply-4.png" /></p>
+
+
+
 
 
 ## Credits
