@@ -18,6 +18,9 @@ On my website user can find out a little bit about Atari. there is a text sectio
 The same with Asteroids game. On my websiet you can find a short hint but hsitory of a game but attached link to wkipedia saying more about this matter.
 
 ### Why Asteroids?
+Asteroids is one of my favourite game on Atari, after Tetris and Space Invaders.
+Making Asteroids was a big challenge for me but at the same time pleasure to get it done.
+Currently im fascinated about '80s era. Music, Film, culture and art. Thats kind of an era that I was bord and wplyw prominiwal na moje dziecinstwo. At the begining I wanted to make my website very dark. But things were
 
 ### User stories
 
@@ -29,6 +32,18 @@ The same with Asteroids game. On my websiet you can find a short hint but hsitor
 <p><img alt="Image" title="icon" src="wireframes/PAGE 2.png" /></p>
 
 ## Features
+
+1.Easy to use- Clear navigation
+
+2.responsive and media supportive
+
+3.Intuitive - Clear navigation
+
+4.Quality Conent
+
+5.Informative
+
+6. user friendly
 
 ## Technologies used
 
