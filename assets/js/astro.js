@@ -216,6 +216,7 @@ function keyUp (event) {
 function newGame() {
     level = 0;
     lives = gameLives;
+    score = 0;
     ship = newShip();
 
     let scoreStr = localStorage.getItem(saveScore);// get the high score from local storage
