@@ -86,21 +86,21 @@ Finally my project got colors inspired by my favourite tv show
 
 ## Deployment
 
-# To deploy my website I had to log on to browser to my personal Gitub account s and click on my repository with Astreoids - Milstone 2 project - that was patrycja-io/asteroids.
-# Onced I clicked my reop I showed a screen with setting and I had to click on this button like above:
+### To deploy my website I had to log on to browser to my personal Gitub account s and click on my repository with Astreoids - Milstone 2 project - that was patrycja-io/asteroids.
+### Onced I clicked my reop I showed a screen with setting and I had to click on this button like above:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.PNG" /></p>
 
-# Than on settings I had to scroll to the end of this page :
+### Than on settings I had to scroll to the end of this page :
 
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-2.PNG" /></p>
 
-# And find a section with Github Pages and click on source/ none button.
-# Than from toggle menu change it to master branch:
+### And find a section with Github Pages and click on source/ none button.
+### Than from toggle menu change it to master branch:
 
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-3.PNG" /></p>
 
-# After when page refreshed I had a ready url with deployed website:
+### After when page refreshed I had a ready url with deployed website:
 
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-4.PNG" /></p>
 
