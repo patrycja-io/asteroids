@@ -38,9 +38,9 @@ Finally my project got colors inspired by my favourite tv show
 ## Wireframes
 
 
-<p><img alt="Image" title="icon" src="wireframes/PAGE 1.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/wireframe_1.png" /></p>
 
-<p><img alt="Image" title="icon" src="wireframes/PAGE 2.png" /></p>
+<p><img alt="Image" title="icon" src="wireframes/wireframe_2.png" /></p>
 
 ## Features
 
