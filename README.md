@@ -84,14 +84,9 @@ Finally my project got colors inspired by my favourite tv show
 
 I have done manual testing:
 
-Asteroids Game plus buttons:
-
-Press Play button 
-
-Viddeo games at `80s plus button 
-Go to any random section.
-try to press on "logo button" and verify if page is going back to home as a main page.
-Navbar 1.Go to "navbar section" 2. Try to click on every section that contain Navabar and verify if navbar elements will take you to relevant sections. 3. On small devices check if navbar changed to hamburger icon. 4. Try to press on Hamburger icon and check if dropdown works
+Asteroids Game plus button: - Try to press button, expected popup modal with text about the game - fully working
+Press Play button -Try to press "play button, expected to be redirected to game section
+Viddeo games at `80s plus button -Try to press button, expected popup modal nested youtube video - fully working
 
 Game 
 
