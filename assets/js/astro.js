@@ -36,14 +36,15 @@ newGame();
 // Game loop set up
 setInterval(update, 1000 / FPS);
 
-// SHIP
-// Spaceship object- set up
+/** 
+* function drawing the ship, and thrusting direction after being navigated
+*/
 function newShip () {
     return{
     x: canvas.width / 2,
     y: canvas.height / 2,
     r: shipSize / 2,
-    a: 90 / 180 * Math.PI, //  direction of the ship conversion to radiance
+    a: 90 / 180 * Math.PI, 
     blinkNum: Math.ceil(shipInvisible / shipBlinkDuration),
     blinkTime: Math.ceil(shipBlinkDuration * FPS),
     canShoot: true,
@@ -51,7 +52,7 @@ function newShip () {
     explodeTime: 0,
     lasers: [],
     rot: 0,
-    thrusting: false, // thrusting of the ship parameter
+    thrusting: false, 
     thrust: {
         x:0,
         y:0
@@ -59,11 +60,13 @@ function newShip () {
   }
 }
 
-// ASTEROIDS set up
+ /** 
+ * function releasing asteroids 
+*/
 function createAsteroidBelt() {
   enemies = [];
   let x, y;
-  for (let i = 0; i < enemyNum; i++) { // asteroids location 
+  for (let i = 0; i < enemyNum; i++) { 
     do {
       x = Math.floor(Math.random() * canvas.width);
       y = Math.floor(Math.random() * canvas.height);   
@@ -72,30 +75,33 @@ function createAsteroidBelt() {
   }
 }
 
+ /** 
+ * function making enemies dead after shooting , counting points, and splitting them on half after being shooted. As well satrting new leverl when ll of them ahs been destroyed
+*/
 function destroyAsteroid(index) {
     let x = enemies[index].x;
     let y = enemies[index].y;
     let r = enemies[index].r;
 
-    // split the asteroid in two if necessary
-    if (r == Math.ceil(enemySize / 2)) { // large asteroid
+   
+    if (r == Math.ceil(enemySize / 2)) { 
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 4)));
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 4)));
         score += pointsForLargeAsteroids;
-    } else if (r == Math.ceil(enemySize / 4)) { // medium asteroid
+    } else if (r == Math.ceil(enemySize / 4)) { 
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 8)));
         enemies.push(newEnemy(x, y, Math.ceil(enemySize / 8)));
         score += pointsForMediumAsteroids;
     } else {
         score += pointForSmallAsteroids;
 
-    } if (score > scoreHigh) { // check high score
+    } if (score > scoreHigh) { 
        scoreHigh = score;
        localStorage.setItem(saveScore, scoreHigh);
     } 
-     enemies.splice(index, 1); // destroy the asteroid
+     enemies.splice(index, 1); 
    
-      if (enemies.length == 0) { // new level when no more asteroids
+      if (enemies.length == 0) { 
                 level++;
                 newLevel();
     }
