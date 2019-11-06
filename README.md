@@ -7,7 +7,7 @@ Asteroids website is like a back to the past when the Internet was just a newbor
 
 ## UX
 
-### 80`s video games?
+### '80s video games?
 My website is prepared to acknowledge the young generation about video games from an era without www.
 Most of them never heard of any gaming devices before XBOX and Playstation. '80s are trendy now, so I thought that I could help the new generation to understand how it was.
 This website is made as well as a nostalgic journey for those who had a chance to play with Atari games when they were kids.
