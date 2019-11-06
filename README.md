@@ -82,6 +82,32 @@ Finally my project got colors inspired by my favourite tv show
 
 ## Testing
 
+I have done manual testing:
+
+Logo-as a home button
+
+Go to any random section.
+try to press on "logo button" and verify if page is going back to home as a main page.
+Navbar 1.Go to "navbar section" 2. Try to click on every section that contain Navabar and verify if navbar elements will take you to relevant sections. 3. On small devices check if navbar changed to hamburger icon. 4. Try to press on Hamburger icon and check if dropdown works
+
+Carousel 1 -with hero photos
+
+Carousel is programmed on 7 sec and instead of slide it disolve.
+Carosuel doesnt have indicators wich was designed that way.
+Wait 7 secs and check if carosuel photo changed on the next one in the queue
+Carousel 2 -Testimonials
+
+Carousel is programmed on 7 sec and it slides
+Carosuel doesnt have indicators wich was designed that way.
+Wait 7 secs and check if carosuel photo changed on the next one in the queue
+Contact form:
+
+Go to the "Contact me" page
+Try to submit the empty form and verify that an error message about the required fields appears
+Try to submit the form with an invalid email address and verify that a relevant error message appears
+Try to submit the form with all inputs valid and verify that a success message appears.
+Project is fully responsive on large screens like desktops or laptops and medium size devices as for ex. Pixel 3XL and small phones as iPhone 5s. There is no bugs and website fully works on browsers as Firefox, Opera or Internet Explorer.
+
 
 
 ## Deployment
