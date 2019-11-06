@@ -160,9 +160,9 @@ Further reading and troubleshooting on cloning a repository from GitHub here.
 
 **Acknowledgements**
 
-* [Traversy_Media] (https://www.youtube.com/watch?v=vEROU2XtPR8)
-* [w3schools] (https://www.w3schools.com/tags/ref_canvas.asp)
-* [csstricks](https://css-tricks.com/)
-* [stackoverflow] (https://stackoverflow.com/)
-* [bootstrap_documentation] (https://getbootstrap.com/)
+* [Traversy_Media](https://www.youtube.com/watch?v=vEROU2XtPR8)
+* [W3schools](https://www.w3schools.com/tags/ref_canvas.asp)
+* [CssTricks](https://css-tricks.com/)
+* [StackOverflow](https://stackoverflow.com/)
+* [Bootstrap_documentation](https://getbootstrap.com/)
 * [Original game on Youtube](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
