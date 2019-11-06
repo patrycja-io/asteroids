@@ -130,7 +130,7 @@ canvas{
 #game{
 background-image: linear-gradient(to bottom right,  #311B92, #872A56);
 background-size: cover; 
-display:none;
+display: none;
 
 }
 
