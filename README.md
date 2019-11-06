@@ -138,9 +138,8 @@ Project is fully responsive on large screens like desktops or laptops and medium
 **Content**
 
 * [Wikipedia-Asteroids (video game)](https://bit.ly/2PMwBer)
-http://www.liketotally80s.com/2006/11/80s-atari/
-* [Main color scheme taken from - click link ](https://www.awwwards.com/sites/arkade-london-audio-reactive-art)
-  `And ` [and found on Visme.com - NO. 9](https://visme.co/blog/website-color-schemes/)
+* [liketotally80s](http://www.liketotally80s.com/2006/11/80s-atari/)
+* [Main color scheme found on Visme.com  ](https://visme.co/blog/website-color-schemes/)
 
 
 **Media**
@@ -150,9 +149,9 @@ http://www.liketotally80s.com/2006/11/80s-atari/
 
 **Acknowledgements**
 
-* [Traversy_Media] https://www.youtube.com/watch?v=vEROU2XtPR8
-* [w3schools]https://www.w3schools.com/tags/ref_canvas.asp
-* [csstricks] https://css-tricks.com/
-* [stackoverflow] https://stackoverflow.com/
-* [bootstrap_documentation] https://getbootstrap.com/   
+* [Traversy_Media] (https://www.youtube.com/watch?v=vEROU2XtPR8)
+* [w3schools] (https://www.w3schools.com/tags/ref_canvas.asp)
+* [csstricks](https://css-tricks.com/)
+* [stackoverflow] (https://stackoverflow.com/)
+* [bootstrap_documentation] (https://getbootstrap.com/)
 * [Original game on Youtube](https://www.youtube.com/watch?v=9Ydu8UhIjeU)
