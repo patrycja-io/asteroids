@@ -44,17 +44,17 @@ As a grandma, I want to be able to understand my kids, and explore subject close
 
 ## Features
 
-1.Easy to use- Clear navigation
+1. Easy to use- Clear navigation
 
-2.responsive and media supportive
+2. Responsive to different devices media supportive
 
-3.Intuitive - Clear navigation
+3. Intuitive - Clear navigation
 
-4.Quality Conent
+4. Quality Conent- high resolution photos well made game.
 
-5.Informative
+5. Informative - explaining subjet of old videogames
 
-6. user friendly
+6. User friendly
 
 
 ## Technologies used
