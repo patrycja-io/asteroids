@@ -118,16 +118,16 @@ Project is fully responsive on large screens like desktops or laptops and medium
 
 ### Than on settings I had to scroll to the end of this page :
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-2.PNG" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeploy-2.PNG" /></p>
 
 ### And find a section with Github Pages and click on source/ none button.
 ### Than from toggle menu change it to master branch:
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-3.PNG" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeploy-3.PNG" /></p>
 
 ### After when page refreshed I had a ready url with deployed website:
 
-<p><img alt="Image" title="icon" src="wireframes/how to deploy-4.PNG" /></p>
+<p><img alt="Image" title="icon" src="wireframes/howtodeploy-4.PNG" /></p>
 
 
 
