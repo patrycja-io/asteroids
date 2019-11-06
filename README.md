@@ -111,25 +111,36 @@ Project is fully responsive on large screens like desktops or laptops and medium
 
 ## Deployment
 
-### To deploy my website I had to log on to browser to my personal Gitub account s and click on my repository with Astreoids - Milstone 2 project - that was patrycja-io/asteroids.
-### Onced I clicked my reop I showed a screen with setting and I had to click on this button like above:
+#### To deploy my website I had to log on to browser to my personal Gitub account s and click on my repository with Astreoids - Milstone 2 project - that was patrycja-io/asteroids.
+#### Onced I clicked my reop I showed a screen with setting and I had to click on this button like above:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.PNG" /></p>
 
-### Than on settings I had to scroll to the end of this page :
+#### Than on settings I had to scroll to the end of this page :
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-2.PNG" /></p>
 
-### And find a section with Github Pages and click on source/ none button.
-### Than from toggle menu change it to master branch:
+#### And find a section with Github Pages and click on source/ none button.
+#### Than from toggle menu change it to master branch:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-3.PNG" /></p>
 
-### After when page refreshed I had a ready url with deployed website:
+#### After when page refreshed I had a ready url with deployed website:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-4.PNG" /></p>
 
+How to run this project locally
+To clone this project from GitHub:
 
+Follow this link to the Project GitHub repository.
+Under the repository name, click "Clone or download".
+In the Clone with HTTPs section, copy the clone URL for the repository.
+In your local IDE open Git Bash.
+Change the current working directory to the location where you want the cloned directory to be made.
+Type git clone, and then paste the URL you copied in Step 3.
+git clone https://github.com/USERNAME/REPOSITORY
+Press Enter. Your local clone will be created.
+Further reading and troubleshooting on cloning a repository from GitHub here.
 
 
 
