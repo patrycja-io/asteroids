@@ -84,24 +84,24 @@ Finally my project got colors inspired by my favourite tv show
 
 I have done manual testing:
 
+Hero section:
+
 Asteroids Game plus button: - Try to press button, expected popup modal with text about the game - fully working
-Press Play button -Try to press "play button, expected to be redirected to game section
-Viddeo games at `80s plus button -Try to press button, expected popup modal nested youtube video - fully working
+Press Play button -Try to press "play"- Try to press button, expected popup modal nested youtube video - fully working
+
+Scrolling up and down on wesite works
 
 Game 
 
-Carousel is programmed on 7 sec and instead of slide it disolve.
-Carosuel doesnt have indicators wich was designed that way.
-Wait 7 secs and check if carosuel photo changed on the next one in the queue
-Carousel 2 -Testimonials
-
-Carousel is programmed on 7 sec and it slides
-Carosuel doesnt have indicators wich was designed that way.
-Wait 7 secs and check if carosuel photo changed on the next one in the queue
-Contact form:
+Navigation of the ship when pressed designed button - works
+Laser shooting after tapping in space bar - works
+Counting points after shooted asteroid - works
+Saving best score of a game - works
+Loosking lifes after hitted by asteroids -works
 
 
 Go to the Social Links 
+
 Try to press on Github icon and be redirected to Github opened up with my profile - fully working
 Try to press on Instagram icon and be redirected to Instagram page opened up in new tab with my profile - fully working
 Try to press on Linkedin icon and be redirected to Linkedin opened up with my profile - fully working
