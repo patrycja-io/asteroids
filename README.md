@@ -59,25 +59,25 @@ Finally my project got colors inspired by my favourite tv show
 
 ## Technologies used
 
-* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Core of the website
+* [Html](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Core of the website
 
-* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - To make my website stylish
+* [Css](https://developer.mozilla.org/en-US/docs/Web/CSS) - To make my website stylish
 
-* [JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - to make my game with
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - to make my game with
 
-* [JQUERY](https://jquery.com/) - to simplyfy DOM manipulation
+* [Jquery](https://jquery.com/) - to simplyfy DOM manipulation
 
-* [BOOTSTRAP 4](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Framework to make layout and content looking better
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Framework to make layout and content looking better
 
-* [FONTAWESOME](https://fontawesome.com/) - Icons to make my website looking proffesional
+* [Fontawesome](https://fontawesome.com/) - Icons to make my website looking proffesional
 
-* [GOOGLEFONTS]( https://fonts.google.com/) - nice choice of fonts
+* [GoogleFonts]( https://fonts.google.com/) - nice choice of fonts
 
-* [ANIMISTA](http://animista.net/)  - to animate my icons
+* [Animista](http://animista.net/)  - to animate my icons
 
-* [MOCKUP](http://ami.responsivedesign.is/#) - mockup for my readme
+* [Mockup](http://ami.responsivedesign.is/#) - mockup for my readme
 
-* [GIT](https://git-scm.com/) -version control for my project
+* [Git](https://git-scm.com/) -version control for my project
 
 
 ## Testing
