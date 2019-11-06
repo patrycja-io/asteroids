@@ -31,9 +31,9 @@ Finally my project got colors inspired by my favourite tv show
 
 ### User stories
 
-As Max, I want to have a unique experience and play with oldschool game. so we can enjoy this service together.
-As Anna, I want show my friends a game that I used to play when I was a kid. 
-As a grandma, I want to be able to understand my kids, and explore subject close to their heart. 
+* As Max, I want to have a unique experience and play with oldschool game. so we can enjoy this service together.
+* As Anna, I want show my friends a game that I used to play when I was a kid. 
+* As a grandma, I want to be able to understand my kids, and explore subject close to their heart. 
 
 ### Wireframes
 
@@ -85,18 +85,20 @@ As a grandma, I want to be able to understand my kids, and explore subject close
 
 
 ## Deployment
-To Deploy my website I had to logo on browser to my personal gitub side and click on my repository with Milstone 2 project in tghat case that was patrycja-io/asteroids.
-Once I cliced on my repo
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
+To deploy my website I had to log on to browser to my personal Gitub account s and click on my repository with Astreoids - Milstone 2 project - that was patrycja-io/asteroids.
+Onced I clicked my reop I showed a screen with setting and I had to click on this button like above:
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.PNG" /></p>
+
+Than on settings I had to scroll to the end of this page :
 
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-2.PNG" /></p>
 
+To option with Github Pages and clicked on source/ none button.
+Than from toggle menu change it to master branch:
+
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-3.PNG" /></p>
+
+After when page refreshed I had a ready url with deployed website:
 
 <p><img alt="Image" title="icon" src="wireframes/how to deploy-4.PNG" /></p>
 
