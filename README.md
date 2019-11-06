@@ -35,7 +35,7 @@ Finally my project got colors inspired by my favourite tv show
 * As Anna, I want show my friends a game that I used to play when I was a kid. 
 * As a grandma, I want to be able to understand my kids, and explore subject close to their heart. 
 
-### Wireframes
+## Wireframes
 
 
 <p><img alt="Image" title="icon" src="wireframes/PAGE 1.png" /></p>
@@ -84,13 +84,16 @@ Finally my project got colors inspired by my favourite tv show
 
 I have done manual testing:
 
-Logo-as a home button
+Asteroids Game plus buttons:
 
+Press Play button 
+
+Viddeo games at `80s plus button 
 Go to any random section.
 try to press on "logo button" and verify if page is going back to home as a main page.
 Navbar 1.Go to "navbar section" 2. Try to click on every section that contain Navabar and verify if navbar elements will take you to relevant sections. 3. On small devices check if navbar changed to hamburger icon. 4. Try to press on Hamburger icon and check if dropdown works
 
-Carousel 1 -with hero photos
+Game 
 
 Carousel is programmed on 7 sec and instead of slide it disolve.
 Carosuel doesnt have indicators wich was designed that way.
@@ -102,10 +105,11 @@ Carosuel doesnt have indicators wich was designed that way.
 Wait 7 secs and check if carosuel photo changed on the next one in the queue
 Contact form:
 
-Go to the "Contact me" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
+
+Go to the Social Links 
+Try to press on Github icon and be redirected to Github opened up with my profile - fully working
+Try to press on Instagram icon and be redirected to Instagram page opened up in new tab with my profile - fully working
+Try to press on Linkedin icon and be redirected to Linkedin opened up with my profile - fully working
 Project is fully responsive on large screens like desktops or laptops and medium size devices as for ex. Pixel 3XL and small phones as iPhone 5s. There is no bugs and website fully works on browsers as Firefox, Opera or Internet Explorer.
 
 
