@@ -5,7 +5,7 @@ $('.clickButtons').click(function(e) {
   if (id === 'topButton') {
     $('#game').show();
     $('#history').hide();
-    $('.footer').remove();
+    $('footer').remove();
 } else {    
     $('#history').show();
     $('#game').hide();
