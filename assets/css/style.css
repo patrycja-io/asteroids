@@ -24,9 +24,12 @@ body {
     background-repeat: no-repeat;
     margin:0px;
     background-position: center;
-    height:71vh;
+    height:71;
     }
 
+.row{
+  margin:0px;
+}
 
 #modalIcon{
   text-align: center;
