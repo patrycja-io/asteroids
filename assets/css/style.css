@@ -25,11 +25,14 @@ body {
     margin:0px;
     background-position: center;
     height:71vh;
-    }
+    background-attachment: fixed;
+    z-index: 1;
+}
 
 .row{
   margin:0px;
 }
+
 
 #modalIcon{
   text-align: center;
