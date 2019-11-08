@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:700i&display=swap');
 
+#plus{
+  box-shadow: none;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #plus{display:none}
@@ -9,9 +13,6 @@
 @media only screen and (min-width: 600px)  {
   #plus{display:none}
 }
-
-
-
 
 
 html {
@@ -29,7 +30,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 0;
 }
-
 
 #history{
     background-image: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); 
