@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:700i&display=swap');
 
-#plus{
-  box-shadow: none;
+#add {
+  margin-bottom: 0;
 }
-
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #plus{display:none}
+@media screen and (max-width: 600px) {
+  #add {display: none;}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px)  {
-  #plus{display:none}
-}
 
 
 html {
@@ -38,8 +33,7 @@ body {
     margin:0px;
     background-position: center;
     height:71vh;
-    background-attachment: fixed;
-    z-index: 1;
+
 }
 
 .row{
@@ -51,6 +45,7 @@ body {
   text-align: center;
   color: #FEF001;
 }
+
 .modal-content{
   color:#fafaf8;
   background-color: #1d1c1cf5;
