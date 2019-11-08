@@ -130,16 +130,25 @@ Project is fully responsive on large screens like desktops or laptops and medium
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-4.PNG" /></p>
 
 How to run this project locally
+---
 To clone this project from GitHub:
 
 Follow this link to the Project GitHub repository.
+
 Under the repository name, click "Clone or download".
+
 In the Clone with HTTPs section, copy the clone URL for the repository.
+
 In your local IDE open Git Bash.
+
 Change the current working directory to the location where you want the cloned directory to be made.
+
 Type git clone, and then paste the URL you copied in Step 3.
+
 git clone https://github.com/USERNAME/REPOSITORY
+
 Press Enter. Your local clone will be created.
+
 Further reading and troubleshooting on cloning a repository from GitHub here.
 
 
