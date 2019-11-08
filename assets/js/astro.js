@@ -144,9 +144,10 @@ function gameOver() {
     ship.dead = true;
     text = "Game Over";
     textAlpha = 2.0;
-    document.location.reload(true)
+    document.location.reload(true);  
    
 }
+
  /** added event listener to keydown and keyup
  * 
 */
