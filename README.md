@@ -131,9 +131,6 @@ Project is fully responsive on large screens like desktops or laptops and medium
 
 How to run this project locally
 ---
-To clone this project from GitHub:
-
-Follow this link to the Project GitHub repository.
 
 Under the repository name, click "Clone or download".
 
@@ -145,7 +142,11 @@ Change the current working directory to the location where you want the cloned d
 
 Type git clone, and then paste the URL you copied in Step 3.
 
+```
+
 git clone https://github.com/USERNAME/REPOSITORY
+
+``
 
 Press Enter. Your local clone will be created.
 
