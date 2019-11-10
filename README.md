@@ -30,9 +30,9 @@ Finally, my project got colors inspired by my favorite tv show
 
 ### User stories
 
-* As Max, I want to have a unique experience and play with oldschool game. so we can enjoy this service together.
-* As Anna, I want show my friends a game that I used to play when I was a kid. 
-* As a grandma, I want to be able to understand my kids, and explore subject close to their heart. 
+* As Max, I want to have a unique experience and play with an old school game. so we can enjoy this service together.
+* As Anna, I would like to show my friends a game that I used to play when I was a kid. 
+* As a grandma, I want to be able to understand my kids and explore subjects close to their hearts. 
 
 
 ## Wireframes
