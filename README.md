@@ -62,6 +62,9 @@ Finally my project got colors inspired by my favourite tv show
 
 ### Features Left to Implement
 
+* Game is working just only on a desktop version. Unfortunately didnt have a time for playing with animations to build a touch control on mobile.
+* There is one bug that I found out wile testing - in my html left inline styling for canvas. Tried to fix that by adding styling in CSS but it break whole webiste.
+
 
 
 
@@ -107,7 +110,7 @@ Laser shooting after tapping in space bar - works
 Counting points after shooted asteroid - works
 Saving best score of a game - works
 Loosing lifes after hitted by asteroids -works
-I discovered one bug that I cna not fix because of lack of time
+I discovered one bug that I cna not fix because of lack of time. IN html left inline styling for canvas. Tried to fix that by adding styling in CSS but it break whole webiste.
 
 
 Go to the Social Links 
