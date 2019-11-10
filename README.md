@@ -55,7 +55,15 @@ This logo works as a home button. Redirect player/user to the main page.
 
 #### History section
 
+History section contains 3 buttons styled in font awesome and background image showing old devices from the '80s.
+
+* First plus button toggle modal content explains little about the history of Asteroids.
+* Play Button in the middle has to redirect the user to go to the hidden section with game 
+* Third last play button toggle another modal content but this time with embedded Youtube video about Atari and overall games from old times.
+
 #### Game section
+
+
 
 #### Footer
 
@@ -85,7 +93,7 @@ From social links user can find out more about the owner of a website
 
 * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Framework to make layout and content looking better
 
-* [Fontawesome](https://fontawesome.com/) - Icons to make my website looking proffesional
+* [Fontawesome](https://fontawesome.com/) - Icons to make my website looking professional
 
 * [GoogleFonts]( https://fonts.google.com/) - nice choice of fonts
 
@@ -105,7 +113,7 @@ I have done manual testing:
 Asteroids Game plus button: - Try to press button, expected popup modal with text about the game - fully working
 Press Play button -Try to press *play* - Try to press button, expected popup modal nested youtube video - fully working
 
-Scrolling up and down on wesite works
+Scrolling up and down on website works
 
 #### Game 
 
