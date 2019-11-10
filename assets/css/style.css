@@ -43,12 +43,14 @@ body {
 .modalIcon{
   text-align: center;
   color: #FEF001;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .modal-content{
   color:#fafaf8;
   background-color: #1d1c1cf5;
   font-family: Lato, sans-serif;
+ 
 }
 
 canvas{
