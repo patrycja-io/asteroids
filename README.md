@@ -144,9 +144,8 @@ Type git clone, and then paste the URL you copied in Step 3.
 
 ```
 
-git clone https://github.com/USERNAME/REPOSITORY
+git clone https://github.com/patrycja-io/asteroids
 
-``
 
 Press Enter. Your local clone will be created.
 
