@@ -127,8 +127,8 @@ The project is fully responsive on large screens as well as desktops or laptops 
 
 ## Deployment
 
-#### To deploy my website I had to log on to browser to my personal GitHub account s and click on my repository with Asteroids - Milestone 2 project - that was patrycja-io/asteroids.
-#### Once I clicked my reop I showed a screen with setting and I had to click on this button like above:
+* To deploy my website I had to log on to browser to my personal GitHub account s and click on my repository with Asteroids - Milestone 2 project - that was patrycja-io/asteroids.
+Once I clicked my repo I showed a screen with setting and I had to click on this button like above:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.PNG" /></p>
 
