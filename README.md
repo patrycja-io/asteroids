@@ -145,7 +145,7 @@ How to run this project locally
 ```
 
 git clone https://github.com/patrycja-io/asteroids
-
+```
 
 Press Enter. Your local clone will be created.
 
