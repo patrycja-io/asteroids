@@ -63,6 +63,8 @@ History section contains 3 buttons styled in font awesome and background image s
 
 #### Game section
 
+Game section contain a game build in Javascript and quick explanation whats the purpose of the game.
+In this section user can find a button to reset a game and go back to main page.
 
 
 #### Footer
