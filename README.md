@@ -46,23 +46,16 @@ Finally, my project got colors inspired by my favorite tv show
 
 ## Features
 
-1. Easy to use- Clear navigation
-
-2. Responsive to different devices media supportive
-
-3. Intuitive - Clear navigation
-
-4. Quality Conent- high resolution photos well made game.
-
-5. Informative - explaining subjet of old videogames
-
-6. User friendly
+### Elements on every page
+ 
+* Navbar
+* Footer
 
 
 ### Features Left to Implement
 
-* Game is working just only on a desktop version. Unfortunately didnt have a time for playing with animations to build a touch control on mobile.
-* There is one bug that I found out wile testing - in my html left inline styling for canvas. Tried to fix that by adding styling in CSS but it break whole webiste.
+* Game is working just only on a desktop version. Unfortunately, I didn't have time for playing with animations to build a touch control on mobile.
+* There is one bug that I found out while testing - in my HTML left inline styling for canvas. I tried to fix that by adding styling in CSS but it breaks the whole website.
 
 
 
@@ -95,36 +88,35 @@ Finally, my project got colors inspired by my favorite tv show
 
 I have done manual testing:
 
-Hero section:
+#### Hero section:
 
 Asteroids Game plus button: - Try to press button, expected popup modal with text about the game - fully working
 Press Play button -Try to press *play* - Try to press button, expected popup modal nested youtube video - fully working
 
 Scrolling up and down on wesite works
 
-Game 
+#### Game 
 
-Navigation of the ship when pressed designed button - works
+Navigation of the ship when pressed a designed button - works
 Laser shooting after tapping in space bar - works
 Counting points after shooted asteroid - works
-Saving best score of a game - works
-Loosing lifes after hitted by asteroids -works
-I discovered one bug that I cna not fix because of lack of time. IN html left inline styling for canvas. Tried to fix that by adding styling in CSS but it break whole webiste.
+Saving the best score of a game - works
+Losing lives after hitting by asteroids -works
+I discovered one bug that I can not fix because of a lack of time. In HTML left inline styling for canvas. I tried to fix that by adding styling in CSS but it breaks the whole website.
 
-
-Go to the Social Links 
+#### Go to the Social Links in footer section
 
 Try to press on Github icon and be redirected to Github opened up with my profile - fully working
-Try to press on Instagram icon and be redirected to Instagram page opened up in new tab with my profile - fully working
-Try to press on Linkedin icon and be redirected to Linkedin opened up with my profile - fully working
-Project is fully responsive on large screens like desktops or laptops and medium size devices as for ex. Pixel 3XL and small phones as iPhone 5s. There is no bugs and website fully works on browsers as Firefox, Opera or Internet Explorer.
+Try to press on the Instagram icon and be redirected to Instagram page opened up in new tab with my profile - fully working
+Try to press on the Linkedin icon and be redirected to Linkedin opened up with my profile - fully working
+The project is fully responsive on large screens as well as desktops or laptops and medium-size devices. Pixel 3XL and small phones as iPhone 5s. There is no bugs and website fully works on browsers like Firefox, Opera or Internet Explorer.
 
 
 
 ## Deployment
 
-#### To deploy my website I had to log on to browser to my personal Gitub account s and click on my repository with Astreoids - Milstone 2 project - that was patrycja-io/asteroids.
-#### Onced I clicked my reop I showed a screen with setting and I had to click on this button like above:
+#### To deploy my website I had to log on to browser to my personal GitHub account s and click on my repository with Asteroids - Milestone 2 project - that was patrycja-io/asteroids.
+#### Once I clicked my reop I showed a screen with setting and I had to click on this button like above:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-1.PNG" /></p>
 
@@ -144,15 +136,15 @@ Project is fully responsive on large screens like desktops or laptops and medium
 How to run this project locally
 ---
 
-1.Under the repository name, click "Clone or download".
+1. Under the repository name, click "Clone or download".
 
-2.In the Clone with HTTPs section, copy the clone URL for the repository.
+2. In the Clone with HTTPs section, copy the clone URL for the repository.
 
-3.In your local IDE open in Terminal.
+3. In your local IDE open in Terminal.
 
-4.Change the current working directory to the location where you want the cloned directory to be made.
+4. Change the current working directory to the location where you want the cloned directory to be made.
 
-5.Type git clone, and then paste the URL you copied in Step 3.
+5. Type git clone, and then paste the URL you copied in Step 3.
 
 ```
 
