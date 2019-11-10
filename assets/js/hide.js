@@ -3,11 +3,12 @@ $('.clickButtons').click(function(e) {
   const id = this.id;
     console.log(this.id);
   if (id === 'topButton') {
-    $('#game').show();
-    $('#history').hide();
-    $('footer').remove();
+    $('#history').hide(1200);
+    $('footer').hide(1200);
+    $('#game').show(1200);
 } else {    
-    $('#history').show();
-    $('#game').hide();
+    $('#history').show(1200);
+    $('footer').show(1200);
+    $('#game').hide(1200);
   }
 });
