@@ -132,15 +132,15 @@ Project is fully responsive on large screens like desktops or laptops and medium
 How to run this project locally
 ---
 
-⋅⋅*Under the repository name, click "Clone or download".
+1.Under the repository name, click "Clone or download".
 
-⋅⋅*In the Clone with HTTPs section, copy the clone URL for the repository.
+2.In the Clone with HTTPs section, copy the clone URL for the repository.
 
-⋅⋅*In your local IDE open in Terminal.
+3.In your local IDE open in Terminal.
 
-⋅⋅*Change the current working directory to the location where you want the cloned directory to be made.
+4.Change the current working directory to the location where you want the cloned directory to be made.
 
-⋅⋅*Type git clone, and then paste the URL you copied in Step 3.
+5.Type git clone, and then paste the URL you copied in Step 3.
 
 ```
 
