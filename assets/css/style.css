@@ -9,7 +9,6 @@
 }
 
 
-
 html {
     scroll-behavior: smooth; 
   }
@@ -149,20 +148,19 @@ display: none;
 
 }
 
-
 img {
     max-width:60%;
     height: auto;
   }
 
-h1{
+h1 {
   font-family: 'Exo 2', sans-serif;
     text-align:center;
     font-size: 25px;
     margin-bottom:20px;
 };
 
-h3{
+h2 {
   font-family: 'Exo 2', sans-serif;
     text-align:center;
     font-size: 14px;
