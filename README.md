@@ -35,12 +35,15 @@ Finally my project got colors inspired by my favourite tv show
 * As Anna, I want show my friends a game that I used to play when I was a kid. 
 * As a grandma, I want to be able to understand my kids, and explore subject close to their heart. 
 
+
 ## Wireframes
+
 
 
 <p><img alt="Image" title="icon" src="wireframes/wireframe_1.png" /></p>
 
 <p><img alt="Image" title="icon" src="wireframes/wireframe_2.png" /></p>
+
 
 ## Features
 
@@ -55,6 +58,12 @@ Finally my project got colors inspired by my favourite tv show
 5. Informative - explaining subjet of old videogames
 
 6. User friendly
+
+
+### Features Left to Implement
+
+
+
 
 
 ## Technologies used
@@ -97,7 +106,8 @@ Navigation of the ship when pressed designed button - works
 Laser shooting after tapping in space bar - works
 Counting points after shooted asteroid - works
 Saving best score of a game - works
-Loosking lifes after hitted by asteroids -works
+Loosing lifes after hitted by asteroids -works
+I discovered one bug that I cna not fix because of lack of time
 
 
 Go to the Social Links 
