@@ -132,15 +132,15 @@ Project is fully responsive on large screens like desktops or laptops and medium
 How to run this project locally
 ---
 
-Under the repository name, click "Clone or download".
+⋅⋅*Under the repository name, click "Clone or download".
 
-In the Clone with HTTPs section, copy the clone URL for the repository.
+⋅⋅*In the Clone with HTTPs section, copy the clone URL for the repository.
 
-In your local IDE open Git Bash.
+⋅⋅*In your local IDE open Git Bash.
 
-Change the current working directory to the location where you want the cloned directory to be made.
+⋅⋅*Change the current working directory to the location where you want the cloned directory to be made.
 
-Type git clone, and then paste the URL you copied in Step 3.
+⋅⋅*Type git clone, and then paste the URL you copied in Step 3.
 
 ```
 
@@ -148,9 +148,6 @@ git clone https://github.com/patrycja-io/asteroids
 
 
 Press Enter. Your local clone will be created.
-
-Further reading and troubleshooting on cloning a repository from GitHub here.
-
 
 
 ## Credits
