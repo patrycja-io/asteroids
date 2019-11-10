@@ -136,7 +136,7 @@ How to run this project locally
 
 ⋅⋅*In the Clone with HTTPs section, copy the clone URL for the repository.
 
-⋅⋅*In your local IDE open Git Bash.
+⋅⋅*In your local IDE open in Terminal.
 
 ⋅⋅*Change the current working directory to the location where you want the cloned directory to be made.
 
