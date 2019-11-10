@@ -48,8 +48,20 @@ Finally, my project got colors inspired by my favorite tv show
 
 ### Elements on every page
  
-* Navbar
-* Footer
+#### Navbar
+
+In existing Navabar there is just only one element - original logo Asteroids.
+This logo works as a home button. Redirect player/user to the main page.
+
+#### History section
+
+#### Game section
+
+#### Footer
+
+On my page footer contains social links that connect directly to my Github page LinkedIn and Instagram.
+From social links user can find out more about the owner of a website
+
 
 
 ### Features Left to Implement
