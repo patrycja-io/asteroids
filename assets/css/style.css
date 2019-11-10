@@ -162,6 +162,14 @@ h1{
     margin-bottom:20px;
 };
 
+h3{
+  font-family: 'Exo 2', sans-serif;
+    text-align:center;
+    font-size: 14px;
+    margin-bottom:20px;
+    color: rgb(245, 23, 127)
+};
+
 .fa-plus-circle {
     color:rgb(235, 224, 17);
   }
