@@ -18,11 +18,11 @@ On my website, the user can find out a little bit about Atari. there is a text s
 The same with the Asteroids game. On my website, you can find a short hint but history of a game but attached link to Wikipedia saying more about this matter.
 
 ### Why Asteroids?
-Asteroids are one of my favorite games on Atari, after Tetris and Space Invaders.
+Asteroids are one of my favourite games on Atari, after Tetris and Space Invaders.
 Making Asteroids was a big challenge for me but at the same time pleasure to get it done.
 Currently, I'm fascinated by the '80s era. Music, Film, culture, and art. That's kind of an era that I was a baby and had an impact on my young years. In the beginning, I wanted to make my website very dark. But things were
 
-Finally, my project got colors inspired by my favorite tv show 
+Finally, my project got colours inspired by my favorite tv show 
 
 * [Stranger Things - Netflix series stylized on '80s](https://www.youtube.com/watch?v=YEG3bmU_WaI)
 
@@ -136,7 +136,7 @@ Once I clicked my repo I showed a screen with setting and I had to click on this
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-2.PNG" /></p>
 
-* Then to find a section with Github Pages and click on source/ none button.
+* Than to find a section with Github Pages and click on source/ none button.
 And than from toggle menu change it to master branch:
 
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-3.PNG" /></p>
