@@ -87,7 +87,7 @@ I have done manual testing:
 Hero section:
 
 Asteroids Game plus button: - Try to press button, expected popup modal with text about the game - fully working
-Press Play button -Try to press "play"- Try to press button, expected popup modal nested youtube video - fully working
+Press Play button -Try to press *play* - Try to press button, expected popup modal nested youtube video - fully working
 
 Scrolling up and down on wesite works
 
