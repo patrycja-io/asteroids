@@ -79,7 +79,7 @@ From social links user can find out more about the owner of a website
 
 * [Css](https://developer.mozilla.org/en-US/docs/Web/CSS) - To make my website stylish
 
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - to make my game with
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - To make my game with and animate buttons
 
 * [Jquery](https://jquery.com/) - to simplyfy DOM manipulation
 
