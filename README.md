@@ -150,6 +150,7 @@ Once I clicked my repo I showed a screen with setting and I had to click on this
 * Than to find a section with Github Pages and click on source/ none button.
 And than from toggle menu change it to master branch:
 
+
 <p><img alt="Image" title="icon" src="wireframes/howtodeploy-3.PNG" /></p>
 
 * After when page refreshed I had a ready url with deployed website:
